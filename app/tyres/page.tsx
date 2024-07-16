@@ -35,10 +35,10 @@ const tyreProducts = [
   { id: 15, name: 'Ceat Car Tyre', size: '165/80 R14', image: '/ceatcar.jpeg' },
   { id: 16, name: 'Ceat Car Tyre', size: '185/65 R15', image: '/ceatcar.jpeg' },
 
-  { id: 17, name: 'Ceat Truck Tyre', size: '6.00 R16', image: '/ceatotr.jpeg' },
-  { id: 18, name: 'Ceat Truck Tyre', size: '8.25 R16', image: '/ceatotr.jpeg' },
-  { id: 19, name: 'Ceat Truck Tyre', size: '12.4 28', image: '/ceat12.jpeg' },
-  { id: 20, name: 'Ceat Truck Tyre', size: '13.4 28', image: '/ceat12.jpeg' },
+  { id: 17, name: 'Ceat Tractor front Tyre', size: '6.00 R16', image: '/ceatotr.jpeg' },
+  { id: 18, name: 'Ceat Tractor Front Tyre', size: '8.25 R16', image: '/ceatotr.jpeg' },
+  { id: 19, name: 'Ceat Tractor Tyre', size: '12.4 28', image: '/ceat12.jpeg' },
+  { id: 20, name: 'Ceat Tractor Tyre', size: '13.4 28', image: '/ceat12.jpeg' },
 
 
   { id: 36, name: 'Apollo Alnac 4G', size: '165/80 R14', image: '/apollo.jpeg' },
