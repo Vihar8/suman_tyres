@@ -54,6 +54,15 @@ export default function Component() {
         <section className="w-full">
           <Carousel className="w-full max-w-[450px] mx-auto relative">
             <CarouselContent>
+            <CarouselItem>
+                <img
+                  src="/sumantyresshop.jpg"
+                  width={1000}
+                  height={600}
+                  alt="Tire Shop"
+                  className="aspect-[1/1] object-cover"
+                />
+              </CarouselItem>
               <CarouselItem>
                 <img
                   src="/tyres.jpg"
