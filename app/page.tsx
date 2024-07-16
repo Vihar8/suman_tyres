@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { JSX, SVGProps, useState } from 'react';
 import Link from 'next/link';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
@@ -181,7 +181,7 @@ export default function Component() {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -202,7 +202,7 @@ function MenuIcon(props) {
   );
 }
 
-function CloseIcon(props) {
+function CloseIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -222,7 +222,7 @@ function CloseIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+function InstagramIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
