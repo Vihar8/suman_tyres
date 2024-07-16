@@ -117,7 +117,7 @@ export default function Component() {
                 />
               </CardHeader>
               <CardContent>
-                <h3 className="text-xl font-bold">All-Season Tires</h3>
+                <h3 className="text-xl font-bold">Tyre</h3>
                 <p className="text-muted-foreground">Durable and versatile tires for year-round driving.</p>
               </CardContent>
             </Card>
@@ -132,7 +132,7 @@ export default function Component() {
                 />
               </CardHeader>
               <CardContent>
-                <h3 className="text-xl font-bold">Winter Tires</h3>
+                <h3 className="text-xl font-bold">Oil</h3>
                 <p className="text-muted-foreground">Specially designed for optimal performance in snow and ice.</p>
               </CardContent>
             </Card>
@@ -147,7 +147,7 @@ export default function Component() {
                 />
               </CardHeader>
               <CardContent>
-                <h3 className="text-xl font-bold">High-Performance Tires</h3>
+                <h3 className="text-xl font-bold">Battery</h3>
                 <p className="text-muted-foreground">Engineered for superior handling and responsiveness.</p>
               </CardContent>
             </Card>
