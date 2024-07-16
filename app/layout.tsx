@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Suman Tyres",
-  description: "We Don't Sell We Help People To Buy!",
+  description: "We are wholesaler Sell We Help People To Buy!",
+  keywords: "tyres, bike tyre, activa tyre, car tyre, wiper blade shop,car battery charging , engine oil, car battery,  wholesale tyres, tyre shop Gandhinagar, tyre wholesaler, Gandhinagar tyres, best tyre shop in gandhinagar, tyre shop near me",
 };
 
 export default function RootLayout({
