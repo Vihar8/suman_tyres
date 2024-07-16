@@ -19,7 +19,7 @@ function Navbar() {
           <nav className={`md:flex items-center gap-6 ${menuOpen ? 'block' : 'hidden'}`}>
             <ul className="md:flex items-center gap-6">
               <li>
-                <Link href="#" className="font-medium hover:underline" prefetch={false}>
+                <Link href="/home" className="font-medium hover:underline" prefetch={false}>
                   Home
                 </Link>
               </li>
