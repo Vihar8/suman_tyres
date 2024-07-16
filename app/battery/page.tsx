@@ -8,15 +8,15 @@ import { SearchIcon } from 'lucide-react';
 
 // Sample battery products data
 const batteryProducts = [
-  { id: 1, name: 'Exide Activa Battery', size: 'BTZ4l', image: '/4lbe.jpeg' },
-  { id: 2, name: 'Exide Activa Battery', size: 'BTZ5l', image: '/5lbe.webp' },
-  { id: 3, name: 'Exide Bike Battery', size: 'BTZ4L', image: '/4lbe.jpeg' },
-  { id: 4, name: 'Exide Bike Battery', size: 'BTZ5L', image: '/5lbe.webp' },
+  { id: 1, name: 'Exide Activa Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
+  { id: 2, name: 'Exide Activa Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
+  { id: 3, name: 'Exide Bike Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
+  { id: 4, name: 'Exide Bike Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
   { id: 5, name: 'Exide Car Battery', size: '200Ah', image: '/ecar.jpeg' },
-  { id: 6, name: 'Amaron Activa Battery', size: 'BT4L', image: '/4lb.webp' },
-  { id: 7, name: 'Amaron Activa Battery', size: 'BTZ5L', image: '/5lb.webp' },
-  { id: 8, name: 'Amaron Bike Battery', size: 'BTZ4L', image: '/4lb.webp' },
-  { id: 9, name: 'Amaron Bike Battery', size: 'BTZ5L', image: '/5lb.webp' },
+  { id: 6, name: 'Amaron Activa Battery', size: 'BT4LB', image: '/4lb.webp' },
+  { id: 7, name: 'Amaron Activa Battery', size: 'BTZ5LB', image: '/5lb.webp' },
+  { id: 8, name: 'Amaron Bike Battery', size: 'BTZ4LB', image: '/4lb.webp' },
+  { id: 9, name: 'Amaron Bike Battery', size: 'BTZ5LB', image: '/5lb.webp' },
   { id: 10, name: 'Amaron Flo car Battery', size: '200Ah', image: '/acar.png' },
   { id: 11, name: 'Amaron Go car Battery', size: '200Ah', image: '/acargo.png' },
   { id: 12, name: 'Amaron Elito car Battery', size: '200Ah', image: '/aelito.jpeg' },
