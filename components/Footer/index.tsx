@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-gray-200 text-gray-700">
+    <footer className= " bg-gray-200 text-gray-700">
       <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-4 md:px-6">
         <div className="space-y-2">
           <h4 className="text-lg font-bold">Contact Us</h4>

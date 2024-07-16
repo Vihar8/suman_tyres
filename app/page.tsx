@@ -56,33 +56,48 @@ export default function Component() {
             ))}
           </div>
           <div className="flex flex-col items-center justify-center py-12">
-      <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">Our Dealership</h2>
-      <div className="grid grid-cols-4 gap-4 mb-8">
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/ceatlogo.jpg" alt="Ceat" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/michelinlogo.jpg" alt="Michelin" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/bridgestonelogo.jpg" alt="Bridgestone" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/shelllogo.jpeg" alt="Shell" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/castrollogo.jpeg" alt="Castrol" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/jklogo.png" alt="JK" />
-        </div>
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/amaronlogo.jpg" alt="Amaron" />
+  <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">
+    Our Dealership
+  </h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/ceatlogo.jpg" alt="Ceat" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/michelinlogo.jpg" alt="Michelin" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/bridgestonelogo.jpg" alt="Bridgestone" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/apollologo.jpeg" alt="Apollo" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/jklogo.png" alt="JK" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/shelllogo.jpeg" alt="Shell" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/castrollogo.jpeg" alt="Castrol" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/repsollogo.jpg" alt="Repsol" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/servologo.jpg" alt="Servo" />
+    </div>
+    
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/amaronlogo.jpg" alt="Amaron" />
+    </div>
+    <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+      <img src="/exidelogo.jpeg" alt="Exide" />
+    </div>
+       <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
+          <img src="/eloficlogo.jpeg" alt="elofic" />
         </div>
 
-        <div className="flex items-center justify-center p-4 bg-gray-100 rounded">
-          <img src="/exidelogo.jpeg" alt="exide" />
-        </div>
       </div>
     </div>
         </section>
