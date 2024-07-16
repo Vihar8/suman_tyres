@@ -9,7 +9,7 @@ function Navbar() {
     <header className="bg-gray-300 text-black">
         <div className="container flex items-center justify-between py-4 px-4 md:px-6">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <img src="/logo.jpg" width={250} height={250} alt="Tire Shop" />
+            <img src="/logo.jpg" width={230} height={230} alt="Tire Shop" />
           </Link>
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)} className="focus:outline-none">
@@ -19,22 +19,22 @@ function Navbar() {
           <nav className={`md:flex items-center gap-6 ${menuOpen ? 'block' : 'hidden'}`}>
             <ul className="md:flex items-center gap-6">
               <li>
-                <Link href="/" className="font-medium hover:underline" prefetch={false}>
+                <Link href="/" className="font-medium text-xl hover:underline" prefetch={false}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="\tyres" className="font-medium hover:underline" prefetch={false}>
+                <Link href="\tyres" className="font-medium text-xl hover:underline" prefetch={false}>
                   Tyres
                 </Link>
               </li>
               <li>
-                <Link href="\oil" className="font-medium hover:underline" prefetch={false}>
+                <Link href="\oil" className="font-medium text-xl hover:underline" prefetch={false}>
                   Engine Oil
                 </Link>
               </li>
               <li>
-                <Link href="\battery" className="font-medium hover:underline" prefetch={false}>
+                <Link href="\battery" className="font-medium text-xl hover:underline" prefetch={false}>
                   Battery
                 </Link>
               </li>
