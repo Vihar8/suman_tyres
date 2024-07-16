@@ -127,7 +127,7 @@ export default function Component() {
               </CardHeader>
               <CardContent>
                 <h3 className="text-xl font-bold">Tyre</h3>
-                <p className="text-muted-foreground">Durable and versatile tires for year-round driving.</p>
+                <p className="text-muted-foreground">Durable and versatile tyres for year-round driving.</p>
               </CardContent>
             </Card>
             <Card>
@@ -168,8 +168,10 @@ export default function Component() {
           <div className="space-y-2">
             <h4 className="text-lg font-bold">Contact Us</h4>
             <p>Sec 11, Suman Tower, Suman Tyres</p>
-            <p>Near Cinemax</p>
-            <a href="tel:+919426636250" className="hover:text-red-900 transition-colors duration-300">
+            <p>Near Cinemax Gandhinagar, Gujarat</p>
+            <br />
+            <p className='text-l'>Phone No: </p>
+            <a href="tel:+919426636250" className="hover:text-red-800 text-l transition-colors duration-300">
                         (+91) 9426636250
                       </a>
           </div>
