@@ -36,7 +36,7 @@ export default function Component() {
             {[
               { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
               { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
-              { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your Vehicle Engine." },
+              { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your Vehicle." },
             ].map((item, index) => (
               <Card key={index}>
                 <CardHeader>
