@@ -2,6 +2,7 @@
 'use client'
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
@@ -66,7 +67,7 @@ const OilLanding: React.FC = () => {
             {filteredOils.map(product => (
               <div key={product.id} className="border border-gray-300 p-4 rounded transition duration-300 hover:shadow-lg">
                 <div className="w-full min-h-40 mb-2 rounded-lg overflow-hidden">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                  <Image src={product.image} alt={product.name} width={200} height={200} className="w-full h-full object-cover" />
                 </div>
                 <p className="font-semibold text-lg">{product.name}</p>
                 <p className="text-sm text-gray-600">{product.type}</p>

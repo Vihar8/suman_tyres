@@ -2,6 +2,7 @@
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Head from 'next/head';
+import Image from 'next/image';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Footer from "@/components/Footer";
 
@@ -29,19 +30,18 @@ export default function Component() {
                 <div>
                   <h2 className="text-xl font-semibold text-black">Address</h2>
                   <p className="text-gray-900">Sec 11, Suman Tower, Suman Tyres</p>
-          <p className="text-gray-900">Near Cinemax Gandhinagar, Gujarat</p>
-          
+                  <p className="text-gray-900">Near Cinemax Gandhinagar, Gujarat</p>
                 </div>
               </div>
               <div className="border-t border-gray-200 pt-6">
                 <div className="flex items-center space-x-4">
                   <FaPhoneAlt className="text-red-800 text-2xl" />
                   <div>
-                  <h2 className="text-xl font-semibold text-black">Phone No</h2>
+                    <h2 className="text-xl font-semibold text-black">Phone No</h2>
                     <p className="text-gray-900">
-                    <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
-            (+91) 9426636250
-          </a>
+                      <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
+                        (+91) 9426636250
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -61,16 +61,15 @@ export default function Component() {
               </div>
             </div>
             <div className="w-full h-full overflow-hidden rounded-lg shadow-lg group">
-              <img
+              <Image
                 src="/sumantyresshop.jpg"
-                width="400"
-                height="400"
+                width={400}
+                height={400}
                 alt="Company Location"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
               />
             </div>
           </div>
-        
         </Card>
         <br />
         <br />

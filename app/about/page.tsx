@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
             Established in 1997, Suman Tyres is a leading tyre dealer located in Sector 11, Gandhinagar, near Cinemax. Over the years, we have built a reputation for offering high-quality tyres and exceptional service to our customers.
           </p>
           <p className="text-lg text-gray-700 mb-6">
-            At Suman Tyres, we cater to a wide range of tyre needs, including brands like Michelin, Ceat, Bridgestone, Shell Lubricant, Castrol, Repsol, Apollo, and JK. Whether you're looking for tyres for your car, bike, or commercial vehicle, we have you covered.
+            At Suman Tyres, we cater to a wide range of tyre needs, including brands like Michelin, Ceat, Bridgestone, Shell Lubricant, Castrol, Repsol, Apollo, and JK. Whether you&apos;re looking for tyres for your car, bike, or commercial vehicle, we have you covered.
           </p>
           <p className="text-lg text-gray-700 mb-6">
             Our commitment to customer satisfaction has helped us grow into a trusted name in Gandhinagar. We believe in providing not only quality products but also expert advice and reliable service.
