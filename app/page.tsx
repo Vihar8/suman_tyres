@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 export default function Component() {
   return (
