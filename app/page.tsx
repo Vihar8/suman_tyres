@@ -13,7 +13,6 @@ export default function Component() {
         <meta name="description" content="Suman Tyres is the best shop in Gandhinagar, Gujarat for tyres, oil, and batteries. We are a wholesaler providing the cheapest rates to our customers." />
         <meta name="keywords" content="tyres, oil, batteries, Gandhinagar, Gujarat, Suman Tyres, wholesaler" />
         <meta name="author" content="Suman Tyres" />
-        <meta name="msvalidate.01" content="BF044A098A32924B54F240FF89DE83E7" />
         <meta property="og:title" content="Suman Tyres | Best Tyre, Oil, and Battery Shop in Gandhinagar" />
         <meta property="og:description" content="Suman Tyres is the best shop in Gandhinagar, Gujarat for tyres, oil, and batteries. We are a wholesaler providing the cheapest rates to our customers. best tyre shop in gandhinagar" />
         <meta property="og:image" content="/sumantyresshop.jpg" />
