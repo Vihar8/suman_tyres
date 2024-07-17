@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "postbuild": "next-sitemap",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -34,9 +35,5 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "scripts": {
-  "postbuild": "next-sitemap"
-}
-
+  }
 }
