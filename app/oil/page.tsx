@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { SearchIcon } from 'lucide-react';
 
 // Sample engine oil products data
 const oilProducts = [
@@ -51,14 +52,16 @@ const OilLanding: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-3xl font-bold mb-4">Our Engine Oil Products</h2>
           {/* Search bar */}
-          
-          <input
-            type="text"
-            placeholder="Search by oil name or type..."
-            value={searchTerm}
-            onChange={handleSearchChange}
-            className="border border-gray-300 rounded-full px-4 py-2 w-full mb-4 focus:outline-none focus:border-blue-500 shadow-sm flex items-center"
-          />
+          <div className="flex items-center border-2 border-red-800 rounded-full px-4 py-2 mb-4 shadow-sm">
+            <SearchIcon className="w-5 h-5 text-gray-400 mr-2" />
+            <input
+              type="text"
+              placeholder="Search by tyre name or size..."
+              value={searchTerm}
+              onChange={handleSearchChange}
+              className="flex-1 border-none focus:outline-none"
+            />
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredOils.map(product => (
               <div key={product.id} className="border border-gray-300 p-4 rounded transition duration-300 hover:shadow-lg">
