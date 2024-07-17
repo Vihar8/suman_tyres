@@ -63,9 +63,15 @@ export default function Component() {
               </svg>
             </CarouselNext>
           </Carousel>
+          <hr />
         </section>
+
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-6">
+        <h2 className="bg-rose-600 text-white rounded-xl w-fit text-4xl font-bold p-5 mb-8 mx-auto">
+  We Offer
+</h2>
+
+          <div className="container grid grid-cols-2 sm:grid-cols-3 mb-8 gap-8 px-4 md:px-6">
             {[
               { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
               { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
@@ -88,11 +94,12 @@ export default function Component() {
               </Card>
             ))}
           </div>
-          <div className="flex flex-col items-center justify-center py-12">
+          <hr />
+          <div className="flex flex-col items-center justify-center py-12 m-4">
             <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">
               Our Dealership
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-8">
               {[
                 { src: "/ceatlogo.jpg", alt: "Ceat" },
                 { src: "/michelinlogo.jpg", alt: "Michelin" },
@@ -113,6 +120,7 @@ export default function Component() {
               ))}
             </div>
           </div>
+          <hr />
         </section>
       </main>
       <Footer />
