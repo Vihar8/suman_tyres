@@ -1,5 +1,5 @@
 // pages/battery-landing.tsx
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
@@ -9,19 +9,19 @@ import Image from 'next/image';
 
 // Sample battery products data
 const batteryProducts = [
-  { id: 6, name: 'Amaron Activa Battery', size: 'BT4LB', image: '/4lb.webp' },
-  { id: 7, name: 'Amaron Activa Battery', size: 'BTZ5LB', image: '/5lb.webp' },
-  { id: 8, name: 'Amaron Bike Battery', size: 'BTZ4LB', image: '/4lb.webp' },
-  { id: 9, name: 'Amaron Bike Battery', size: 'BTZ5LB', image: '/5lb.webp' },
-  { id: 9, name: 'Amaron Car Battery', size: 'Din 55 FLO', image: '/din55.jpeg' },
-  { id: 10, name: 'Amaron Flo car Battery', size: '200Ah', image: '/acar.png' },
-  { id: 11, name: 'Amaron Go car Battery', size: '200Ah', image: '/acargo.png' },
-  { id: 12, name: 'Amaron Elito car Battery', size: '200Ah', image: '/aelito.jpeg' },
-  { id: 1, name: 'Exide Activa Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
-  { id: 2, name: 'Exide Activa Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
-  { id: 3, name: 'Exide Bike Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
-  { id: 4, name: 'Exide Bike Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
-  { id: 5, name: 'Exide Car Battery', size: '200Ah', image: '/ecar.jpeg' },
+  { id: 1, name: 'Amaron Activa Battery', size: 'BT4LB', image: '/4lb.webp' },
+  { id: 2, name: 'Amaron Activa Battery', size: 'BTZ5LB', image: '/5lb.webp' },
+  { id: 3, name: 'Amaron Bike Battery', size: 'BTZ4LB', image: '/4lb.webp' },
+  { id: 4, name: 'Amaron Bike Battery', size: 'BTZ5LB', image: '/5lb.webp' },
+  { id: 5, name: 'Amaron Car Battery', size: 'Din 55 FLO', image: '/din55.jpeg' },
+  { id: 6, name: 'Amaron Flo Car Battery', size: '200Ah', image: '/acar.png' },
+  { id: 7, name: 'Amaron Go Car Battery', size: '200Ah', image: '/acargo.png' },
+  { id: 8, name: 'Amaron Elito Car Battery', size: '200Ah', image: '/aelito.jpeg' },
+  { id: 9, name: 'Exide Activa Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
+  { id: 10, name: 'Exide Activa Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
+  { id: 11, name: 'Exide Bike Battery', size: 'BTZ4LB', image: '/4lbe.jpeg' },
+  { id: 12, name: 'Exide Bike Battery', size: 'BTZ5LB', image: '/5lbe.webp' },
+  { id: 13, name: 'Exide Car Battery', size: '200Ah', image: '/ecar.jpeg' },
 ];
 
 const BatteryLanding: React.FC = () => {
@@ -32,10 +32,11 @@ const BatteryLanding: React.FC = () => {
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLowerCase();
     setSearchTerm(value);
-    const filtered = batteryProducts.filter(product =>
-      product.name.toLowerCase().includes(value) || product.size.toLowerCase().includes(value)
+    setFilteredBatteries(
+      batteryProducts.filter(product =>
+        product.name.toLowerCase().includes(value) || product.size.toLowerCase().includes(value)
+      )
     );
-    setFilteredBatteries(filtered);
   };
 
   return (
@@ -54,7 +55,7 @@ const BatteryLanding: React.FC = () => {
             <SearchIcon className="w-5 h-5 text-gray-400 mr-2" />
             <input
               type="text"
-              placeholder="Search by tyre name or size..."
+              placeholder="Search by battery name or size..."
               value={searchTerm}
               onChange={handleSearchChange}
               className="flex-1 border-none focus:outline-none"
