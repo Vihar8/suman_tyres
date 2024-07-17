@@ -4,21 +4,23 @@ import React from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { title } from 'process';
 
 const AboutPage: React.FC = () => {
   return (
     <>
       <Head>
         <title>About Suman Tyres | Best Tyre Dealers in Gandhinagar</title>
-        <meta name="description" content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more." />
+        <meta
+          name="description"
+          content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more."
+        />
       </Head>
       <Navbar />
       <main className="container mx-auto px-4 py-8">
         <section className="mb-8">
-        <h1 className="text-4xl font-bold text-center text-black animate-bounce">About Us</h1>
-        <div className="mx-auto w-28 border-t-2 border-black my-6" />
-        <br />
+          <h1 className="text-4xl font-bold text-center text-black animate-bounce">About Us</h1>
+          <div className="mx-auto w-28 border-t-2 border-black my-6" />
+          <br />
           <p className="text-lg text-gray-700 mb-6">
             Established in 1997, Suman Tyres is a leading tyre dealer located in Sector 11, Gandhinagar, near Cinemax. Over the years, we have built a reputation for offering high-quality tyres and exceptional service to our customers.
           </p>

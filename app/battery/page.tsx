@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
+import Image from 'next/image';
 
 // Sample battery products data
 const batteryProducts = [
@@ -61,7 +62,13 @@ const BatteryLanding: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredBatteries.map(product => (
               <div key={product.id} className="border border-gray-300 p-4 rounded transition duration-300 hover:shadow-lg">
-                <img src={product.image} alt={product.name} className="w-full object-cover min-h-40 mb-2 rounded-lg overflow-hidden" />
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={300}
+                  height={200}
+                  className="w-full object-cover min-h-40 mb-2 rounded-lg overflow-hidden"
+                />
                 <p className="font-semibold text-lg">{product.name}</p>
                 <p className="text-sm text-gray-600">{product.size}</p>
               </div>
