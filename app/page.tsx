@@ -71,7 +71,7 @@ export default function Component() {
   We Offer
 </h2>
 
-          <div className="container grid grid-cols-2 sm:grid-cols-3 mb-8 gap-8 px-4 md:px-6">
+          <div className="container grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
             {[
               { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
               { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
@@ -99,7 +99,7 @@ export default function Component() {
             <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">
               Our Dealership
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-8">
+            <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-8">
               {[
                 { src: "/ceatlogo.jpg", alt: "Ceat" },
                 { src: "/michelinlogo.jpg", alt: "Michelin" },
