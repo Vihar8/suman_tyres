@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 // Sample engine oil products data
 const oilProducts = [
@@ -78,6 +79,9 @@ const OilLanding: React.FC = () => {
         </section>
         <hr className="my-4 border-t-2 border-gray-200" />
       </main>
+      <div>
+              <WhatsAppButton />
+            </div>
       <Footer />
     </>
   );

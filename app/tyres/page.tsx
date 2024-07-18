@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 // Sample tyre products data
 const tyreProducts = [
@@ -87,6 +88,9 @@ const TyreLanding: React.FC = () => {
         </section>
         <hr className="my-4 border-t-2 border-gray-200" />
       </main>
+      <div>
+              <WhatsAppButton />
+            </div>
       <Footer />
     </>
   );

@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Component() {
   return (
@@ -73,6 +74,9 @@ export default function Component() {
         </Card>
         <br />
         <br />
+        <div>
+              <WhatsAppButton />
+            </div>
         <Footer />
       </div>
     </>

@@ -4,6 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Component() {
   return (
@@ -142,6 +143,9 @@ export default function Component() {
                   <img src={brand.src} alt={brand.alt} />
                 </div>
               ))}
+            </div>
+            <div>
+              <WhatsAppButton />
             </div>
           </div>
           <hr />

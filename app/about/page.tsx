@@ -4,6 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const AboutPage: React.FC = () => {
   return (
@@ -35,6 +36,9 @@ const AboutPage: React.FC = () => {
           </p>
         </section>
       </main>
+      <div>
+              <WhatsAppButton />
+            </div>
       <Footer />
     </>
   );
