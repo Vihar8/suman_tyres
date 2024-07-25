@@ -2,6 +2,8 @@
     display: inline-block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: fixed;
+    border-radius: 15px;
+    background-color: #25D366;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
@@ -11,6 +13,8 @@
   
   .whatsapp-logo:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #25D366;
   }
   
   /* Responsive styles */

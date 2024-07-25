@@ -1,6 +1,6 @@
-import { Instagram } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
 import Link from 'next/link';
-import React, { SVGProps } from 'react';
+import React from 'react';
 
 function Footer() {
   return (
@@ -18,6 +18,9 @@ function Footer() {
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Follow Us</h4>
           <div className="flex gap-4">
+          <a href="https://www.youtube.com/@SumanTyres" className="text-gray-700 hover:text-black transition-colors duration-300">
+              <Youtube className="w-6 h-6" />
+            </a>
             <a href="https://www.instagram.com/suman_tyres?igsh=bGl3amx4M2ViNXM5" className="text-gray-700 hover:text-black transition-colors duration-300">
               <Instagram className="w-6 h-6" />
             </a>
