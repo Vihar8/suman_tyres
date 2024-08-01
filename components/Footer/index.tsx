@@ -6,15 +6,13 @@ function Footer() {
   return (
     <footer className="bg-gray-200 text-gray-700">
       <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-4 md:px-6">
-        <div className="space-y-2">
-          <h4 className="text-lg font-bold mb-3">Contact Us</h4>
-          <p>Sec 11, Suman Tower, Suman Tyres</p>
-          <p>Near Cinemax Gandhinagar, Gujarat</p>
-          <p className="mt-4 text-lg font-semibold">Phone No:</p>
-          <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
-            (+91) 9426636250
-          </a>
+      <div className="space-y-2">
+          <h4 className="text-lg font-bold mb-3">About Us</h4>
+          <p>
+          Suman Tyres is one of the Oldest and influential hub for low cost Tyres, Battery , Oil, etc in Gandhinagar. We offer all sizes of tyres for your cars and two-wheelers. At Suman Tyres, you can choose from a wide range of tyers from all leading manufacturers. We make your life simple!
+          </p>
         </div>
+        
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Follow Us</h4>
           <div className="flex gap-4">
@@ -46,9 +44,18 @@ function Footer() {
             </li>
           </ul>
         </div>
+        <div className="space-y-2">
+          <h4 className="text-lg font-bold mb-3">Contact Us</h4>
+          <p>Sec 11, Suman Tower, Suman Tyres</p>
+          <p>Near Cinemax Gandhinagar, Gujarat</p>
+          <p className="mt-4 text-lg font-semibold">Phone No:</p>
+          <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
+            (+91) 9426636250
+          </a>
+        </div>
       </div>
       <div className="bg-gray-300 py-4 text-center text-sm">
-        &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved.
       </div>
     </footer>
   );
