@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import OrderCarOilOnline from '@/components/OrderCarOilOnline';
 
 // Sample engine oil products data
 const oilProducts = [
@@ -50,6 +51,9 @@ const OilLanding: React.FC = () => {
         <meta name="description" content="Explore our range of high-quality engine oils at Suman Tyres." />
       </Head>
       <Navbar />
+      <div>
+      <OrderCarOilOnline />
+    </div>
       <hr className="my-4 border-t-2 border-gray-200" />
       <main className="container mx-auto px-4">
         <section className="mb-8">

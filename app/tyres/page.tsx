@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import OrderCarTyreOnline from '@/components/OrderCarTyreOnline';
 
 // Sample tyre products data
 const tyreProducts = [
@@ -61,6 +62,9 @@ const TyreLanding: React.FC = () => {
         <meta name="description" content="Explore our range of high-quality tyres at Suman Tyres." />
       </Head>
       <Navbar />
+      <div>
+        <OrderCarTyreOnline />
+      </div>
       <hr className="my-4 border-t-2 border-gray-200" />
       <main className="container mx-auto px-4">
         <section className="mb-8">

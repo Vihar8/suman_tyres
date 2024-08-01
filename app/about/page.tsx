@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
           </p>
         </section>
       </main>
-      <div>
+            <div>
               <WhatsAppButton />
             </div>
       <Footer />
