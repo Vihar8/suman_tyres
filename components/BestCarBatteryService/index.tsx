@@ -1,4 +1,3 @@
-// components/BestCarBatteryService.tsx
 import React from 'react';
 
 const BestCarBatteryService: React.FC = () => {
@@ -7,7 +6,7 @@ const BestCarBatteryService: React.FC = () => {
       <div className="service-content">
         <h2>Best Car Battery Replacement Service At <span>Suman Tyres</span></h2>
         <p>
-          When attempting to start your vehicle, if the dashboard lights fail to illuminate or you don't hear the engine cranking, it is probable that your car battery is dead.
+          When attempting to start your vehicle, if the dashboard lights fail to illuminate or you don&#39;t hear the engine cranking, it is probable that your car battery is dead.
         </p>
         <p>
           At Suman Tyres, we have battery technicians that can be dispatched to your location in no time. Once they reach your location, they will diagnose your car battery and replace your battery on the spot if needed.
