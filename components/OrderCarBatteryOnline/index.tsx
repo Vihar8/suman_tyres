@@ -1,4 +1,3 @@
-// components/OrderCarBatteryOnline.tsx
 import React from 'react';
 
 const OrderCarBatteryOnline: React.FC = () => {
@@ -15,7 +14,6 @@ const OrderCarBatteryOnline: React.FC = () => {
       </div>
       <div className="battery-images">
         <img src="/5lbe.webp" alt="Exide Xplore Battery" />
-        
         <img src="/acar.png" alt="Amaron Battery" />
         <img src="/ecar.jpeg" alt="Exide Mileage Battery" />
       </div>
@@ -57,13 +55,46 @@ const OrderCarBatteryOnline: React.FC = () => {
         }
         .battery-images {
           display: flex;
-          justify-content: space-around;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
           margin-top: 20px;
         }
         .battery-images img {
           width: 150px;
           height: auto;
           border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+          .order-content h2 {
+            font-size: 20px;
+          }
+          .order-content p {
+            font-size: 14px;
+          }
+          .battery-images img {
+            width: 120px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .order-container {
+            padding: 20px 10px;
+          }
+          .order-content h2 {
+            font-size: 18px;
+          }
+          .order-content p {
+            font-size: 13px;
+          }
+          .call-now-button {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+          .battery-images img {
+            width: 100px;
+          }
         }
       `}</style>
     </div>
