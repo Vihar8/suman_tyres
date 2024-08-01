@@ -1,21 +1,21 @@
 import React from 'react';
 
-const OrderCarOilOnline: React.FC = () => {
+const OrderCarTyreOnline: React.FC = () => {
   return (
     <div className="order-container">
       <div className="order-content">
-        <h2>ORDER A CAR/BIKE OIL ONLINE?</h2>
+        <h2>ORDER A CAR/BIKE TYRE ONLINE?</h2>
         <p>
-          On Suman Tyres, you can also search and order online using our oil shop.
+          On Suman Tyres, you can also search and order online using our Tyre shop.
         </p>
         <a href="tel:9426636250" className="call-now-link">
           <button className="call-now-button">Call Now</button>
         </a>
       </div>
-      <div className="oil-images">
-        <img src="/1040c.jpeg" alt="1040 Car Oil" />
-        <img src="/castrolcom.jpeg" alt="Castrol Oil" />
-        <img src="/repsol-elite.jpeg" alt="Repsol Elite Oil" />
+      <div className="tyre-images">
+        <img src="/ceatcar.jpeg" alt="CEAT Car Tyre" />
+        <img src="/michelinbike.jpg" alt="Michelin Bike Tyre" />
+        <img src="/apollo.jpeg" alt="Apollo Tyre" />
       </div>
       <style jsx>{`
         .order-container {
@@ -53,15 +53,15 @@ const OrderCarOilOnline: React.FC = () => {
         .call-now-button:hover {
           background-color: #004080;
         }
-        .oil-images {
+        .tyre-images {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
           gap: 20px;
           margin-top: 20px;
         }
-        .oil-images img {
-          width: 120px;
+        .tyre-images img {
+          width: 150px;
           height: auto;
           border-radius: 8px;
         }
@@ -73,8 +73,8 @@ const OrderCarOilOnline: React.FC = () => {
           .order-content p {
             font-size: 14px;
           }
-          .oil-images img {
-            width: 100px;
+          .tyre-images img {
+            width: 120px;
           }
         }
 
@@ -92,8 +92,8 @@ const OrderCarOilOnline: React.FC = () => {
             padding: 8px 16px;
             font-size: 14px;
           }
-          .oil-images img {
-            width: 80px;
+          .tyre-images img {
+            width: 100px;
           }
         }
       `}</style>
@@ -101,4 +101,4 @@ const OrderCarOilOnline: React.FC = () => {
   );
 };
 
-export default OrderCarOilOnline;
+export default OrderCarTyreOnline;
