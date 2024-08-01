@@ -33,6 +33,21 @@ function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/tyres" className="font-medium text-lg hover:underline">
+                Tyres
+              </Link>
+            </li>
+            <li>
+              <Link href="/oil" className="font-medium text-lg hover:underline">
+                Oil
+              </Link>
+            </li>
+            <li>
+              <Link href="/battery" className="font-medium text-lg hover:underline">
+                Battery
+              </Link>
+            </li>
+            <li>
               <Link href="/about" className="font-medium text-lg hover:underline">
                 About Us
               </Link>
@@ -52,6 +67,12 @@ function Footer() {
           <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
             (+91) 9426636250
           </a>
+          <div>
+            <p className="mt-4 text-lg font-semibold">Email</p>
+          <a href="mailto:sumantyres@gmail.com" className="hover:text-red-800 text-lg transition-colors duration-300">
+                        sumantyres@gmail.com
+                      </a>
+          </div>
         </div>
       </div>
       <div className="bg-gray-300 py-4 text-center text-sm">

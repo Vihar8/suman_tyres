@@ -53,7 +53,7 @@ export default function Component() {
                   <div>
                     <h2 className="text-xl font-semibold text-black">Email</h2>
                     <p className="text-gray-900">
-                      <a href="mailto:docusync07@gmail.com" className="hover:text-red-800 text-lg transition-colors duration-300">
+                      <a href="mailto:sumantyres@gmail.com" className="hover:text-red-800 text-lg transition-colors duration-300">
                         sumantyres@gmail.com
                       </a>
                     </p>
