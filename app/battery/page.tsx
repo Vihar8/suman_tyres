@@ -7,6 +7,9 @@ import Footer from '@/components/Footer';
 import { SearchIcon } from 'lucide-react';
 import Image from 'next/image';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CarBatteryReplacement from '@/components/CarBatteryReplacement';
+import BestCarBatteryService from '@/components/BestCarBatteryService';
+import OrderCarBatteryOnline from '@/components/OrderCarBatteryOnline';
 
 // Sample battery products data
 const batteryProducts = [
@@ -47,6 +50,9 @@ const BatteryLanding: React.FC = () => {
         <meta name="description" content="Explore our range of high-quality batteries at Suman Tyres." />
       </Head>
       <Navbar />
+      <div>
+      <OrderCarBatteryOnline />
+    </div>
       <hr className="my-4 border-t-2 border-gray-200" />
       <main className="container mx-auto px-4">
         <section className="mb-8">
@@ -78,6 +84,12 @@ const BatteryLanding: React.FC = () => {
             ))}
           </div>
         </section>
+        <div>
+      <CarBatteryReplacement />
+    </div>
+    <div>
+      <BestCarBatteryService />
+    </div>
         <hr className="my-4 border-t-2 border-gray-200" />
       </main>
       <div>
