@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { SVGProps, useState } from 'react';
 import Link from 'next/link';
 
 function Navbar() {
@@ -64,7 +64,7 @@ function Navbar() {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -86,7 +86,7 @@ function MenuIcon(props) {
   );
 }
 
-function CloseIcon(props) {
+function CloseIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
