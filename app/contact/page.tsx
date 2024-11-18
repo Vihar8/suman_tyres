@@ -20,7 +20,7 @@ export default function Component() {
         <Navbar />
         <Card className="mx-auto max-w-3xl mt-10 px-4 md:px-8 py-8 space-y-8 bg-white rounded-lg shadow-lg">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-black animate-bounce">Contact Us</h1>
+            <h1 className="text-4xl text-gray-800 animate-bounce"><strong>Contact Us</strong></h1>
             <p className="mt-4 text-lg font-semibold text-red-700">Get in touch with our team for any inquiries or support.</p>
             <div className="mx-auto w-24 border-t-2 border-black my-6" />
           </div>
@@ -61,13 +61,13 @@ export default function Component() {
                 </div>
               </div>
             </div>
-            <div className="w-full h-full overflow-hidden rounded-lg shadow-lg group">
+            <div className="w-[320px] h-[320px] overflow-hidden">
               <Image
                 src="/sumantyresshop.jpg"
                 width={400}
                 height={400}
                 alt="Company Location"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

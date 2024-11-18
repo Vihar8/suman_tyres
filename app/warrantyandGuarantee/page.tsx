@@ -27,8 +27,8 @@ const companies = [
     src: "/bridgestonelogo.jpg",
     alt: "Bridgestone",
     phone: (
-      <a href="tel:1800222088" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-222-088
+      <a href="tel: 18002668055" className="hover:text-red-800 text-lg transition-colors duration-300">
+         1800-266-8055
       </a>
     ),
   },
@@ -36,8 +36,8 @@ const companies = [
     src: "/apollologo.jpeg",
     alt: "Apollo",
     phone: (
-      <a href="tel:18002127070" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-212-7070
+      <a href="tel:18002127021" className="hover:text-red-800 text-lg transition-colors duration-300">
+        1800-212-7021
       </a>
     ),
   },
@@ -54,8 +54,8 @@ const companies = [
     src: "/shelllogo.jpeg",
     alt: "Shell",
     phone: (
-      <a href="tel:18000100000" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-010-0000
+      <a href="tel:4446945101" className="hover:text-red-800 text-lg transition-colors duration-300">
+        44-46945101
       </a>
     ),
   },
@@ -63,17 +63,8 @@ const companies = [
     src: "/castrollogo.jpeg",
     alt: "Castrol",
     phone: (
-      <a href="tel:1800222020" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-222-020
-      </a>
-    ),
-  },
-  {
-    src: "/repsollogo.jpg",
-    alt: "Repsol",
-    phone: (
-      <a href="tel:18003001005" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-300-1005
+      <a href="tel:1800223733" className="hover:text-red-800 text-lg transition-colors duration-300">
+        1800-223-733
       </a>
     ),
   },
@@ -81,8 +72,8 @@ const companies = [
     src: "/servologo.jpg",
     alt: "Servo",
     phone: (
-      <a href="tel:18001237837" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-123-7837
+      <a href="tel:18001807788" className="hover:text-red-800 text-lg transition-colors duration-300">
+       1800-180-7788
       </a>
     ),
   },
@@ -108,8 +99,8 @@ const companies = [
     src: "/eloficlogo.jpeg",
     alt: "Elofic",
     phone: (
-      <a href="tel:18001005005" className="hover:text-red-800 text-lg transition-colors duration-300">
-        1800-100-5005
+      <a href="tel:18003132025" className="hover:text-red-800 text-lg transition-colors duration-300">
+        1800-313-2025
       </a>
     ),
   },
@@ -122,9 +113,9 @@ export default function WarrantyPage() {
 
       {/* Warranty Section */}
       <section id="warranty" className="py-12">
-        <h2 className="text-3xl font-bold text-center text-gray-800">Warranty and Guarantee</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 animate-bounce">Warranty and Guarantee</h2>
         <div className="flex justify-center mt-4">
-    <hr className="w-1/2 border-t-2 border-black my-6" />
+    <hr className="w-52 border-t-2 border-black my-6" />
   </div>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 container mx-auto">
           {companies.map((brand, index) => (
