@@ -16,7 +16,7 @@ export default function Component() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://sumantyres.vercel.app/" />
       </Head>
-      <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100">
+      <div className="min-h-screen">
         <Navbar />
         <Card className="mx-auto max-w-3xl mt-10 px-4 md:px-8 py-8 space-y-8 bg-white rounded-lg shadow-lg">
           <div className="text-center">
@@ -72,6 +72,17 @@ export default function Component() {
             </div>
           </div>
         </Card>
+        <div className="mt-16 text-center">
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mx-auto">
+              <Image
+                src="/sumantyresmascot.png"
+                width={600}
+                height={600}
+                alt="Suman Tyres Mascot"
+                className="w-full h-full object-contain transition-transform duration-300 transform hover:scale-105"
+              />
+            </div>
+          </div>
         <br />
         <br />
         <div>
