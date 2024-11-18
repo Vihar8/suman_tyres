@@ -53,6 +53,11 @@ function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/warrantyandGuarantee" className="font-medium text-lg hover:underline">
+              Guarantee Warranty
+              </Link>
+            </li>
+            <li>
               <Link href="/contact" className="font-medium text-lg hover:underline">
                 Contact Us
               </Link>
