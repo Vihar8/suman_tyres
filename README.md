@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Suman Tyres Website
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Suman Tyres is a leading tyre, oil, and battery shop located in Gandhinagar, Gujarat. Established in 1997, the shop offers a wide range of products, including Michelin, Falken, Ceat, Bridgestone, Shell Lubricants, Castrol, and more. The website serves as a platform to showcase the products, provide store information, and offer a user-friendly experience to customers.
 
-```bash
+This repository contains the source code for the Suman Tyres website hosted at [Suman Tyres](https://sumantyres.vercel.app).
+
+---
+
+## Features
+
+- **Mobile-Friendly Design**: Responsive layout with a hamburger menu for seamless navigation.
+- **Product Showcase**: Display of tyres, oils, and batteries with detailed information.
+- **WhatsApp Integration**: Direct contact button for inquiries via WhatsApp.
+- **UI/UX Enhancements**: Smooth animations and intuitive navigation.
+- **Fast Performance**: Optimized for speed using tools like `@vercel/speed-insights`.
+
+---
+
+## Technologies Used
+
+- **Frontend**: React.js with `lucide-react` for icons.
+- **Styling**: CSS modules (or styled-components, if applicable).
+- **Backend**: Node.js with Express (if applicable).
+- **Deployment**: Vercel.
+- **Others**: 
+  - Axios for API calls (e.g., newsletter subscription).
+  - Environment variable management for WhatsApp integration.
+
+---
+
+## Installation and Setup
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/suman-tyres.git
+   cd suman-tyres
+### Steps
+2. Install dependencies:
+ npm install
+or
+yarn install
+
+### Steps
+ 3. Create a .env.local file and add the following variables:
+NEXT_PUBLIC_WHATSAPP_NUMBER=your-whatsapp-number
+
+### Steps
+
+ 4. Start the development server:
 npm run dev
-# or
+ or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ### Steps
+```bash
+5. Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT License.
