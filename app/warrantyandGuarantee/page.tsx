@@ -141,6 +141,16 @@ export default function WarrantyPage() {
           ))}
         </div>
       </section>
+      <div className="m-2 text-center">
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mx-auto">
+              <Image
+                src="/shopani.jpg"
+                width={600}
+                height={500}
+                alt="Suman Tyres Mascot"
+                />
+            </div>
+          </div>
       <div>
         <WhatsAppButton />
       </div>

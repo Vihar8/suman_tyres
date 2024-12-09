@@ -49,14 +49,14 @@ export default function Component() {
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
-          <Carousel className="w-full max-w-[450px] mx-auto relative">
+          <Carousel className="w-full p-5 max-w-[500px] mx-auto relative">
             <CarouselContent>
-              {["sumantyresshop.jpg", "tyres.jpg", "battery.jpg", "oilfilter.jpg", "engineoil.jpg", "batterycharging.jpg"].map((src, index) => (
+              {["sumantyresshop.jpg", "animatedtyre.jpg", "animatedoil.jpg","animatedbattery.jpg","animatedoilfilter.jpg","animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
                   <img
                     src={`/${src}`}
-                    width={1000}
-                    height={600}
+                    width={900}
+                    height={500}
                     alt="Carousel Image"
                     className="aspect-[1/1] object-cover"
                   />
@@ -101,6 +101,7 @@ export default function Component() {
               { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
               { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
               { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your vehicle." },
+              { src: "/oilfilter.jpg", title: "Oil and Air Filter", desc: "it ensure optimal engine performance by trapping contaminants, maintaining clean oil flow and air intake for smooth operation." },
             ].map((item, index) => (
               <Card key={index}>
                 <CardHeader>
