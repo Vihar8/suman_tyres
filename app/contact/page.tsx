@@ -75,10 +75,10 @@ export default function Component() {
         <div className="mt-16 text-center">
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mx-auto">
               <Image
-                src="/sumantyresmascot.png"
+                src="/st1.webp"
                 width={600}
                 height={600}
-                alt="Suman Tyres Mascot"
+                alt="Suman Tyres"
                 className="w-full h-full object-contain transition-transform duration-300 transform hover:scale-105"
               />
             </div>

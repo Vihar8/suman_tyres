@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="flex justify-center items-center mt-8">
             <Image
-              src="/aboutsuman.jpg"
+              src="/stferr.webp"
               alt="Wide Range of Tyres"
               width={600}
               height={400}
