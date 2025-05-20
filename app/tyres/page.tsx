@@ -57,10 +57,28 @@ const TyreLanding: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>Suman Tyres - Tyres</title>
-        <meta name="description" content="Explore our range of high-quality tyres at Suman Tyres." />
-      </Head>
+        <Head>
+      <title>Suman Tyres - Best Tyre Shop in Gandhinagar, Gujarat | Wide Range of Car & Bike Tyres</title>
+      <meta
+        name="description"
+        content="Visit Suman Tyres in Gandhinagar, Gujarat for a wide selection of high-quality car and bike tyres. Affordable rates, expert service, and trusted brands. Your one-stop tyre shop!"
+      />
+      <meta
+        name="keywords"
+        content="Tyres Gandhinagar, Car Tyres Gujarat, Bike Tyres Gandhinagar, Best Tyre Shop in Gandhinagar, Car & Bike Tyres Gujarat, Suman Tyres, Tyre Dealer Gandhinagar"
+      />
+      <meta name="author" content="Suman Tyres" />
+      <meta property="og:title" content="Suman Tyres - Top Tyre Shop in Gandhinagar, Gujarat" />
+      <meta
+        property="og:description"
+        content="Explore a wide range of car and bike tyres at Suman Tyres in Gandhinagar, Gujarat. Quality brands, affordable prices, and expert service. Visit us today!"
+      />
+      <meta property="og:image" content="/sumantyresshop.jpg" />
+      <meta property="og:url" content="https://sumantyres.vercel.app/tyres" />
+      <meta property="og:type" content="website" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
       <Navbar />
       <div>
         <OrderCarTyreOnline />

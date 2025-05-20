@@ -47,9 +47,25 @@ const OilLanding: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Suman Tyres - Engine Oils</title>
-        <meta name="description" content="Explore our range of high-quality engine oils at Suman Tyres." />
-      </Head>
+  <title>Suman Tyres - Premium Engine Oils in Gandhinagar, Gujarat | Car & Bike Oil Shop</title>
+  <meta
+    name="description"
+    content="Discover high-quality engine oils at Suman Tyres in Gandhinagar, Gujarat. Wide range of synthetic, mineral, and scooter oils for cars, bikes, and trucks. Affordable rates & trusted brands!"
+  />
+  <meta
+    name="keywords"
+    content="Engine Oils Gandhinagar, Car Oil Gujarat, Bike Oil Gandhinagar, Synthetic Engine Oil, Mineral Oil, Car & Bike Lubricants, Best Oil Shop in Gandhinagar, Suman Tyres, Oil Dealer Gujarat"
+  />
+  <meta name="author" content="Suman Tyres" />
+  <meta property="og:title" content="Suman Tyres - Best Engine Oils in Gandhinagar, Gujarat" />
+  <meta
+    property="og:description"
+    content="Visit Suman Tyres in Gandhinagar for a wide selection of engine oils suitable for cars, bikes, trucks, and scooters. Premium brands, affordable prices, expert advice!"
+  />
+  <meta property="og:image" content="/sumantyresshop.jpg" />
+  <meta property="og:url" content="https://sumantyres.vercel.app/oil" />
+  <meta property="og:type" content="website" />
+</Head>
       <Navbar />
       <div>
       <OrderCarOilOnline />

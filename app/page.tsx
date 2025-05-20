@@ -9,7 +9,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Head>
+      {/* <Head>
         <title>Suman Tyres | Best Tyre, Oil, and Battery Shop in Gandhinagar</title>
         <meta name="description" content="Suman Tyres is the best shop in Gandhinagar, Gujarat for tyres, oil, and batteries. We are a wholesaler providing the cheapest rates to our customers." />
         <meta name="keywords" content="tyres, oil, batteries, Gandhinagar, Gujarat, Suman Tyres, wholesaler" />
@@ -45,13 +45,83 @@ export default function Component() {
           }
           `}
         </script>
-      </Head>
+      </Head> */}
+      <Head>
+  <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
+  <meta
+    name="description"
+    content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service."
+  />
+  <meta
+    name="keywords"
+    content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar"
+  />
+  <meta name="author" content="Suman Tyres" />
+
+  {/* Open Graph / Social Media */}
+  <meta property="og:title" content="Suman Tyres - Best Tyre, Oil & Battery Shop in Gandhinagar, Gujarat" />
+  <meta
+    property="og:description"
+    content="Discover top-quality tyres, oils, and batteries at Suman Tyres in Gandhinagar. We are a trusted wholesaler offering the best prices, bulk discounts, and reliable service for all vehicles."
+  />
+  <meta property="og:image" content="/sumantyresshop.jpg" />
+  <meta property="og:url" content="https://sumantyres.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:title" content="Suman Tyres - Top Tyre, Oil & Battery Shop in Gandhinagar" />
+  <meta
+    name="twitter:description"
+    content="Trusted wholesaler for tyres, oils, and batteries in Gandhinagar. Get the best rates, bulk discounts, and quality products at Suman Tyres."
+  />
+  <meta name="twitter:image" content="/sumantyresshop.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  {/* Structured Data for Local Business */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Suman Tyres",
+      "description": "Leading tyre, oil, and battery shop in Gandhinagar, Gujarat. Wholesale supplier with the best rates and bulk discounts.",
+      "image": "/sumantyresshop.jpg",
+      "url": "https://sumantyres.vercel.app/",
+      "telephone": "+91-9426636250",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sector 11, Suman Tyres, Suman Tower",
+        "addressLocality": "Gandhinagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "382011",
+        "addressCountry": "India"
+      },
+      "openingHours": [
+        "Mo-Sa 09:00-21:00",
+        "Su 09:00-16:00"
+      ],
+      "priceRange": "₹₹",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9426636250",
+        "contactType": "Customer Service"
+      }
+    }
+    `}
+  </script>
+
+  {/* Favicon */}
+  <link rel="icon" href="/favicon.ico" />
+
+  {/* Viewport for responsiveness */}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</Head>
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
           <Carousel className="w-full p-5 max-w-[500px] mx-auto relative">
             <CarouselContent>
-              {["sumantyresshop.jpg", "animatedtyre.jpg", "animatedoil.jpg","animatedbattery.jpg","animatedoilfilter.jpg","animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
+              {["animatedtyre.jpg", "animatedoil.jpg","animatedbattery.jpg","animatedoilfilter.jpg","animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
                   <img
                     src={`/${src}`}

@@ -45,10 +45,26 @@ const BatteryLanding: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>Suman Tyres - Batteries</title>
-        <meta name="description" content="Explore our range of high-quality batteries at Suman Tyres." />
-      </Head>
+          <Head>
+      <title>Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices</title>
+      <meta
+        name="description"
+        content="Get high-quality batteries for 2-wheelers and 4-wheelers at wholesale rates in Gandhinagar, Gujarat. Wide selection of trusted brands for bikes and cars. Affordable prices & bulk discounts!"
+      />
+      <meta
+        name="keywords"
+        content="Wholesale Bike Batteries Gandhinagar, Car Batteries Wholesale Gujarat, 2 Wheeler Batteries Bulk Prices, Car Batteries Discount Gandhinagar, Best Wholesale Battery Shop, Suman Tyres, Bulk Battery Deals Gujarat"
+      />
+      <meta name="author" content="Suman Tyres" />
+      <meta property="og:title" content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat" />
+      <meta
+        property="og:description"
+        content="Purchase batteries for 2-wheelers and cars at wholesale rates from Suman Tyres in Gandhinagar, Gujarat. Trusted brands, bulk discounts, and expert service for all vehicle needs!"
+      />
+      <meta property="og:image" content="/sumantyresshop.jpg" />
+      <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
+      <meta property="og:type" content="website" />
+    </Head>
       <Navbar />
       <div>
       <OrderCarBatteryOnline />
