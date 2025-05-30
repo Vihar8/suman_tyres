@@ -46,7 +46,7 @@ const OilLanding: React.FC = () => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
   <title>Suman Tyres - Premium Engine Oils in Gandhinagar, Gujarat | Car & Bike Oil Shop</title>
   <meta
     name="description"
@@ -65,7 +65,57 @@ const OilLanding: React.FC = () => {
   <meta property="og:image" content="/sumantyresshop.jpg" />
   <meta property="og:url" content="https://sumantyres.vercel.app/oil" />
   <meta property="og:type" content="website" />
-</Head>
+</Head> */}
+ <Head>
+      <title>
+        Buy Premium Engine Oils in Gandhinagar | Suman Tyres - Car & Bike Oil Shop
+      </title>
+
+      <meta
+        name="description"
+        content="Explore high-quality engine oils at Suman Tyres, Gandhinagar. Choose from synthetic, semi-synthetic, mineral, and scooter oils for cars, bikes, and trucks. Trusted brands at great prices."
+      />
+
+      <meta
+        name="keywords"
+        content="Engine Oils Gandhinagar, Synthetic Engine Oil, Mineral Oil, Car Oil Gujarat, Bike Oil Gandhinagar, Best Oil Shop Gujarat, Car & Bike Lubricants, Suman Tyres, Oil Dealer Gandhinagar"
+      />
+
+      <meta name="author" content="Suman Tyres" />
+
+      {/* Open Graph */}
+      <meta
+        property="og:title"
+        content="Premium Engine Oils in Gandhinagar | Suman Tyres"
+      />
+      <meta
+        property="og:description"
+        content="Find a wide range of premium engine oils for cars, bikes, and trucks at Suman Tyres, Gandhinagar. Affordable prices and expert advice."
+      />
+      <meta
+        property="og:image"
+        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+      />
+      <meta property="og:url" content="https://sumantyres.vercel.app/oil" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Premium Engine Oils in Gandhinagar | Suman Tyres"
+      />
+       <meta
+        name="twitter:description"
+        content="Wide range of engine oils from Shell, Castrol, Servo, MAK, HP, Sonata and more at Suman Tyres, Gandhinagar. Trusted brands with affordable prices."
+      />
+      <meta
+        name="twitter:image"
+        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+      />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
       <Navbar />
       <div>
       <OrderCarOilOnline />

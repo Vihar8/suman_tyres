@@ -9,43 +9,6 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <Head>
-        <title>Suman Tyres | Best Tyre, Oil, and Battery Shop in Gandhinagar</title>
-        <meta name="description" content="Suman Tyres is the best shop in Gandhinagar, Gujarat for tyres, oil, and batteries. We are a wholesaler providing the cheapest rates to our customers." />
-        <meta name="keywords" content="tyres, oil, batteries, Gandhinagar, Gujarat, Suman Tyres, wholesaler" />
-        <meta name="author" content="Suman Tyres" />
-        <meta property="og:title" content="Suman tyres" />
-        <meta property="og:description" content="Suman Tyres is the best shop in Gandhinagar, Gujarat for tyres, oil, and batteries. We are a wholesaler providing the cheapest rates to our customers. best tyre shop in gandhinagar" />
-        <meta property="og:image" content="/sumantyresshop.jpg" />
-        <meta property="og:url" content="https://sumantyres.vercel.app/" />
-        <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Store",
-            "name": "Suman Tyres",
-            "description": "Best Tyre, Oil, and Battery Shop in Gandhinagar",
-            "url": "https://sumantyres.vercel.app",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Sector 11 , suman tyres , suman tower",
-              "addressLocality": "Gandhinagar",
-              "addressRegion": "Gujarat",
-              "postalCode": "382011",
-              "addressCountry": "India"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+91-9426636250",
-              "contactType": "Customer Service"
-            }
-          }
-          `}
-        </script>
-      </Head> */}
       <Head>
   <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
   <meta

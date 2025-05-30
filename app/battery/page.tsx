@@ -45,7 +45,7 @@ const BatteryLanding: React.FC = () => {
 
   return (
     <>
-          <Head>
+          {/* <Head>
       <title>Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices</title>
       <meta
         name="description"
@@ -64,6 +64,57 @@ const BatteryLanding: React.FC = () => {
       <meta property="og:image" content="/sumantyresshop.jpg" />
       <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
       <meta property="og:type" content="website" />
+    </Head> */}
+     <Head>
+      <title>
+        Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices & Bulk Deals
+      </title>
+
+      <meta
+        name="description"
+        content="Get high-quality batteries for 2-wheelers and 4-wheelers at wholesale rates in Gandhinagar, Gujarat. Wide range of trusted brands for bikes and cars. Affordable prices with bulk discounts!"
+      />
+
+      <meta
+        name="keywords"
+        content="Wholesale Bike Batteries Gandhinagar, Car Batteries Wholesale Gujarat, 2 Wheeler Batteries Bulk Prices, Car Batteries Discount Gandhinagar, Best Wholesale Battery Shop Gujarat, Suman Tyres, Bulk Battery Deals Gujarat, Bike Battery Shop Gandhinagar"
+      />
+
+      <meta name="author" content="Suman Tyres" />
+
+      {/* Open Graph */}
+      <meta
+        property="og:title"
+        content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat"
+      />
+      <meta
+        property="og:description"
+        content="Purchase batteries for 2-wheelers and cars at wholesale rates from Suman Tyres in Gandhinagar. Trusted brands, bulk discounts, and expert service for all vehicle needs."
+      />
+      <meta
+        property="og:image"
+        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+      />
+      <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat"
+      />
+      <meta
+        name="twitter:description"
+        content="Get top-quality batteries from Amaron, Exide and Many more for bikes and cars at wholesale prices from Suman Tyres, Gandhinagar. Bulk deals and trusted brands for all your battery needs."
+      />
+      <meta
+        name="twitter:image"
+        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+      />
+
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
       <Navbar />
       <div>

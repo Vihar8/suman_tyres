@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
               Wide Range of Tyres
             </h2>
             <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              Suman Tyres offers a great variety of tyres, oils, and batteries for all two-wheelers, three-wheelers, cars, etc. We display products from brands like <strong>Ceat, Michelin, Bridgestone, Goodyear, MRF, JK Tyres, Apollo, Amaron, Exide, Shell, Castrol, Repsol</strong>, and more.
+              Suman Tyres offers a great variety of tyres, oils, and batteries for all two-wheelers, three-wheelers, cars, etc. We display products from brands like <strong>Ceat, Michelin, Bridgestone, JK Tyres, Apollo, Amaron, Exide, Shell, Castrol, Repsol</strong>, and more.
             </p>
             <p className="mt-6 text-gray-700">
               If you don’t find the tyres, oils, or batteries you need in our list, kindly contact us at 

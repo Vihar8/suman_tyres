@@ -2,7 +2,10 @@ import Link from 'next/link';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
-  const whatsappUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`;
+  const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const predefinedMessage = encodeURIComponent("Hello, I’m interested in your products.");
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${predefinedMessage}`;
+
 
   return (
     <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">

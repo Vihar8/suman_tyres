@@ -18,14 +18,14 @@ export default function Component() {
       </Head>
       <div className="min-h-screen">
         <Navbar />
-        <Card className="mx-auto max-w-3xl mt-10 px-4 md:px-8 py-8 space-y-8 bg-white rounded-lg shadow-lg">
+        <Card className="mx-auto max-w-3xl mt-10 px-4 md:px-8 py-8 space-y-8 bg-white rounded-lg">
           <div className="text-center">
             <h1 className="text-4xl text-gray-800 animate-bounce"><strong>Contact Us</strong></h1>
             <p className="mt-4 text-lg font-semibold text-red-700">Get in touch with our team for any inquiries or support.</p>
             <div className="mx-auto w-24 border-t-2 border-black my-6" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
-            <div className="space-y-6 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="space-y-6 p-2 flex flex-col items-center md:items-start text-center md:text-left">
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-red-800 text-2xl" />
                 <div>
@@ -61,28 +61,15 @@ export default function Component() {
                 </div>
               </div>
             </div>
-            <div className="w-[320px] h-[320px] overflow-hidden">
               <Image
                 src="/sumantyresshop.jpg"
                 width={400}
                 height={400}
-                alt="Company Location"
+                alt="Suman Tyres shop image"
                 className="w-full h-full object-cover"
               />
-            </div>
           </div>
         </Card>
-        <div className="mt-16 text-center">
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mx-auto">
-              <Image
-                src="/st1.webp"
-                width={600}
-                height={600}
-                alt="Suman Tyres"
-                className="w-full h-full object-contain transition-transform duration-300 transform hover:scale-105"
-              />
-            </div>
-          </div>
         <br />
         <br />
         <div>

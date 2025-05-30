@@ -57,7 +57,7 @@ const TyreLanding: React.FC = () => {
 
   return (
     <>
-        <Head>
+        {/* <Head>
       <title>Suman Tyres - Best Tyre Shop in Gandhinagar, Gujarat | Wide Range of Car & Bike Tyres</title>
       <meta
         name="description"
@@ -76,6 +76,45 @@ const TyreLanding: React.FC = () => {
       <meta property="og:image" content="/sumantyresshop.jpg" />
       <meta property="og:url" content="https://sumantyres.vercel.app/tyres" />
       <meta property="og:type" content="website" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head> */} 
+    <Head>
+      <title>
+        Car & Bike Tyres shop in Gandhinagar | Suman Tyres - Quality & Affordable
+      </title>
+
+      <meta
+        name="description"
+        content="Suman Tyres offers a wide range of premium car and bike tyres in Gandhinagar, Gujarat. Shop trusted brands at affordable prices with expert advice and service."
+      />
+
+      <meta
+        name="keywords"
+        content="car tyres Gandhinagar, bike tyres Gandhinagar, best tyre shop Gujarat, affordable tyres Gandhinagar, Suman Tyres, quality car tyres, bike tyre dealer"
+      />
+
+      <meta name="author" content="Suman Tyres" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Car & Bike Tyres shop in Gandhinagar | Suman Tyres" />
+      <meta
+        property="og:description"
+        content="Discover top-quality car and bike tyres at Suman Tyres, Gandhinagar. Trusted brands, affordable prices, and expert service all in one place."
+      />
+      <meta property="og:image" content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+      <meta property="og:url" content="https://sumantyres.vercel.app/tyres" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Car & Bike Tyres shop in Gandhinagar | Suman Tyres" />
+      <meta
+        name="twitter:description"
+        content="Wide range of premium tyres from Ceat, Bridgestone, Michelin & Apollo for cars and bikes at Suman Tyres, Gandhinagar. Quality products, great prices, expert support."
+      />
+      <meta name="twitter:image" content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
