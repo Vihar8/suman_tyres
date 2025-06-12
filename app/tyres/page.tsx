@@ -38,7 +38,16 @@ const tyreProducts = [
   { id: 37, name: 'Apollo Amazer 4G Life', size: '175/65 R14', image: '/apollo.jpeg' },
   { id: 38, name: 'Apollo Aspire 4G', size: '195/55 R16', image: '/apollo.jpeg' },
   { id: 39, name: 'Apollo Apterra AT2', size: '235/70 R16', image: '/apollo.jpeg' },
-  { id: 40, name: 'Apollo Apterra HT2', size: '215/60 R17', image: '/apollo.jpeg' }
+  { id: 40, name: 'Apollo Apterra HT2', size: '215/60 R17', image: '/apollo.jpeg' },
+  { id: 41, name: 'Bridgestone STURDO', size: '135/70 R12', image: '/bridgestonesturdo.png' },
+  { id: 41, name: 'Bridgestone STURDO', size: '145/80 R12', image: '/sturdo1.png' },
+  { id: 42, name: 'Bridgestone STURDO', size: '155/65 R13', image: '/sturdo2.png' },
+  { id: 43, name: 'Bridgestone STURDO', size: '155/70 R13', image: '/sturdo2.png' },
+  { id: 44, name: 'Bridgestone STURDO', size: '165/70 R14', image: '/sturdo2.png' },
+  { id: 45, name: 'Bridgestone STURDO', size: '185/65 R14', image: '/sturdo2.png' },
+  { id: 46, name: 'Bridgestone STURDO', size: '175/65 R14', image: '/sturdo2.png' },
+  { id: 47, name: 'Bridgestone STURDO', size: '185/65 R15', image: '/sturdo2.png' },
+  { id: 48, name: 'Bridgestone STURDO', size: '195/65 R15', image: '/sturdo2.png' },
 ];
 
 const TyreLanding: React.FC = () => {
