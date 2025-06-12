@@ -4,7 +4,7 @@ const OrderCarBatteryOnline: React.FC = () => {
   return (
     <div className="order-container">
       <div className="order-content">
-        <h2>ORDER A CAR BATTERY ONLINE?</h2>
+        <h2>ORDER A CAR AT WHOLESALE PRICE?</h2>
         <p>
           On Suman Tyres, you can also search and order online using our battery shop. You can select to have your car battery delivered and fitted at a preferred garage, or simply have the car battery delivered to your doorstep.
         </p>
