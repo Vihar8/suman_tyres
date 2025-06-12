@@ -4,7 +4,7 @@ const OrderCarTyreOnline: React.FC = () => {
   return (
     <div className="order-container">
       <div className="order-content">
-        <h2>ORDER A CAR/BIKE TYRE ONLINE?</h2>
+        <h2>GET A CAR/BIKE TYRE AT WHOLESALE PRICE?</h2>
         <p>
           On Suman Tyres, you can also search and order online using our Tyre shop.
         </p>

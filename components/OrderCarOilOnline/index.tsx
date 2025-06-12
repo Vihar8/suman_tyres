@@ -4,7 +4,7 @@ const OrderCarOilOnline: React.FC = () => {
   return (
     <div className="order-container">
       <div className="order-content">
-        <h2>ORDER A CAR/BIKE OIL ONLINE?</h2>
+        <h2>GET A CAR/BIKE OIL AT WHOLESALE PRICE?</h2>
         <p>
           On Suman Tyres, you can also search and order online using our oil shop.
         </p>
