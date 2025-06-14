@@ -172,6 +172,7 @@ export default function Component() {
                 { src: "/amaronlogo.jpg", alt: "Amaron" },
                 { src: "/exidelogo.jpeg", alt: "Exide" },
                 { src: "/eloficlogo.jpeg", alt: "Elofic" },
+                { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
               ].map((brand, index) => (
                 <div key={index} className="flex items-center justify-center p-4 bg-gray-100 rounded">
                   <img src={brand.src} alt={brand.alt} />
