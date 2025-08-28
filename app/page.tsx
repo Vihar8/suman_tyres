@@ -184,6 +184,47 @@ export default function Component() {
             </div>
           </div>
           <hr />
+          <div className="bg-gray-50 py-12 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        {/* Left Content */}
+        <div className="flex-1">
+          <h2 className="text-2xl font-bold mb-6">Types of Tyres</h2>
+
+          {/* Conventional Tubed */}
+          <div className="mb-6 flex">
+            <div className="w-2 h-24 bg-green-600 mr-2"></div>
+            <div>
+              <h3 className="font-semibold text-lg flex items-center">
+              Conventional Tubed
+            </h3>
+            <p className="text-gray-600 mt-2">
+              A tubed tyre that has a separate inner tube placed inside it. If a tubed tyre is punctured, 
+              then you will not be able to drive the vehicle.
+            </p>
+            </div>
+          </div>
+
+          {/* Tubeless */}
+          <div>
+            <h3 className="font-semibold text-lg">Tubeless</h3>
+            <p className="text-gray-600 mt-2">
+              A tubeless tyre does not have a tube inside it. If the tubeless tyre is punctured, the tyre never goes flat 
+              and it will still run for days.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex-1 flex justify-center">
+          <img
+            src="/tyre.png"
+            alt="Tyre"
+            className="w-72 h-72 object-contain"
+          />
+        </div>
+      </div>
+    </div>
         </section>
       </main>
       <Footer />
