@@ -9,7 +9,7 @@ function Footer() {
       <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">About Us</h4>
           <p>
-          Suman Tyres is one of the Oldest and influential hub for low cost Tyres, Battery, Oil, etc in Gandhinagar. We offer all sizes of tyres, all Range of Batteries, Types of Engine Oil for your cars and two-wheelers. At Suman Tyres, you can choose from a wide range of tyers from all leading manufacturers and Company. We make your life simple!
+          Suman Tyres is one of the Oldest and influential hub for low cost Tyres, Battery, Oil, etc in Gandhinagar. We offer all sizes of tyres, all Range of Batteries, Types of Engine Oil for your cars and two-wheelers. At Suman Tyres Gandhinagar, you can choose from a wide range of tyers from all leading manufacturers and Company. We make your life simple!
           </p>
         </div>
         
@@ -67,7 +67,7 @@ function Footer() {
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Contact Us</h4>
           <p>Sec 11, Suman Tower, Suman Tyres</p>
-          <p>Near Cinemax Gandhinagar, Gujarat</p>
+          <p>Near Sec 11 Petrol Pump Gandhinagar, Gujarat</p>
           <p className="mt-4 text-lg font-semibold">Phone No:</p>
           <a href="tel:+919426636250" className="hover:text-red-800 text-lg transition-colors duration-300">
             (+91) 9426636250

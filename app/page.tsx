@@ -10,39 +10,39 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-  <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
-  <meta
-    name="description"
-    content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service."
-  />
-  <meta
-    name="keywords"
-    content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar"
-  />
-  <meta name="author" content="Suman Tyres" />
+        <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
+        <meta
+          name="description"
+          content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service."
+        />
+        <meta
+          name="keywords"
+          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar"
+        />
+        <meta name="author" content="Suman Tyres" />
 
-  {/* Open Graph / Social Media */}
-  <meta property="og:title" content="Suman Tyres - Best Tyre, Oil & Battery Shop in Gandhinagar, Gujarat" />
-  <meta
-    property="og:description"
-    content="Discover top-quality tyres, oils, and batteries at Suman Tyres in Gandhinagar. We are a trusted wholesaler offering the best prices, bulk discounts, and reliable service for all vehicles."
-  />
-  <meta property="og:image" content="/sumantyresshop.jpg" />
-  <meta property="og:url" content="https://sumantyres.vercel.app/" />
-  <meta property="og:type" content="website" />
+        {/* Open Graph / Social Media */}
+        <meta property="og:title" content="Suman Tyres - Best Tyre, Oil & Battery Shop in Gandhinagar, Gujarat" />
+        <meta
+          property="og:description"
+          content="Discover top-quality tyres, oils, and batteries at Suman Tyres in Gandhinagar. We are a trusted wholesaler offering the best prices, bulk discounts, and reliable service for all vehicles."
+        />
+        <meta property="og:image" content="/sumantyresshop.jpg" />
+        <meta property="og:url" content="https://sumantyres.vercel.app/" />
+        <meta property="og:type" content="website" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:title" content="Suman Tyres - Top Tyre, Oil & Battery Shop in Gandhinagar" />
-  <meta
-    name="twitter:description"
-    content="Trusted wholesaler for tyres, oils, and batteries in Gandhinagar. Get the best rates, bulk discounts, and quality products at Suman Tyres."
-  />
-  <meta name="twitter:image" content="/sumantyresshop.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+        {/* Twitter Card */}
+        <meta name="twitter:title" content="Suman Tyres - Top Tyre, Oil & Battery Shop in Gandhinagar" />
+        <meta
+          name="twitter:description"
+          content="Trusted wholesaler for tyres, oils, and batteries in Gandhinagar. Get the best rates, bulk discounts, and quality products at Suman Tyres."
+        />
+        <meta name="twitter:image" content="/sumantyresshop.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
 
-  {/* Structured Data for Local Business */}
-  <script type="application/ld+json">
-    {`
+        {/* Structured Data for Local Business */}
+        <script type="application/ld+json">
+          {`
     {
       "@context": "https://schema.org",
       "@type": "Store",
@@ -71,20 +71,20 @@ export default function Component() {
       }
     }
     `}
-  </script>
+        </script>
 
-  {/* Favicon */}
-  <link rel="icon" href="/favicon.ico" />
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
 
-  {/* Viewport for responsiveness */}
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</Head>
+        {/* Viewport for responsiveness */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
           <Carousel className="w-full p-5 max-w-[500px] mx-auto relative">
             <CarouselContent>
-              {["animatedtyre.jpg", "animatedoil.jpg","animatedbattery.jpg","animatedoilfilter.jpg","animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
+              {["animatedtyre.jpg", "animatedoil.jpg", "animatedbattery.jpg", "animatedoilfilter.jpg", "animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
                   <img
                     src={`/${src}`}
@@ -123,38 +123,8 @@ export default function Component() {
           </Carousel>
           <hr />
         </section>
-
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <h2 className="bg-rose-600 text-white rounded-xl w-fit text-4xl font-bold p-5 mb-8 mx-auto">
-            We Offer
-          </h2>
-
-          <div className="container grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
-            {[
-              { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
-              { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
-              { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your vehicle." },
-              { src: "/oilfilter.jpg", title: "Oil and Air Filter", desc: "it ensure optimal engine performance by trapping contaminants, maintaining clean oil flow and air intake for smooth operation." },
-            ].map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <img
-                    src={item.src}
-                    width={400}
-                    height={200}
-                    alt={item.title}
-                    className="aspect-video object-cover rounded-t-md"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <h3 className="text-xl font-bold">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <hr />
-          <div className="flex flex-col items-center justify-center py-12 m-4">
+        <section className="w-full py-12">
+          <div className="flex flex-col items-center justify-center m-4">
             <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">
               Our Dealership
             </h2>
@@ -183,48 +153,80 @@ export default function Component() {
               <WhatsAppButton />
             </div>
           </div>
-          <hr />
-          <div className="bg-gray-50 py-12 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        
-        {/* Left Content */}
-        <div className="flex-1">
-          <h2 className="text-2xl font-bold mb-6">Types of Tyres</h2>
 
-          {/* Conventional Tubed */}
-          <div className="mb-6 flex">
-            <div className="w-2 h-24 bg-green-600 mr-2"></div>
-            <div>
-              <h3 className="font-semibold text-lg flex items-center">
-              Conventional Tubed
-            </h3>
-            <p className="text-gray-600 mt-2">
-              A tubed tyre that has a separate inner tube placed inside it. If a tubed tyre is punctured, 
-              then you will not be able to drive the vehicle.
-            </p>
+          <hr />
+          <div className='w-full py-12'>
+
+            <h2 className="bg-rose-600 text-white rounded-xl w-fit text-4xl font-bold p-5 mb-8 mx-auto">
+              We Offer
+            </h2>
+            <div className="container grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
+              {[
+                { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
+                { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
+                { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your vehicle." },
+                { src: "/oilfilter.jpg", title: "Oil and Air Filter", desc: "it ensure optimal engine performance by trapping contaminants, maintaining clean oil flow and air intake for smooth operation." },
+              ].map((item, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <img
+                      src={item.src}
+                      width={400}
+                      height={200}
+                      alt={item.title}
+                      className="aspect-video object-cover rounded-t-md"
+                    />
+                  </CardHeader>
+                  <CardContent>
+                    <h3 className="text-xl font-bold">{item.title}</h3>
+                    <p className="text-gray-600">{item.desc}</p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
+          <hr />
+          <div className="bg-gray-50 py-12 px-6">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
-          {/* Tubeless */}
-          <div>
-            <h3 className="font-semibold text-lg">Tubeless</h3>
-            <p className="text-gray-600 mt-2">
-              A tubeless tyre does not have a tube inside it. If the tubeless tyre is punctured, the tyre never goes flat 
-              and it will still run for days.
-            </p>
+              {/* Left Content */}
+              <div className="flex-1">
+                <h2 className="text-2xl font-bold mb-6">Types of Tyres</h2>
+
+                {/* Conventional Tubed */}
+                <div className="mb-6 flex">
+                  <div className="w-2 h-24 bg-green-600 mr-2"></div>
+                  <div>
+                    <h3 className="font-semibold text-lg flex items-center">
+                      Conventional Tubed
+                    </h3>
+                    <p className="text-gray-600 mt-2">
+                      A tubed tyre that has a separate inner tube placed inside it. If a tubed tyre is punctured,
+                      then you will not be able to drive the vehicle.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Tubeless */}
+                <div>
+                  <h3 className="font-semibold text-lg">Tubeless</h3>
+                  <p className="text-gray-600 mt-2">
+                    A tubeless tyre does not have a tube inside it. If the tubeless tyre is punctured, the tyre never goes flat
+                    and it will still run for days.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Image */}
+              <div className="flex-1 flex justify-centernpm">
+                <img
+                  src="/tyre.png"
+                  alt="Tyre"
+                  className="w-72 h-72 object-contain"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="flex-1 flex justify-center">
-          <img
-            src="/tyre.png"
-            alt="Tyre"
-            className="w-72 h-72 object-contain"
-          />
-        </div>
-      </div>
-    </div>
         </section>
       </main>
       <Footer />
