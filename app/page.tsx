@@ -269,7 +269,7 @@ export default function Component() {
         {/* Review cards Wrapper - Creates the viewport for the three cards */}
         <div 
             className="overflow-hidden px-8" 
-            style={{ width: `${(CARD_WIDTH * 3) + (GAP_WIDTH * 2)}px` }}
+            style={{ width: `${(CARD_WIDTH * 3) + (GAP_WIDTH * 4)}px` }}
         >
           <div
             // This inner div holds ALL the review cards in a single row
