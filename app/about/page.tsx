@@ -9,21 +9,78 @@ import Image from 'next/image';
 const AboutPage: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>About Suman Tyres | Best Tyre Dealers in Gandhinagar</title>
-        <meta
-          name="description"
-          content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more."
-        />
-      </Head>
       <Navbar />
+      <Head>
+  <title>About Suman Tyres | Best Tyre Dealers in Gandhinagar</title>
+  <meta
+    name="description"
+    content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more. Trusted tyre dealer near Cinemax, Sector 11."
+  />
+
+  {/* Keywords (optional but can be useful) */}
+  <meta
+    name="keywords"
+    content="Tyres Gandhinagar, Car Tyres Gandhinagar, Bike Tyres Gandhinagar, Tyre Dealer Gandhinagar, Suman Tyres, Michelin Gandhinagar, Ceat Gandhinagar, Bridgestone Gandhinagar, auto service Gandhinagar"
+  />
+
+  {/* Open Graph / Social Media */}
+  <meta property="og:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
+  <meta
+    property="og:description"
+    content="Discover Suman Tyres, a trusted tyre dealer in Gandhinagar since 1997. Wide range of tyres, oils, and batteries. Visit us near Cinemax, Sector 11."
+  />
+  <meta property="og:image" content="/sumanty.webp" /> {/* Replace with your actual image path */}
+  <meta property="og:url" content="https://sumantyres.vercel.app/about" /> {/* Your page URL */}
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
+  <meta
+    name="twitter:description"
+    content="Learn about Suman Tyres, a reputed tyre dealer in Gandhinagar since 1997. Wide selection of tyres and auto accessories near Cinemax."
+  />
+  <meta name="twitter:image" content="/sumanty.webp" /> {/* Your image path */}
+
+  {/* Structured Data (JSON-LD) */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Suman Tyres",
+      "description": "Trusted tyre dealer and auto service provider in Gandhinagar, Gujarat since 1997.",
+      "image": "/images/about-suman-tyres.jpg",
+      "url": "https://sumantyres.vercel.app/about",
+      "telephone": "+91-9426636250",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sector 11, Suman Tower",
+        "addressLocality": "Gandhinagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "382011",
+        "addressCountry": "IN"
+      },
+      "openingHours": [
+        "Mo-Sa 09:00-21:00",
+        "Su 09:00-16:00"
+      ],
+      "priceRange": "₹₹",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9426636250",
+        "contactType": "Customer Service"
+      }
+    }
+    `}
+  </script>
+</Head>
       <main className="container mx-auto px-4 py-12">
         {/* About Us Section */}
         <section className="flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
           {/* Heading Section */}
           <div className="text-center md:text-left md:w-1/2">
             <h1 className="text-4xl font-extrabold text-gray-900 animate-bounce mb-6">
-              About <span className="text-red-500">Suman Tyres</span>
+              About <span className="text-red-500">Us</span>
             </h1>
             <div className="mx-auto md:mx-0 w-16 h-1 bg-red-500 mb-8" />
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -44,7 +101,7 @@ const AboutPage: React.FC = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="w-[350px] h-[350px] overflow-hidden rounded-xl shadow-lg">
               <Image
-                src="/sumanabout.jpeg"
+                src="/sumanty.webp"
                 width={350}
                 height={350}
                 alt="Company Location"

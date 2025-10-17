@@ -84,11 +84,11 @@ export default function Component() {
         <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
         <meta
           name="description"
-          content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service."
+          content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service.Suman Tyres in Gandhinagar offers a wide selection of car and bike tyres, puncture repairs, wheel alignment, batteries, and auto accessories. Trusted brands like Ceat, Michelin, Bridgestone, Apollo, and MRF. Visit us for quality service near Sector 11 and Khodiyar Tyres."
         />
         <meta
           name="keywords"
-          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar"
+          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar, tyre shop Gandhinagar, car tyres Gandhinagar, bike tyres Gandhinagar, puncture repair Gandhinagar, tyre dealers Gandhinagar, ceat tyres Gandhinagar, bridgestone tyres Gandhinagar, michelin tyres Gandhinagar, mrf tyres Gandhinagar, car batteries Gandhinagar, auto parts Gandhinagar, wheel alignment Gandhinagar, tyre shop near me, puncture shop near me, tyre showroom Gandhinagar, Khodiyar tyres, radhe tyres, tyre dealer Gandhinagar, tyre store Gandhinagar, Gandhinagar tyre shop, sector 11 tyre shop, khodiyar tyres, tyre repair near me"
         />
         <meta name="author" content="Suman Tyres" />
 
