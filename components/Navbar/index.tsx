@@ -121,7 +121,7 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <img
-            src="/logo.jpg"
+            src="/logo.png"
             width={menuOpen ? 180 : 230}  // Adjust logo size on menu open
             height={menuOpen ? 180 : 230}
             alt="Suman Tyres Logo"
