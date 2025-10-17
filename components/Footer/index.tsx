@@ -1,4 +1,4 @@
-import { Instagram, Youtube } from 'lucide-react';
+import { Instagram, Youtube, Twitter} from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -21,6 +21,9 @@ function Footer() {
             </a>
             <a href="https://www.instagram.com/suman_tyres?igsh=bGl3amx4M2ViNXM5" className="text-gray-700 hover:text-black transition-colors duration-300">
               <Instagram className="w-6 h-6" />
+            </a>
+                        <a href="https://x.com/TyresSuman11576?t=A2s_jqfP1QZhOfByzbVaGQ&s=09" className="text-gray-700 hover:text-black transition-colors duration-300">
+              <Twitter className="w-6 h-6" />
             </a>
           </div>
         </div>
