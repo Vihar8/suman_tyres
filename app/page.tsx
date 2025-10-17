@@ -31,6 +31,12 @@ export default function Component() {
     text: "Got really good experience here. The seller was humble and cooperative. He made me understand about tyres and helped me in selection.",
   },
   {
+    name: "Dr Shah",
+    imgUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fmodern-dr-logo-icon-vector_364014244.htm&psig=AOvVaw19vpGcQhDtxiyNefcvRJkb&ust=1760801931990000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiopMDIq5ADFQAAAAAdAAAAABAE",
+    date: "a week ago",
+    text: "I recently visited Suman Tyres in Sector 11, Gandhinagar for a car battery replacement and charging service. The staff was very professional and helped me choose the right Amaron battery for my car. They also performed a battery health check and ensured proper installation.Fast, reliable, and trustworthy service! If you’re looking for a battery store in Gandhinagar with replacement, charging, or maintenance services, I highly recommend Suman Tyres.",
+  },
+  {
     name: "Niranjan Korde",
     imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUptM0WHSx5OL4sx_va5UuAybiqz0-07TzLp8mmavT0Y7zLbxRn=w65-h65-p-rp-mo-ba6-br100",
     date: "2023-04-10",
