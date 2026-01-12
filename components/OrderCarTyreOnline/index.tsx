@@ -5,8 +5,9 @@ const OrderCarTyreOnline: React.FC = () => {
     <div className="order-container">
       <div className="order-content">
         <h2>GET A CAR/BIKE TYRE AT WHOLESALE PRICE?</h2>
+        <h3>Best Tyre Shop in Gandhinagar-Gujarat</h3>
         <p>
-          On Suman Tyres, you can also search and order online using our Tyre shop.
+          On Suman Tyres, you can also search using our Tyre shop.
         </p>
         <a href="tel:9426636250" className="call-now-link">
           <button className="call-now-button">Call Now</button>

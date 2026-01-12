@@ -5,8 +5,9 @@ const OrderCarOilOnline: React.FC = () => {
     <div className="order-container">
       <div className="order-content">
         <h2>GET A CAR/BIKE OIL AT WHOLESALE PRICE?</h2>
+        <h3>Best Engine Oil Shop in Gandhinagar-Gujarat</h3>
         <p>
-          On Suman Tyres, you can also search and order online using our oil shop.
+          On Suman Tyres, you can also search using our oil shop.
         </p>
         <a href="tel:9426636250" className="call-now-link">
           <button className="call-now-button">Call Now</button>

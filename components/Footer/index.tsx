@@ -9,7 +9,7 @@ function Footer() {
       <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">About Us</h4>
           <p>
-          Suman Tyres is one of the Oldest and influential hub for low cost Tyres, Battery, Oil, etc in Gandhinagar. We offer all sizes of tyres, all Range of Batteries, Types of Engine Oil for your cars and two-wheelers. At Suman Tyres Gandhinagar, you can choose from a wide range of tyers from all leading manufacturers and Company. We make your life simple!
+          Suman Tyres is one of the Oldest and influential hub for Tyres, Battery, Oil, etc in Gandhinagar-Gujarat. We offer all sizes of tyres, all Range of Batteries, Types of Engine Oil for your cars and two-wheelers. At Suman Tyres Gandhinagar, you can choose from a wide range of tyers from all leading manufacturers and Company. We make your life simple! Best Shop for Tyre, Battery, Engine Oil in Sector 11, Gandhinagar-Gujarat 382010.
           </p>
         </div>
         
