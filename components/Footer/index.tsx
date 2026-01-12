@@ -53,6 +53,11 @@ function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/gallery" className="font-medium text-lg hover:underline">
+                Gallery
+              </Link>
+            </li>
+            <li>
               <Link href="/about" className="font-medium text-lg hover:underline">
                 About Us
               </Link>
