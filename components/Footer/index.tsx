@@ -99,7 +99,11 @@ function Footer() {
           </div>
       </div>
       <div className="bg-gray-300 py-4 text-center text-sm">
-        Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved. | Designed & Developed by <a 
+        href="https://www.linkedin.com/in/cse-viharmodi/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="underline hover:text-black">Vihar Modi</a>
       </div>
     </footer>
   );

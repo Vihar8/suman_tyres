@@ -12,47 +12,47 @@ import { useEffect, useState } from 'react';
 
 export default function Component() {
   const reviews = [
-  {
-    name: "Daksh Panchal",
-    imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUU1Ushz8lvIRZVI0R5PDvPkp807wCwL6NO9Z5hb5eiB7rWkw=w65-h65-p-rp-mo-ba2-br100",
-    date: "a week ago",
-    text: "Amazing place to buy tyre. They are very corporative in helping you to buy the perfect tyres within your budget. The rate they offer is also the best all over in Gandhinagar as compared to all other dealers.",
-  },
-  {
-    name: "Divy Patel",
-    imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjVe9NAVpibqoNlShIj_vHpoQZgP4QMHvHVFULEl6puWUfOXMR6L=w65-h65-p-rp-mo-ba3-br100",
-    date: "4 month ago",
-    text: "I recently visited Suman Tyres, and I’m very satisfied with the overall experience. The staff was knowledgeable, polite, and quick to assist me in choosing the right set of tyres for my vehicle. They offered a good variety of brands and explained the pros and cons of each based on my driving needs and budget.",
-  },
-  {
-    name: "Adonis",
-    imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUnyRNrMkQ6t_qVbRZdRE6zl5dr-gN6iFZrzYZeJx9BqAKDHfkQ=w65-h65-p-rp-mo-ba4-br100",
-    date: "2023-05-22",
-    text: "Got really good experience here. The seller was humble and cooperative. He made me understand about tyres and helped me in selection.",
-  },
-  {
-    name: "Dr Shah",
-    imgUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fmodern-dr-logo-icon-vector_364014244.htm&psig=AOvVaw19vpGcQhDtxiyNefcvRJkb&ust=1760801931990000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiopMDIq5ADFQAAAAAdAAAAABAE",
-    date: "a week ago",
-    text: "I recently visited Suman Tyres in Sector 11, Gandhinagar for a car battery replacement and charging service. The staff was very professional and helped me choose the right Amaron battery for my car. They also performed a battery health check and ensured proper installation.Fast, reliable, and trustworthy service! If you’re looking for a battery store in Gandhinagar with replacement, charging, or maintenance services, I highly recommend Suman Tyres.",
-  },
-  {
-    name: "Niranjan Korde",
-    imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUptM0WHSx5OL4sx_va5UuAybiqz0-07TzLp8mmavT0Y7zLbxRn=w65-h65-p-rp-mo-ba6-br100",
-    date: "2023-04-10",
-    text: "Fairly maintained outlet. Reasonable price and good service",
-  },
-];
+    {
+      name: "Daksh Panchal",
+      imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUU1Ushz8lvIRZVI0R5PDvPkp807wCwL6NO9Z5hb5eiB7rWkw=w65-h65-p-rp-mo-ba2-br100",
+      date: "a week ago",
+      text: "Amazing place to buy tyre. They are very corporative in helping you to buy the perfect tyres within your budget. The rate they offer is also the best all over in Gandhinagar as compared to all other dealers.",
+    },
+    {
+      name: "Divy Patel",
+      imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjVe9NAVpibqoNlShIj_vHpoQZgP4QMHvHVFULEl6puWUfOXMR6L=w65-h65-p-rp-mo-ba3-br100",
+      date: "4 month ago",
+      text: "I recently visited Suman Tyres, and I’m very satisfied with the overall experience. The staff was knowledgeable, polite, and quick to assist me in choosing the right set of tyres for my vehicle. They offered a good variety of brands and explained the pros and cons of each based on my driving needs and budget.",
+    },
+    {
+      name: "Adonis",
+      imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUnyRNrMkQ6t_qVbRZdRE6zl5dr-gN6iFZrzYZeJx9BqAKDHfkQ=w65-h65-p-rp-mo-ba4-br100",
+      date: "2023-05-22",
+      text: "Got really good experience here. The seller was humble and cooperative. He made me understand about tyres and helped me in selection.",
+    },
+    {
+      name: "Dr Shah",
+      imgUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fmodern-dr-logo-icon-vector_364014244.htm&psig=AOvVaw19vpGcQhDtxiyNefcvRJkb&ust=1760801931990000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiopMDIq5ADFQAAAAAdAAAAABAE",
+      date: "a week ago",
+      text: "I recently visited Suman Tyres in Sector 11, Gandhinagar for a car battery replacement and charging service. The staff was very professional and helped me choose the right Amaron battery for my car. They also performed a battery health check and ensured proper installation.Fast, reliable, and trustworthy service! If you’re looking for a battery store in Gandhinagar with replacement, charging, or maintenance services, I highly recommend Suman Tyres.",
+    },
+    {
+      name: "Niranjan Korde",
+      imgUrl: "https://lh3.googleusercontent.com/a-/ALV-UjUptM0WHSx5OL4sx_va5UuAybiqz0-07TzLp8mmavT0Y7zLbxRn=w65-h65-p-rp-mo-ba6-br100",
+      date: "2023-04-10",
+      text: "Fairly maintained outlet. Reasonable price and good service",
+    },
+  ];
 
- const [index, setIndex] = useState(0);
-  
+  const [index, setIndex] = useState(0);
+
   // Constants for carousel movement calculation
   const CARD_WIDTH = 320;
   const GAP_WIDTH = 24; // Tailwind's gap-6 is 1.5rem = 24px
   const CARD_WIDTH_PLUS_GAP = CARD_WIDTH + GAP_WIDTH;
-  
+
   // The carousel can only slide up to the point where the last 3 cards are visible.
-  const maxIndex = reviews.length - 3; 
+  const maxIndex = reviews.length - 3;
 
   const prevSlide = () => {
     setIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
@@ -257,89 +257,89 @@ export default function Component() {
             </div>
           </div>
           <hr />
-           <h2 className="text-black rounded-xl w-fit text-2xl font-bold mt-5 mx-auto">
-              What Our Customers Say
-            </h2>
-         <div className="flex justify-center items-center w-full py-8 bg-white">
-      {/* max-w-7xl matches your original code, setting the content width */}
-      <div className="relative w-full max-w-7xl flex items-center justify-center">
-        {/* Left arrow */}
-        <button
-          onClick={prevSlide}
-          // Positioning the arrow slightly outside the content area
-          className="absolute -left-3 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <FaChevronLeft size={20} className="text-gray-700" />
-        </button>
-
-        {/* Review cards Wrapper - Creates the viewport for the three cards */}
-        <div 
-            className="overflow-hidden px-8" 
-            style={{ width: `${(CARD_WIDTH * 3) + (GAP_WIDTH * 4)}px` }}
-        >
-          <div
-            // This inner div holds ALL the review cards in a single row
-            className="flex gap-6 transition-transform duration-700 ease-in-out"
-            // Applies the translation to slide the entire row
-            style={{ 
-                transform: `translateX(-${index * CARD_WIDTH_PLUS_GAP}px)` 
-            }}
-          >
-            {reviews.map((review, i) => (
-              <div
-                key={i}
-                // Cards are full opacity and scaled to match the image
-                className="bg-white rounded-xl shadow-md p-5 w-[320px] min-h-[230px] border shrink-0"
+          <h2 className="text-black rounded-xl w-fit text-2xl font-bold mt-5 mx-auto">
+            What Our Customers Say
+          </h2>
+          <div className="flex justify-center items-center w-full py-8 bg-white">
+            {/* max-w-7xl matches your original code, setting the content width */}
+            <div className="relative w-full max-w-7xl flex items-center justify-center">
+              {/* Left arrow */}
+              <button
+                onClick={prevSlide}
+                // Positioning the arrow slightly outside the content area
+                className="absolute -left-1 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                {/* Header: Profile, Name, Date, Google Icon */}
-                <div className="flex justify-between items-center mb-3">
-                  <div className="flex items-center">
-                    {/* Profile Image and Text */}
-                    <div className="flex items-center">
-                      <img 
-                        src={review.imgUrl} 
-                        alt={review.name}
-                        className="w-10 h-10 rounded-full object-cover mr-3"
-                      />
-                      <div>
-                        <h3 className="font-semibold text-gray-800">{review.name}</h3>
-                        <p className="text-sm text-gray-500">{review.date}</p>
+                <FaChevronLeft size={20} className="text-gray-700" />
+              </button>
+
+              {/* Review cards Wrapper - Creates the viewport for the three cards */}
+              <div
+                className="overflow-hidden px-8"
+                style={{ width: `${(CARD_WIDTH * 3) + (GAP_WIDTH * 4)}px` }}
+              >
+                <div
+                  // This inner div holds ALL the review cards in a single row
+                  className="flex gap-6 transition-transform duration-700 ease-in-out"
+                  // Applies the translation to slide the entire row
+                  style={{
+                    transform: `translateX(-${index * CARD_WIDTH_PLUS_GAP}px)`
+                  }}
+                >
+                  {reviews.map((review, i) => (
+                    <div
+                      key={i}
+                      // Cards are full opacity and scaled to match the image
+                      className="bg-white rounded-xl shadow-md p-5 w-[320px] min-h-[230px] border shrink-0"
+                    >
+                      {/* Header: Profile, Name, Date, Google Icon */}
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="flex items-center">
+                          {/* Profile Image and Text */}
+                          <div className="flex items-center">
+                            <img
+                              src={review.imgUrl}
+                              alt={review.name}
+                              className="w-10 h-10 rounded-full object-cover mr-3"
+                            />
+                            <div>
+                              <h3 className="font-semibold text-gray-800">{review.name}</h3>
+                              <p className="text-sm text-gray-500">{review.date}</p>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Google Icon (Top Right) */}
+                        <FcGoogle className="text-gray-400 text-xl" />
                       </div>
+
+                      {/* Rating and Verified Badge */}
+                      <div className="flex items-center gap-1 mb-2">
+                        {[...Array(5)].map((_, idx) => (
+                          <FaStar key={idx} className="text-yellow-500" size={16} />
+                        ))}
+                        {/* Blue Checkmark */}
+                        <GoVerified className="text-blue-500 ml-1" size={16} />
+                      </div>
+
+                      {/* Review text */}
+                      <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap">
+                        {review.text}
+                      </p>
                     </div>
-                  </div>
-                  {/* Google Icon (Top Right) */}
-                  <FcGoogle className="text-gray-400 text-xl" />
-                </div>
-
-                {/* Rating and Verified Badge */}
-                <div className="flex items-center gap-1 mb-2">
-                  {[...Array(5)].map((_, idx) => (
-                    <FaStar key={idx} className="text-yellow-500" size={16} />
                   ))}
-                  {/* Blue Checkmark */}
-                  <GoVerified className="text-blue-500 ml-1" size={16} />
                 </div>
-
-                {/* Review text */}
-                <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap">
-                    {review.text}
-                </p>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Right arrow */}
-        <button
-          onClick={nextSlide}
-          // Positioning the arrow slightly outside the content area
-          className="absolute -right-3 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <FaChevronRight size={20} className="text-gray-700" />
-        </button>
-      </div>
-    </div>
-    <hr />
+              {/* Right arrow */}
+              <button
+                onClick={nextSlide}
+                // Positioning the arrow slightly outside the content area
+                className="absolute -right-1 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <FaChevronRight size={20} className="text-gray-700" />
+              </button>
+            </div>
+          </div>
+          <hr />
           <div className="bg-gray-50 py-12 px-6">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
