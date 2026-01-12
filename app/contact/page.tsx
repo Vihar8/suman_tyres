@@ -6,8 +6,11 @@ import Image from 'next/image';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Grid } from "lucide-react";
 
 export default function Component() {
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.735473031643!2d72.64927899999999!3d23.216308999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b671ffe422d%3A0xaead93f143b1a1db!2sSuman%20Tyres!5e0!3m2!1sen!2sin!4v1768193080867!5m2!1sen!2sin";
+
   return (
     <>
       <Head>
@@ -71,8 +74,55 @@ export default function Component() {
           </div>
         </Card>
         <br />
-        <br />
+         <div aria-labelledby="clinic-location-heading">
+            <h3 id="clinic-location-heading" className="text-3xl font-semibold text-center text-[#213555] mb-6">
+              Location
+            </h3>
+
+            <h2
+              className="sr-only"
+            >
+              Visit Suman Tyres in Gandhinagar
+            </h2>
+             {/* Local Business Schema for SEO */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "Suman Tyres",
+      "description": "Suman Tyres offers wide Range of Tyres, Battery and Engine Oil for all Vehicles in Gandhinagar, Gujarat.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gandhinagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "382010",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.2156,
+        "longitude": 72.6369
+      },
+      "url": "https://sumantyres.vercel.app"
+    })}
+  </script>
+
+            <div className="w-full flex justify-center">
+              <div className="w-full max-w-4xl h-[350px] overflow-hidden rounded-xl shadow-lg border border-gray-200">
+                <iframe
+                  src={mapEmbedUrl}
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Suman Tyres Location on Google Maps"
+                ></iframe>
+              </div>
+            </div>
+          </div>
         <div>
+        <br />
               <WhatsAppButton />
             </div>
         <Footer />
