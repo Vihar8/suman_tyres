@@ -1,12 +1,55 @@
+'use client';
 import { Instagram, Youtube, Twitter} from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
+
+// ✅ SEO Metadata (Next.js App Router Way)
+export const metadata = {
+  title: "Suman Tyres Gandhinagar | Tyres, Battery, Engine Oil Shop",
+  description:
+    "Suman Tyres in Sector 11 Gandhinagar offers car tyres, bike tyres, batteries, engine oils, wheel alignment and balancing services. Trusted tyre shop in Gandhinagar.",
+  keywords: [
+    "Suman Tyres",
+    "tyre shop Gandhinagar",
+    "car tyres Gandhinagar",
+    "bike tyres Gandhinagar",
+    "battery shop Gandhinagar",
+    "engine oil shop Gandhinagar",
+    "wheel alignment Gandhinagar",
+    "wheel balancing Gandhinagar",
+    "best tyre shop in Gandhinagar",
+    "tyre near me Gandhinagar"
+  ],
+};
 
 function Footer() {
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.735473031643!2d72.64927899999999!3d23.216308999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b671ffe422d%3A0xaead93f143b1a1db!2sSuman%20Tyres!5e0!3m2!1sen!2sin!4v1768193080867!5m2!1sen!2sin";
 
   return (
     <footer className="bg-gray-200 text-gray-700">
+      
+      {/* ✅ Structured Data (Local SEO Boost 🚀) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            name: "Suman Tyres",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Sector 11, Suman Tower",
+              addressLocality: "Gandhinagar",
+              addressRegion: "Gujarat",
+              postalCode: "382010",
+              addressCountry: "IN",
+            },
+            telephone: "+919426636250",
+            url: "https://yourdomain.com",
+          }),
+        }}
+      />
+
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-4 md:px-6">
       <div className="space-y-4">
           <h4 className="text-lg font-bold mb-3">About Us</h4>
@@ -24,56 +67,32 @@ function Footer() {
             <a href="https://www.instagram.com/suman_tyres?igsh=bGl3amx4M2ViNXM5" className="text-gray-700 hover:text-black transition-colors duration-300">
               <Instagram className="w-6 h-6" />
             </a>
-                        <a href="https://x.com/TyresSuman11576?t=A2s_jqfP1QZhOfByzbVaGQ&s=09" className="text-gray-700 hover:text-black transition-colors duration-300">
+            <a href="https://x.com/TyresSuman11576?t=A2s_jqfP1QZhOfByzbVaGQ&s=09" className="text-gray-700 hover:text-black transition-colors duration-300">
               <Twitter className="w-6 h-6" />
+            </a>
+            <a href="https://www.justdial.com/Gandhinagar-Gujarat/Suman-Tyres-Near-Suman-City-Mall-Gandhinagar-Sector-11/9999PXX79-XX79-120705183717-C6K8_BZDET" className="text-gray-700 hover:text-black transition-colors duration-300">
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aSPqYmjHelwJgm2TuDESQUGPslY3LJG5RQ&s' className="w-10 h-10" />
+            </a>
+            <a href="https://www.indiamart.com/suman-tyres/aboutus.html?srsltid=AfmBOoqN-b-NTJfEF78DPaQbAG3wfLfBHdkGwMg2_WTH9-KW73NsU7e0" className="text-gray-700 hover:text-black transition-colors duration-300">
+              <img src='https://vectorseek.com/wp-content/uploads/2023/09/IndiaMART-Logo-Vector.svg-.png' className="w-10 h-10" />
             </a>
           </div>
         </div>
+
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Quick Links</h4>
           <ul className="space-y-2">
-            <li>
-              <Link href="/" className="font-medium text-lg hover:underline">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/tyres" className="font-medium text-lg hover:underline">
-                Tyres
-              </Link>
-            </li>
-            <li>
-              <Link href="/oil" className="font-medium text-lg hover:underline">
-                Oil
-              </Link>
-            </li>
-            <li>
-              <Link href="/battery" className="font-medium text-lg hover:underline">
-                Battery
-              </Link>
-            </li>
-            <li>
-              <Link href="/gallery" className="font-medium text-lg hover:underline">
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="font-medium text-lg hover:underline">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/warrantyandGuarantee" className="font-medium text-lg hover:underline">
-              Guarantee Warranty
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="font-medium text-lg hover:underline">
-                Contact Us
-              </Link>
-            </li>
+            <li><Link href="/" className="font-medium text-lg hover:underline">Home</Link></li>
+            <li><Link href="/tyres" className="font-medium text-lg hover:underline">Tyres</Link></li>
+            <li><Link href="/oil" className="font-medium text-lg hover:underline">Oil</Link></li>
+            <li><Link href="/battery" className="font-medium text-lg hover:underline">Battery</Link></li>
+            <li><Link href="/gallery" className="font-medium text-lg hover:underline">Gallery</Link></li>
+            <li><Link href="/about" className="font-medium text-lg hover:underline">About Us</Link></li>
+            <li><Link href="/warrantyandGuarantee" className="font-medium text-lg hover:underline">Guarantee Warranty</Link></li>
+            <li><Link href="/contact" className="font-medium text-lg hover:underline">Contact Us</Link></li>
           </ul>
         </div>
+
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Contact Us</h4>
           <p>Sector 11, Suman Tower, Suman Tyres Gandhinagar-Gujarat 382010</p>
@@ -83,11 +102,12 @@ function Footer() {
           </a>
           <div>
             <p className="mt-4 text-lg font-semibold">Email</p>
-          <a href="mailto:sumantyres@gmail.com" className="hover:text-red-800 text-lg transition-colors duration-300">
-                        sumantyres@gmail.com
-                      </a>
+            <a href="mailto:sumantyres@gmail.com" className="hover:text-red-800 text-lg transition-colors duration-300">
+              sumantyres@gmail.com
+            </a>
           </div>
         </div>
+
         <div className="space-y-4">
           <h4 className="text-lg font-bold">Find Us</h4>
           <div className="w-full h-48 rounded-lg overflow-hidden border border-gray-300 shadow-sm">
@@ -101,14 +121,19 @@ function Footer() {
               title="Suman Tyres Location Map"
             ></iframe>
           </div>
-          </div>
+        </div>
       </div>
+
       <div className="bg-gray-300 py-4 text-center text-sm">
-        Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved. | Designed & Developed by <a 
-        href="https://www.linkedin.com/in/cse-viharmodi/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="underline hover:text-black">Vihar Modi</a>
+        Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved. | Designed & Developed by{" "}
+        <a 
+          href="https://www.linkedin.com/in/cse-viharmodi/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline hover:text-black"
+        >
+          Vihar Modi
+        </a>
       </div>
     </footer>
   );

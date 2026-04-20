@@ -11,6 +11,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import { useEffect, useState } from 'react';
 
 export default function Component() {
+  
   const reviews = [
     {
       name: "Daksh Panchal",
@@ -88,7 +89,16 @@ export default function Component() {
         />
         <meta
           name="keywords"
-          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar, tyre shop Gandhinagar, car tyres Gandhinagar, bike tyres Gandhinagar, puncture repair Gandhinagar, tyre dealers Gandhinagar, ceat tyres Gandhinagar, bridgestone tyres Gandhinagar, michelin tyres Gandhinagar, mrf tyres Gandhinagar, car batteries Gandhinagar, auto parts Gandhinagar, wheel alignment Gandhinagar, tyre shop near me, puncture shop near me, tyre showroom Gandhinagar, Khodiyar tyres, radhe tyres, tyre dealer Gandhinagar, tyre store Gandhinagar, Gandhinagar tyre shop, sector 11 tyre shop, khodiyar tyres, tyre repair near me"
+          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar, tyre shop Gandhinagar, car tyres Gandhinagar, bike tyres Gandhinagar, puncture repair Gandhinagar, tyre dealers Gandhinagar, ceat tyres Gandhinagar, bridgestone tyres Gandhinagar, michelin tyres Gandhinagar, mrf tyres Gandhinagar, car batteries Gandhinagar, auto parts Gandhinagar, wheel alignment Gandhinagar, tyre shop near me, puncture shop near me, tyre showroom Gandhinagar, Khodiyar tyres, radhe tyres, tyre dealer Gandhinagar, tyre store Gandhinagar, Gandhinagar tyre shop, sector 11 tyre shop, khodiyar tyres, tyre repair near me, tyre shop Gandhinagar,
+best tyre shop in Gandhinagar,
+car tyres Gandhinagar,
+bike tyres Gandhinagar,
+battery shop Gandhinagar,
+engine oil Gandhinagar,
+wheel alignment Gandhinagar,
+puncture repair Gandhinagar,
+tyre shop near me,
+Suman Tyres"
         />
         <meta name="author" content="Suman Tyres" />
 
@@ -110,7 +120,7 @@ export default function Component() {
         />
         <meta name="twitter:image" content="/sumantyresshop.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-
+    
         {/* Structured Data for Local Business */}
         <script type="application/ld+json">
           {`
@@ -161,7 +171,7 @@ export default function Component() {
                     src={`/${src}`}
                     width={900}
                     height={500}
-                    alt="Carousel Image"
+                    alt="Car tyres, engine oil and battery services at Suman Tyres Gandhinagar"
                     className="aspect-[1/1] object-cover"
                   />
                 </CarouselItem>
@@ -201,19 +211,19 @@ export default function Component() {
             </h2>
             <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-8">
               {[
-                { src: "/ceatlogo.jpg", alt: "Ceat" },
-                { src: "/michelinlogo.jpg", alt: "Michelin" },
-                { src: "/bridgestonelogo.jpg", alt: "Bridgestone" },
-                { src: "/apollologo.jpeg", alt: "Apollo" },
-                { src: "/jklogo.png", alt: "JK" },
-                { src: "/shelllogo.jpeg", alt: "Shell" },
-                { src: "/castrollogo.jpeg", alt: "Castrol" },
-                { src: "/repsollogo.jpg", alt: "Repsol" },
-                { src: "/servologo.jpg", alt: "Servo" },
-                { src: "/amaronlogo.jpg", alt: "Amaron" },
-                { src: "/exidelogo.jpeg", alt: "Exide" },
-                { src: "/eloficlogo.jpeg", alt: "Elofic" },
-                { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
+                { src: "/ceatlogo.jpg", alt: "Ceat tyres available at Suman Tyres Gandhinagar" },
+                { src: "/michelinlogo.jpg", alt: "Michelin tyres available at Suman Tyres Gandhinagar" },
+                { src: "/bridgestonelogo.jpg", alt: "Bridgestone tyres available at Suman Tyres Gandhinagar" },
+                { src: "/apollologo.jpeg", alt: "Apollo tyres available at Suman Tyres Gandhinagar" },
+                { src: "/jklogo.png", alt: "JK tyres available at Suman Tyres Gandhinagar" },
+                { src: "/shelllogo.jpeg", alt: "Shell oil available at Suman Tyres Gandhinagar" },
+                { src: "/castrollogo.jpeg", alt: "Castrol oil available at Suman Tyres Gandhinagar" },
+                { src: "/repsollogo.jpg", alt: "Repsol oil available at Suman Tyres Gandhinagar" },
+                { src: "/servologo.jpg", alt: "Servo oil available at Suman Tyres Gandhinagar" },
+                { src: "/amaronlogo.jpg", alt: "Amaron battery available at Suman Tyres Gandhinagar" },
+                { src: "/exidelogo.jpeg", alt: "Exide battery available at Suman Tyres Gandhinagar" },
+                { src: "/eloficlogo.jpeg", alt: "Elofic battery available at Suman Tyres Gandhinagar" },
+                { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch battery available at Suman Tyres Gandhinagar" },
               ].map((brand, index) => (
                 <div key={index} className="flex items-center justify-center p-4 bg-gray-100 rounded">
                   <img src={brand.src} alt={brand.alt} />
