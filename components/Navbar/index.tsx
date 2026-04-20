@@ -1,115 +1,109 @@
-import { SVGProps, useState } from 'react';
-import Link from 'next/link';
+"use client";
 
-function Navbar() {
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Tyres", path: "/tyres" },
+    { name: "Engine Oil", path: "/oil" },
+    { name: "Battery", path: "/battery" },
+    { name: "Gallery", path: "/gallery" },
+  ];
 
   return (
-    <header className="bg-gray-300 text-black shadow-lg">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <img
-            src="/logo.png"
-            width={menuOpen ? 180 : 230}  // Adjust logo size on menu open
-            height={menuOpen ? 180 : 230}
-            alt="Suman Tyres Logo"
-            className="transition-all duration-300"
-          />
-        </Link>
-        <div className="md:hidden z-50">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <CloseIcon className="w-8 h-8 text-black" /> : <MenuIcon className="w-8 h-8 text-black" />}
+    <>
+      {/* Top Navbar */}
+      <header className="sticky top-0 z-50 bg-white shadow-sm">
+        <div className="flex items-center justify-between px-4 py-3">
+          {/* Logo */}
+          <Link href="/">
+            <img src="/logo.png" alt="logo" className="h-24" />
+          </Link>
+
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.path}
+                className={`text-sm font-medium ${pathname === link.path
+                  ? "text-red-600 border-b-2 border-red-600 pb-1"
+                  : "text-gray-700 hover:text-red-600"
+                  }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <a
+              href="tel:+919426636250"
+              className="bg-red-600 text-white px-4 py-2 rounded-full text-sm"
+            >
+              Call Now
+            </a>
+          </nav>
+
+          {/* Hamburger */}
+          <button onClick={() => setMenuOpen(true)} className="md:hidden p-2 text-2xl">
+            ☰
           </button>
         </div>
-        <nav
-          className={`fixed top-0 right-0 w-1/2 h-full bg-gray-800 z-40 flex flex-col items-center justify-center space-y-8 transition-transform transform ${
-            menuOpen ? 'translate-x-0' : 'translate-x-full'
-          } md:static md:bg-transparent md:flex-row md:space-y-0 md:translate-x-0 md:gap-6 md:w-auto md:h-auto`}
-        >
-          <ul className="text-center text-white md:flex md:items-center gap-3 md:text-black">
-            <li>
-              <Link href="/" className="text-2xl md:text-lg font-medium hover:underline" prefetch={false}>
-                Home
+      </header>
+
+      {/* MOBILE SIDE DRAWER */}
+      {/* Dark Backdrop */}
+      <div
+        className={`fixed inset-0 z-50 bg-black/50 transition-opacity duration-300 ${menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      {/* Drawer Container */}
+      <div
+        className={`fixed top-0 right-0 z-[60] h-full w-[70%] max-w-[300px] bg-white shadow-2xl transition-transform duration-300 ease-in-out transform ${menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Top Bar inside Drawer */}
+          <div className="flex items-center justify-between px-4 py-9 border-b">
+            <span className="font-bold text-gray-800">Menu</span>
+            <button onClick={() => setMenuOpen(false)} className="text-2xl p-2">
+              ✕
+            </button>
+          </div>
+
+          {/* Menu Links */}
+          <div className="flex flex-col p-6 space-y-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.path}
+                onClick={() => setMenuOpen(false)}
+                className={`text-lg font-medium ${pathname === link.path ? "text-red-600" : "text-gray-800"
+                  }`}
+              >
+                {link.name}
               </Link>
-            </li>
-            <li>
-              <Link href="/tyres" className="text-2xl md:text-lg font-medium hover:underline" prefetch={false}>
-                Tyres
-              </Link>
-            </li>
-            <li>
-              <Link href="/oil" className="text-2xl md:text-lg font-medium hover:underline" prefetch={false}>
-                Engine Oil
-              </Link>
-            </li>
-            <li>
-              <Link href="/battery" className="text-2xl md:text-lg font-medium hover:underline" prefetch={false}>
-                Battery
-              </Link>
-            </li>
-            <li>
-              <Link href="/gallery" className="text-2xl md:text-lg font-medium hover:underline" prefetch={false}>
-                Gallery
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        {menuOpen && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
-            onClick={() => setMenuOpen(false)}
-          />
-        )}
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-auto px-6 pb-8">
+            <a
+              href="tel:+919426636250"
+              className="block text-center bg-red-600 text-white py-3 rounded-lg text-md font-medium"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </>
   );
 }
-
-function MenuIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-label="Open menu"
-    >
-      <line x1="3" y1="12" x2="21" y2="12" />
-      <line x1="3" y1="6" x2="21" y2="6" />
-      <line x1="3" y1="18" x2="21" y2="18" />
-    </svg>
-  );
-}
-
-function CloseIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-label="Close menu"
-    >
-      <line x1="18" y1="6" x2="6" y2="18" />
-      <line x1="6" y1="6" x2="18" y2="18" />
-    </svg>
-  );
-}
-
-export default Navbar;
