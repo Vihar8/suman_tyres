@@ -71,10 +71,10 @@ function Footer() {
               <Twitter className="w-6 h-6" />
             </a>
             <a href="https://www.justdial.com/Gandhinagar-Gujarat/Suman-Tyres-Near-Suman-City-Mall-Gandhinagar-Sector-11/9999PXX79-XX79-120705183717-C6K8_BZDET" className="text-gray-700 hover:text-black transition-colors duration-300">
-              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aSPqYmjHelwJgm2TuDESQUGPslY3LJG5RQ&s' className="w-10 h-10" />
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aSPqYmjHelwJgm2TuDESQUGPslY3LJG5RQ&s' alt="Suman Tyres Justdial Profile" className="w-10 h-10" />
             </a>
             <a href="https://www.indiamart.com/suman-tyres/aboutus.html?srsltid=AfmBOoqN-b-NTJfEF78DPaQbAG3wfLfBHdkGwMg2_WTH9-KW73NsU7e0" className="text-gray-700 hover:text-black transition-colors duration-300">
-              <img src='https://vectorseek.com/wp-content/uploads/2023/09/IndiaMART-Logo-Vector.svg-.png' className="w-10 h-10" />
+              <img src='https://vectorseek.com/wp-content/uploads/2023/09/IndiaMART-Logo-Vector.svg-.png' alt="Suman Tyres IndiaMART Profile" className="w-10 h-10" />
             </a>
           </div>
         </div>

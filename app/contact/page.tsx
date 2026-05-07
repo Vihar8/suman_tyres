@@ -68,7 +68,7 @@ export default function Component() {
                 src="/sumantyresshop.jpg"
                 width={400}
                 height={400}
-                alt="Suman Tyres shop image"
+                alt="Suman Tyres Gandhinagar Shop Contact Image"
                 className="w-full h-full object-cover"
               />
           </div>

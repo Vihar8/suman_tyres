@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className="flex flex-col h-full">
           {/* Top Bar inside Drawer */}
           <div className="flex items-center justify-between px-4 py-9 border-b">
-            <span className="font-bold text-gray-800">Menu</span>
+            <span className="font-bold text-gray-900">Menu</span>
             <button onClick={() => setMenuOpen(false)} className="text-2xl p-2">
               ✕
             </button>

@@ -147,7 +147,7 @@ export default function WarrantyPage() {
                 src="/shopani.jpg"
                 width={600}
                 height={500}
-                alt="Suman Tyres Mascot"
+                alt="Suman Tyres Gandhinagar Mascot"
                 />
             </div>
           </div>

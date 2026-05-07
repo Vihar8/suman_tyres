@@ -82,41 +82,32 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Suman Tyres | Best Tyre, Oil, Batteries & Wholesale Shop in Gandhinagar, Gujarat</title>
+        <title>Suman Tyres | Best Tyre Shop in Gandhinagar, Ahmedabad & Near Me</title>
         <meta
           name="description"
-          content="Suman Tyres in Gandhinagar, Gujarat offers the best tyres, oils, and batteries. As a trusted wholesaler, we provide the lowest rates and bulk discounts for all vehicle needs. Quality products with reliable service.Suman Tyres in Gandhinagar offers a wide selection of car and bike tyres, puncture repairs, wheel alignment, batteries, and auto accessories. Trusted brands like Ceat, Michelin, Bridgestone, Apollo, and MRF. Visit us for quality service near Sector 11 and Khodiyar Tyres."
+          content="Looking for a tyre shop near me? Suman Tyres offers the best tyres, oils, and batteries in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva. Trusted wholesaler with the lowest rates."
         />
         <meta
           name="keywords"
-          content="Tyres Gandhinagar, Oil Gujarat, Batteries Gandhinagar, Wholesale Tyres Gujarat, Car Batteries, Bike Batteries, Oil Shop Gandhinagar, Suman Tyres, Best Tyre Shop in Gandhinagar, tyre shop Gandhinagar, car tyres Gandhinagar, bike tyres Gandhinagar, puncture repair Gandhinagar, tyre dealers Gandhinagar, ceat tyres Gandhinagar, bridgestone tyres Gandhinagar, michelin tyres Gandhinagar, mrf tyres Gandhinagar, car batteries Gandhinagar, auto parts Gandhinagar, wheel alignment Gandhinagar, tyre shop near me, puncture shop near me, tyre showroom Gandhinagar, Khodiyar tyres, radhe tyres, tyre dealer Gandhinagar, tyre store Gandhinagar, Gandhinagar tyre shop, sector 11 tyre shop, khodiyar tyres, tyre repair near me, tyre shop Gandhinagar,
-best tyre shop in Gandhinagar,
-car tyres Gandhinagar,
-bike tyres Gandhinagar,
-battery shop Gandhinagar,
-engine oil Gandhinagar,
-wheel alignment Gandhinagar,
-puncture repair Gandhinagar,
-tyre shop near me,
-Suman Tyres"
+          content="tyre shop in gandhinagar, tyre shop near me, tyres shop ahmedabad, tyres shop vavol, tyres shop dhodakuva, Suman Tyres, Best Tyre Shop in Gandhinagar, car tyres Gandhinagar, bike tyres near me, puncture repair near me, tyre dealers Gandhinagar, car batteries near me, auto parts near me, wheel alignment near me, tyre showroom Gandhinagar, tyre repair near me, battery shop Gandhinagar, engine oil Gandhinagar"
         />
         <meta name="author" content="Suman Tyres" />
 
         {/* Open Graph / Social Media */}
-        <meta property="og:title" content="Suman Tyres - Best Tyre, Oil & Battery Shop in Gandhinagar, Gujarat" />
+        <meta property="og:title" content="Suman Tyres | Best Tyre Shop in Gandhinagar & Near Me" />
         <meta
           property="og:description"
-          content="Discover top-quality tyres, oils, and batteries at Suman Tyres in Gandhinagar. We are a trusted wholesaler offering the best prices, bulk discounts, and reliable service for all vehicles."
+          content="Looking for a tyre shop near me? Suman Tyres offers top-quality tyres, batteries, and engine oils in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
         />
         <meta property="og:image" content="/sumantyresshop.jpg" />
         <meta property="og:url" content="https://sumantyres.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
-        <meta name="twitter:title" content="Suman Tyres - Top Tyre, Oil & Battery Shop in Gandhinagar" />
+        <meta name="twitter:title" content="Suman Tyres | Best Tyre Shop in Gandhinagar & Near Me" />
         <meta
           name="twitter:description"
-          content="Trusted wholesaler for tyres, oils, and batteries in Gandhinagar. Get the best rates, bulk discounts, and quality products at Suman Tyres."
+          content="Looking for a tyre shop near me? Suman Tyres offers top-quality tyres, batteries, and engine oils in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
         />
         <meta name="twitter:image" content="/sumantyresshop.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -126,9 +117,9 @@ Suman Tyres"
           {`
     {
       "@context": "https://schema.org",
-      "@type": "Store",
+      "@type": "TireShop",
       "name": "Suman Tyres",
-      "description": "Leading tyre, oil, and battery shop in Gandhinagar, Gujarat. Wholesale supplier with the best rates and bulk discounts.",
+      "description": "Leading tyre, oil, and battery shop serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva.",
       "image": "/sumantyresshop.jpg",
       "url": "https://sumantyres.vercel.app/",
       "telephone": "+91-9426636250",
@@ -140,6 +131,7 @@ Suman Tyres"
         "postalCode": "382011",
         "addressCountry": "India"
       },
+      "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
       "openingHours": [
         "Mo-Sa 09:00-21:00",
         "Su 09:00-16:00"
@@ -385,12 +377,21 @@ Suman Tyres"
               <div className="flex-1 flex justify-centernpm">
                 <img
                   src="/tyre.png"
-                  alt="Tyre"
+                  alt="Car and Bike Tyres in Gandhinagar"
                   className="w-72 h-72 object-contain"
                 />
               </div>
             </div>
           </div>
+          
+          {/* SEO Content Section */}
+          <div className="bg-white py-12 px-6 text-center border-t border-gray-200">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">Your Trusted Local Tyre Shop Near Me</h2>
+            <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Searching for a <strong>tyre shop near me</strong>? Suman Tyres is conveniently located in Gandhinagar, providing top-notch tyres, batteries, and engine oils to customers from <strong>Gandhinagar, Ahmedabad, Vavol, Dhodakuva</strong>, and surrounding nearby areas. Whether you need an urgent tyre replacement, wheel alignment, or routine maintenance, visit the best <strong>tyre shop in Gandhinagar</strong> today! We offer a wide range of premium products and exceptional service to ensure your vehicle is always ready for the road.
+            </p>
+          </div>
+
         </section>
       </main>
       <Footer />

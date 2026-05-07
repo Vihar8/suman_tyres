@@ -10,6 +10,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import CarBatteryReplacement from '@/components/CarBatteryReplacement';
 import BestCarBatteryService from '@/components/BestCarBatteryService';
 import OrderCarBatteryOnline from '@/components/OrderCarBatteryOnline';
+import BrandMarquee from '@/components/BrandMarquee';
 
 // Sample battery products data
 const batteryProducts = [
@@ -50,7 +51,7 @@ const BatteryLanding: React.FC = () => {
 
   return (
     <>
-          {/* <Head>
+      {/* <Head>
       <title>Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices</title>
       <meta
         name="description"
@@ -70,61 +71,95 @@ const BatteryLanding: React.FC = () => {
       <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
       <meta property="og:type" content="website" />
     </Head> */}
-     <Head>
-      <title>
-        Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices & Bulk Deals
-      </title>
+      <Head>
+        <title>
+          Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres
+        </title>
 
-      <meta
-        name="description"
-        content="Get high-quality batteries for 2-wheelers and 4-wheelers at wholesale rates in Gandhinagar, Gujarat. Wide range of trusted brands for bikes and cars. Affordable prices with bulk discounts!"
-      />
+        <meta
+          name="description"
+          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
+        />
 
-      <meta
-        name="keywords"
-        content="Wholesale Bike Batteries Gandhinagar, Car Batteries Wholesale Gujarat, 2 Wheeler Batteries Bulk Prices, Car Batteries Discount Gandhinagar, Best Wholesale Battery Shop Gujarat, Suman Tyres, Bulk Battery Deals Gujarat, Bike Battery Shop Gandhinagar"
-      />
+        <meta
+          name="keywords"
+          content="car battery replacement in minutes, car jump-start on the spot, battery shop in gandhinagar, emergency jump start near me, Top Battery Dealers in Gandhinagar Gujarat, Best Battery Dealers near me, Car Battery Dealers, Rechargeable Battery Dealers, Inverter Battery Dealers, Batteries for Sale in Gandhinagar Gujarat, battery dealers in Ahmedabad, Suman Tyres"
+        />
 
-      <meta name="author" content="Suman Tyres" />
+        <meta name="author" content="Suman Tyres" />
 
-      {/* Open Graph */}
-      <meta
-        property="og:title"
-        content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat"
-      />
-      <meta
-        property="og:description"
-        content="Purchase batteries for 2-wheelers and cars at wholesale rates from Suman Tyres in Gandhinagar. Trusted brands, bulk discounts, and expert service for all vehicle needs."
-      />
-      <meta
-        property="og:image"
-        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-      />
-      <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
-      <meta property="og:type" content="website" />
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres"
+        />
+        <meta
+          property="og:description"
+          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
+        />
+        <meta
+          property="og:image"
+          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+        />
+        <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
+        <meta property="og:type" content="website" />
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat"
-      />
-      <meta
-        name="twitter:description"
-        content="Get top-quality batteries from Amaron, Exide and Many more for bikes and cars at wholesale prices from Suman Tyres, Gandhinagar. Bulk deals and trusted brands for all your battery needs."
-      />
-      <meta
-        name="twitter:image"
-        content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-      />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres"
+        />
+        <meta
+          name="twitter:description"
+          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
+        />
+        <meta
+          name="twitter:image"
+          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+        />
 
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Structured Data for Local Business */}
+        <script type="application/ld+json">
+          {`
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoPartsStore",
+          "name": "Suman Tyres Battery Shop",
+          "description": "Top Battery Dealers in Gandhinagar Gujarat offering Car Battery, Rechargeable Battery, and Inverter Battery.",
+          "image": "https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+          "url": "https://sumantyres.vercel.app/battery",
+          "telephone": "+91-9426636250",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sector 11",
+            "addressLocality": "Gandhinagar",
+            "addressRegion": "Gujarat",
+            "postalCode": "382017",
+            "addressCountry": "IN"
+          },
+          "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
+          "openingHours": "Mo-Sa 09:00-20:00"
+        }
+        `}
+        </script>
+      </Head>
       <Navbar />
       <div>
-      <OrderCarBatteryOnline />
-    </div>
+        <OrderCarBatteryOnline />
+        <BrandMarquee
+          title="Trusted Battery Brands"
+          logos={[
+            { src: "/amaronlogo.jpg", alt: "Amaron" },
+            { src: "/exidelogo.jpeg", alt: "Exide" },
+            { src: "/eloficlogo.jpeg", alt: "Elofic" },
+            { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
+          ]}
+        />
+      </div>
       <hr className="my-4 border-t-2 border-gray-200" />
       <main className="container mx-auto px-4">
         <section className="mb-8">
@@ -140,33 +175,63 @@ const BatteryLanding: React.FC = () => {
               className="flex-1 border-none focus:outline-none"
             />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {filteredBatteries.map(product => (
-              <div key={product.id} className="border border-gray-300 p-4 rounded transition duration-300 hover:shadow-lg">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={300}
-                  height={200}
-                  className="w-full object-cover min-h-40 mb-2 rounded-lg overflow-hidden"
-                />
-                <p className="font-semibold text-lg">{product.name}</p>
-                <p className="text-sm text-gray-600">{product.size}</p>
+              <div
+                key={product.id}
+                className="group bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out flex flex-col relative overflow-hidden"
+              >
+                {/* Subtle gradient overlay at top */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                <div className="bg-gray-50 rounded-xl mb-4 p-3 flex items-center justify-center h-48 overflow-hidden">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={300}
+                    height={200}
+                    className="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+
+                <div className="flex-grow flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-lg leading-tight mb-2 line-clamp-2">{product.name}</h3>
+                    <p className="text-xs font-semibold text-blue-600 bg-blue-50 border border-blue-100 inline-block px-2.5 py-1 rounded-md mb-4 uppercase tracking-wider">{product.size}</p>
+                  </div>
+
+                  <a
+                    href="tel:+919426636250"
+                    className="mt-auto w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-xl text-center shadow-md hover:shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                    Get Quote
+                  </a>
+                </div>
               </div>
             ))}
           </div>
         </section>
         <div>
-      <CarBatteryReplacement />
-    </div>
-    <div>
-      <BestCarBatteryService />
-    </div>
+          <CarBatteryReplacement />
+        </div>
+        <div>
+          <BestCarBatteryService />
+        </div>
         <hr className="my-4 border-t-2 border-gray-200" />
+
+        {/* SEO Content Section */}
+        <section className="bg-gray-50 py-8 px-6 text-center rounded-lg my-8 border border-gray-200">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Top Battery Dealers in Gandhinagar</h2>
+          <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Are you searching for a <strong>battery shop near me</strong> or need a <strong>car jump-start on the spot</strong>? Look no further! Suman Tyres is the leading <strong>battery shop in Gandhinagar</strong>, serving customers across <strong>Gandhinagar, Ahmedabad, Vavol, and Dhodakuva</strong>. If you are stranded, we offer <strong>car battery replacement in minutes</strong> so you can get back on the road. We are authorized <strong>Car Battery Dealers</strong>, <strong>Rechargeable Battery Dealers</strong>, and <strong>Inverter Battery Dealers</strong>. Whether you need an emergency jump start for your vehicle or reliable home power backup, we have a wide range of premium <strong>Batteries for Sale in Gandhinagar Gujarat</strong>. Visit us today for the best prices and expert installation services!
+          </p>
+        </section>
+
       </main>
       <div>
-              <WhatsAppButton />
-            </div>
+        <WhatsAppButton />
+      </div>
       <Footer />
     </>
   );

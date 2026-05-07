@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
     <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
       <img
         src="/whatsapp-logo.png"
-        alt="WhatsApp Logo"
+        alt="Chat with Suman Tyres on WhatsApp"
         width={55}
         height={55}
         className="whatsapp-logo whatsapp-logo-image"

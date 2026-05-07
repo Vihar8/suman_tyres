@@ -104,7 +104,7 @@ const AboutPage: React.FC = () => {
                 src="/sumanty.webp"
                 width={350}
                 height={350}
-                alt="Company Location"
+                alt="Suman Tyres Gandhinagar - Store Location View"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -130,7 +130,7 @@ const AboutPage: React.FC = () => {
           <div className="flex justify-center items-center mt-8">
             <Image
               src="/stferr.webp"
-              alt="Wide Range of Tyres"
+              alt="Wide Range of Tyres, Battery and Engine Oil at Suman Tyres"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"

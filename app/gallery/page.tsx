@@ -94,7 +94,7 @@ const Gallery: React.FC = () => {
                 {img.type === "image" ? (
                   <img
                     src={img.src}
-                    alt={`${img.category} at Sumant Tyres`}
+                    alt={`${img.category} at Suman Tyres Gandhinagar`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 ) : (
@@ -129,6 +129,7 @@ const Gallery: React.FC = () => {
               {filteredMedia[currentIndex].type === "image" ? (
                 <img
                   src={filteredMedia[currentIndex].src}
+                  alt={`Suman Tyres Gandhinagar - ${filteredMedia[currentIndex].category} Gallery Image`}
                   className="max-h-[90vh] object-contain rounded-lg"
                 />
               ) : (
