@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import { Instagram, Youtube, Twitter} from 'lucide-react';
 import Link from 'next/link';
