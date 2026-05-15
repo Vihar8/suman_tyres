@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";

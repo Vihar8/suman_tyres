@@ -1,4 +1,5 @@
 // pages/battery-landing.tsx
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useState } from 'react';
 import Head from 'next/head';
