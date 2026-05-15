@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type BrandMarqueeProps = {
   title: string;
@@ -22,10 +23,12 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({ title, logos }) => {
               key={index} 
               className="flex-shrink-0 w-32 md:w-48 h-24 flex items-center justify-center p-4 bg-gray-50 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer"
             >
-              <img 
+              <Image 
                 src={logo.src} 
                 alt={logo.alt} 
-                className="max-w-full max-h-full object-contain mix-blend-multiply transition-transform duration-300 hover:scale-110"
+                width={150}
+                height={100}
+                className="w-auto h-auto max-w-full max-h-full object-contain mix-blend-multiply transition-transform duration-300 hover:scale-110"
               />
             </div>
           ))}

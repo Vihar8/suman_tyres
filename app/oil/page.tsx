@@ -270,17 +270,19 @@ const OilLanding: React.FC = () => {
                 <div className="bg-gray-50 rounded-xl mb-4 p-3 flex items-center justify-center h-48 overflow-hidden relative">
                   {/* Engine Oil Company Logo Badge */}
                   <div className="absolute top-3 left-3 bg-white shadow-sm z-10 flex items-center justify-center border border-gray-200 rounded-md p-1.5 h-8 w-[4.5rem] overflow-hidden">
-                    <img
+                    <Image
                       src={
                         product.name.toLowerCase().includes('shell') ? '/shelllogo.jpeg' :
                           product.name.toLowerCase().includes('castrol') ? '/castrollogo.jpeg' :
                             product.name.toLowerCase().includes('repsol') ? '/repsollogo.jpg' :
                               product.name.toLowerCase().includes('servo') ? '/servologo.jpg' :
                                 product.name.toLowerCase().includes('elofic') ? '/eloficlogo.jpeg' :
-                                  product.name.toLowerCase().includes('bosch') ? 'https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180' : '/logo.png'
+                                  product.name.toLowerCase().includes('bosch') ? 'https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180' : '/favicon.ico'
                       }
                       alt={product.name.split(' ')[0]}
-                      className="w-full h-full object-contain mix-blend-multiply"
+                      fill
+                      unoptimized
+                      className="object-contain mix-blend-multiply"
                     />
                   </div>
                   <Image

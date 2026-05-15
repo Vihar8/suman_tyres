@@ -1,5 +1,6 @@
 'use client'
 import Head from 'next/head';
+import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { FaGoogle, FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
@@ -129,7 +130,7 @@ export default function Component() {
             <CarouselContent>
               {["animatedtyre.jpg", "animatedoil.jpg", "animatedbattery.jpg", "animatedoilfilter.jpg", "animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
-                  <img
+                  <Image
                     src={`/${src}`}
                     width={900}
                     height={500}
@@ -188,7 +189,7 @@ export default function Component() {
                 { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch battery available at Suman Tyres Gandhinagar" },
               ].map((brand, index) => (
                 <div key={index} className="flex items-center justify-center p-4 bg-gray-100 rounded">
-                  <img src={brand.src} alt={brand.alt} />
+                  <Image src={brand.src} alt={brand.alt} width={150} height={150} className="object-contain w-auto h-auto max-h-24" unoptimized />
                 </div>
               ))}
             </div>
@@ -206,7 +207,7 @@ export default function Component() {
                 </h2>
                 <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full"></div>
                 <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                  Explore our premium range of products tailored for your vehicle's ultimate performance.
+                  Explore our premium range of products tailored for your vehicle&apos;s ultimate performance.
                 </p>
               </div>
               
@@ -223,10 +224,11 @@ export default function Component() {
                     className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5"
                   >
                     <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                      <img
+                      <Image
                         src={item.src}
                         alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
@@ -260,10 +262,13 @@ export default function Component() {
                       <div className="flex justify-between items-center mb-3">
                         <div className="flex items-center">
                           {/* Profile Image and Text */}
-                          <img
+                          <Image
                             src={review.imgUrl}
                             alt={review.name}
-                            className="w-10 h-10 rounded-full object-cover mr-3"
+                            width={40}
+                            height={40}
+                            unoptimized
+                            className="rounded-full object-cover mr-3"
                           />
                           <div>
                             <h3 className="font-semibold text-gray-800">{review.name}</h3>
@@ -329,10 +334,12 @@ export default function Component() {
 
               {/* Right Image */}
               <div className="flex-1 flex justify-centernpm">
-                <img
+                <Image
                   src="/tyre.png"
                   alt="Car and Bike Tyres in Gandhinagar"
-                  className="w-72 h-72 object-contain"
+                  width={288}
+                  height={288}
+                  className="object-contain"
                 />
               </div>
             </div>

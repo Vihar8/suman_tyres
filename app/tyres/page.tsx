@@ -2,6 +2,7 @@
 'use client';
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -316,23 +317,25 @@ const TyreLanding: React.FC = () => {
                 <div className="bg-gray-50 rounded-xl mb-4 p-3 flex items-center justify-center h-48 overflow-hidden relative">
                   {/* Tyre Company Logo Badge */}
                   <div className="absolute top-3 left-3 bg-white shadow-sm z-10 flex items-center justify-center border border-gray-200 rounded-md p-1.5 h-8 w-[4.5rem] overflow-hidden">
-                    <img 
+                    <Image 
                       src={
                         product.name.toLowerCase().includes('ceat') ? '/ceatlogo.jpg' :
                         product.name.toLowerCase().includes('michelin') ? '/michelinlogo.jpg' :
                         product.name.toLowerCase().includes('bridgestone') ? '/bridgestonelogo.jpg' :
                         product.name.toLowerCase().includes('apollo') ? '/apollologo.jpeg' :
-                        product.name.toLowerCase().includes('jk') ? '/jklogo.png' : ''
+                        product.name.toLowerCase().includes('jk') ? '/jklogo.png' : '/favicon.ico'
                       }
                       alt={product.name.split(' ')[0]} 
-                      className="w-full h-full object-contain mix-blend-multiply"
+                      fill
+                      className="object-contain mix-blend-multiply"
                     />
                   </div>
                   
-                  <img 
+                  <Image 
                     src={product.image} 
                     alt={product.name} 
-                    className="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110" 
+                    fill
+                    className="object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110" 
                   />
                 </div>
                 

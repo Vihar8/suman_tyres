@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const BestCarBatteryService: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const BestCarBatteryService: React.FC = () => {
         </a>
       </div>
       <div className="service-image">
-        <img src="/battery1.jpeg" alt="Car Battery Replacement" />
+        <Image src="/battery1.jpeg" alt="Car Battery Replacement" width={500} height={300} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
       </div>
       <style jsx>{`
         .service-container {
