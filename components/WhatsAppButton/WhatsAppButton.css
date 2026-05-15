@@ -1,37 +1,88 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #25D366;
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse-ring 2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #25D366;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-link:hover {
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transform: scale(1.05);
+}
+
 .whatsapp-logo {
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: fixed;
-    border-radius: 15px;
-    background-color: #25D366;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    width: 80px; /* Increased width and height for better visibility on desktop */
-    height: 80px;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
   }
-  
-  .whatsapp-logo:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    background-color: #25D366;
+
+  .whatsapp-logo {
+    width: 45px;
+    height: 45px;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-   .whatsapp-logo {
-      width: 60px;
-      height: 60px;
-      bottom: 15px;
-      right: 15px;
-    }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-container {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
   }
-  
-  @media (max-width: 480px) {
-   .whatsapp-logo {
-      width: 50px;
-      height: 50px;
-      bottom: 10px;
-      right: 10px;
-    }
+
+  .whatsapp-logo {
+    width: 35px;
+    height: 35px;
   }
+}

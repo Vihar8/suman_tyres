@@ -11,7 +11,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import { useEffect, useState } from 'react';
 
 export default function Component() {
-  
+
   const reviews = [
     {
       name: "Daksh Panchal",
@@ -111,7 +111,7 @@ export default function Component() {
         />
         <meta name="twitter:image" content="/sumantyresshop.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-    
+
         {/* Structured Data for Local Business */}
         <script type="application/ld+json">
           {`
@@ -383,7 +383,7 @@ export default function Component() {
               </div>
             </div>
           </div>
-          
+
           {/* SEO Content Section */}
           <div className="bg-white py-12 px-6 text-center border-t border-gray-200">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Your Trusted Local Tyre Shop Near Me</h2>

@@ -1,6 +1,7 @@
 'use client';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import React, { useState } from "react";
 
 type MediaItem = {
@@ -55,6 +56,9 @@ const Gallery: React.FC = () => {
 
   return (
     <>
+      <div>
+        <WhatsAppButton />
+      </div>
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="mb-10">
@@ -71,11 +75,10 @@ const Gallery: React.FC = () => {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                active === cat
-                  ? "bg-[#E11D48] text-white"
-                  : "bg-gray-100 text-black hover:bg-gray-200"
-              }`}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${active === cat
+                ? "bg-[#E11D48] text-white"
+                : "bg-gray-100 text-black hover:bg-gray-200"
+                }`}
             >
               {cat}
             </button>
