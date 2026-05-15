@@ -64,67 +64,70 @@ export default function Component() {
                 </div>
               </div>
             </div>
-              <Image
-                src="/sumantyresshop.jpg"
-                width={400}
-                height={400}
-                alt="Suman Tyres Gandhinagar Shop Contact Image"
-                className="w-full h-full object-cover"
-              />
+            <Image
+              src="/sumantyresshop.jpg"
+              width={400}
+              height={400}
+              alt="Suman Tyres Gandhinagar Shop Contact Image"
+              className="w-full h-full object-cover"
+            />
           </div>
         </Card>
         <br />
-         <div aria-labelledby="clinic-location-heading">
-            <h3 id="clinic-location-heading" className="text-3xl font-semibold text-center text-[#213555] mb-6">
-              Location
-            </h3>
+        <div aria-labelledby="clinic-location-heading">
+          <h3 id="clinic-location-heading" className="text-3xl font-semibold text-center text-[#213555] mb-6">
+            Location
+          </h3>
 
-            <h2
-              className="sr-only"
-            >
-              Visit Suman Tyres in Gandhinagar
-            </h2>
-             {/* Local Business Schema for SEO */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "AutoPartsStore",
-      "name": "Suman Tyres",
-      "description": "Suman Tyres offers wide Range of Tyres, Battery and Engine Oil for all Vehicles in Gandhinagar, Gujarat.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gandhinagar",
-        "addressRegion": "Gujarat",
-        "postalCode": "382010",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 23.2156,
-        "longitude": 72.6369
-      },
-      "url": "https://sumantyres.vercel.app"
-    })}
-  </script>
+          <h2
+            className="sr-only"
+          >
+            Visit Suman Tyres in Gandhinagar
+          </h2>
+          {/* Local Business Schema for SEO */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AutoPartsStore",
+                "name": "Suman Tyres",
+                "description": "Suman Tyres offers wide Range of Tyres, Battery and Engine Oil for all Vehicles in Gandhinagar, Gujarat.",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Gandhinagar",
+                  "addressRegion": "Gujarat",
+                  "postalCode": "382010",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 23.2156,
+                  "longitude": 72.6369
+                },
+                "url": "https://sumantyres.vercel.app"
+              })
+            }}
+          />
 
-            <div className="w-full flex justify-center">
-              <div className="w-full max-w-4xl h-[350px] overflow-hidden rounded-xl shadow-lg border border-gray-200">
-                <iframe
-                  src={mapEmbedUrl}
-                  className="w-full h-full"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Suman Tyres Location on Google Maps"
-                ></iframe>
-              </div>
+          <div className="w-full flex justify-center p-5">
+            <div className="w-full max-w-4xl h-[350px] overflow-hidden rounded-xl shadow-lg border border-gray-200">
+              <iframe
+                src={mapEmbedUrl}
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Suman Tyres Location on Google Maps"
+              ></iframe>
             </div>
           </div>
+        </div>
         <div>
-        <br />
-              <WhatsAppButton />
-            </div>
+          <br />
+          <WhatsAppButton />
+        </div>
         <Footer />
       </div>
     </>

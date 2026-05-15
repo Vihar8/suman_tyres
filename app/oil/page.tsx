@@ -53,7 +53,9 @@ const oilProducts = [
   { id: 39, name: 'Castrol VECTON 15W-40', type: 'Truck', image: '/cased.jpg' },
   { id: 40, name: 'Castrol CRB Multi 15W-40', type: 'Truck', image: '/cased.jpg' },
   { id: 41, name: 'Shell Rimula R2 Extra 15W-40', type: 'Truck', image: '/r4shell.webp' },
-  { id: 42, name: 'Shell Helix Taxi 5W-30', type: 'Car', image: '/530taxi.jpeg' }
+  { id: 42, name: 'Shell Helix Taxi 5W-30', type: 'Car', image: '/530taxi.jpeg' },
+  { id: 43, name: 'Elofic Oil Filter', type: 'Car', image: '/oilfilter.jpg' },
+  { id: 44, name: 'Bosch Oil Filter', type: 'Car', image: '/oilfilter.jpg' }
 ];
 
 const OilLanding: React.FC = () => {
@@ -100,7 +102,7 @@ const OilLanding: React.FC = () => {
           Showing <span className="text-gray-900 font-bold">{indexOfFirstItem + 1}</span> to <span className="text-gray-900 font-bold">{Math.min(indexOfLastItem, filteredOils.length)}</span> of <span className="text-gray-900 font-bold">{filteredOils.length}</span> products
         </div>
         <div className="flex items-center space-x-3">
-          <button 
+          <button
             onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
             disabled={currentPage === 1}
             className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-white border-2 border-gray-100 rounded-2xl font-semibold text-gray-700 shadow-sm hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:opacity-40 disabled:hover:bg-white disabled:hover:border-gray-100 disabled:hover:text-gray-700 disabled:cursor-not-allowed transition-all duration-200 active:scale-95"
@@ -108,12 +110,12 @@ const OilLanding: React.FC = () => {
             <ChevronLeft className="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" />
             <span className="hidden sm:inline">Previous</span>
           </button>
-          
+
           <div className="flex items-center justify-center min-w-[5rem] px-4 py-2.5 bg-gray-50 border-2 border-gray-100 rounded-2xl text-gray-600 font-medium text-sm">
             <span className="font-bold text-gray-900">{currentPage}</span><span className="mx-1.5 text-gray-300">/</span>{totalPages}
           </div>
 
-          <button 
+          <button
             onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
             disabled={currentPage === totalPages}
             className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white rounded-2xl font-semibold shadow-md hover:shadow-lg disabled:opacity-40 disabled:from-gray-300 disabled:to-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all duration-200 active:scale-95 border-2 border-transparent disabled:border-gray-200"
@@ -227,12 +229,14 @@ const OilLanding: React.FC = () => {
       <div>
         <OrderCarOilOnline />
         <BrandMarquee
-          title="Premium Engine Oil Brands"
+          title="Premium Engine Oil & Filter Brands"
           logos={[
             { src: "/shelllogo.jpeg", alt: "Shell" },
             { src: "/castrollogo.jpeg", alt: "Castrol" },
             { src: "/repsollogo.jpg", alt: "Repsol" },
             { src: "/servologo.jpg", alt: "Servo" },
+            { src: "/eloficlogo.jpeg", alt: "Elofic" },
+            { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
           ]}
         />
       </div>
@@ -251,9 +255,9 @@ const OilLanding: React.FC = () => {
               className="flex-1 border-none focus:outline-none"
             />
           </div>
-          
+
           {renderPagination()}
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {currentOils.map(product => (
               <div
@@ -271,7 +275,9 @@ const OilLanding: React.FC = () => {
                         product.name.toLowerCase().includes('shell') ? '/shelllogo.jpeg' :
                           product.name.toLowerCase().includes('castrol') ? '/castrollogo.jpeg' :
                             product.name.toLowerCase().includes('repsol') ? '/repsollogo.jpg' :
-                              product.name.toLowerCase().includes('servo') ? '/servologo.jpg' : ''
+                              product.name.toLowerCase().includes('servo') ? '/servologo.jpg' :
+                                product.name.toLowerCase().includes('elofic') ? '/eloficlogo.jpeg' :
+                                  product.name.toLowerCase().includes('bosch') ? 'https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180' : '/logo.png'
                       }
                       alt={product.name.split(' ')[0]}
                       className="w-full h-full object-contain mix-blend-multiply"
@@ -303,7 +309,7 @@ const OilLanding: React.FC = () => {
               </div>
             ))}
           </div>
-          
+
           {renderPagination()}
 
         </section>

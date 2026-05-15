@@ -1,7 +1,7 @@
-.whatsapp-container {
+.phonecall-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 1000;
   width: 80px;
   height: 80px;
@@ -10,19 +10,19 @@
   justify-content: center;
 }
 
-.whatsapp-pulse {
+.phonecall-pulse {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #25D366;
+  background-color: #007bff;
   border-radius: 50%;
   z-index: -1;
-  animation: pulse-ring 2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: phonecall-pulse-ring 2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-@keyframes pulse-ring {
+@keyframes phonecall-pulse-ring {
   0% {
     transform: scale(0.9);
     opacity: 0.8;
@@ -34,55 +34,39 @@
   }
 }
 
-.whatsapp-link {
+.phonecall-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #25D366;
+  background-color: #007bff;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.whatsapp-link:hover {
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+.phonecall-link:hover {
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
   transform: scale(1.05);
-}
-
-.whatsapp-logo {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .whatsapp-container {
+  .phonecall-container {
     width: 70px;
     height: 70px;
     bottom: 15px;
-    right: 15px;
-  }
-
-  .whatsapp-logo {
-    width: 55px;
-    height: 55px;
+    left: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .whatsapp-container {
+  .phonecall-container {
     width: 70px;
     height: 70px;
     bottom: 15px;
-    right: 15px;
-  }
-
-  .whatsapp-logo {
-    width: 60px;
-    height: 60px;
+    left: 15px;
   }
 }

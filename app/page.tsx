@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Component() {
 
@@ -45,42 +46,11 @@ export default function Component() {
     },
   ];
 
-  const [index, setIndex] = useState(0);
-
-  // Constants for carousel movement calculation
-  const CARD_WIDTH = 320;
-  const GAP_WIDTH = 24; // Tailwind's gap-6 is 1.5rem = 24px
-  const CARD_WIDTH_PLUS_GAP = CARD_WIDTH + GAP_WIDTH;
-
-  // The carousel can only slide up to the point where the last 3 cards are visible.
-  const maxIndex = reviews.length - 3;
-
-  const prevSlide = () => {
-    setIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
-  };
-
-  const nextSlide = () => {
-    setIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-  };
-
-  // Auto slide every 3 seconds (3000ms)
-  useEffect(() => {
-    // Only auto-slide if there are more than 3 reviews
-    if (reviews.length <= 3) return;
-
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [index]);
-
-
   // Only show the carousel if there are reviews
   if (reviews.length === 0) return null;
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden w-full max-w-[100vw]">
       <Head>
         <title>Suman Tyres | Best Tyre Shop in Gandhinagar, Ahmedabad & Near Me</title>
         <meta
@@ -228,85 +198,76 @@ export default function Component() {
           </div>
 
           <hr />
-          <div className='w-full py-12'>
-
-            <h2 className="bg-rose-600 text-white rounded-xl w-fit text-4xl font-bold p-5 mb-8 mx-auto">
-              We Offer
-            </h2>
-            <div className="container grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8">
-              {[
-                { src: "/tyre1.jpeg", title: "Tyre", desc: "Durable and versatile tyres for driving." },
-                { src: "/oil1.jpeg", title: "Oil", desc: "Specially designed for optimal performance." },
-                { src: "/battery1.jpeg", title: "Battery", desc: "Engineered for superior handling and responsiveness for your vehicle." },
-                { src: "/oilfilter.jpg", title: "Oil and Air Filter", desc: "it ensure optimal engine performance by trapping contaminants, maintaining clean oil flow and air intake for smooth operation." },
-              ].map((item, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <img
-                      src={item.src}
-                      width={400}
-                      height={200}
-                      alt={item.title}
-                      className="aspect-video object-cover rounded-t-md"
-                    />
-                  </CardHeader>
-                  <CardContent>
-                    <h3 className="text-xl font-bold">{item.title}</h3>
-                    <p className="text-gray-600">{item.desc}</p>
-                  </CardContent>
-                </Card>
-              ))}
+          <div className='w-full py-16 bg-gray-50'>
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                  Shop by Category
+                </h2>
+                <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full"></div>
+                <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+                  Explore our premium range of products tailored for your vehicle's ultimate performance.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                {[
+                  { src: "/tyre1.jpeg", title: "Premium Tyres", path: "/tyres" },
+                  { src: "/oil1.jpeg", title: "Engine Oils", path: "/oil" },
+                  { src: "/battery1.jpeg", title: "Car Batteries", path: "/battery" },
+                  { src: "/oilfilter.jpg", title: "Filters & Parts", path: "/oil" },
+                ].map((item, index) => (
+                  <Link 
+                    key={index} 
+                    href={item.path} 
+                    className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+                      <img
+                        src={item.src}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex items-end justify-between overflow-hidden">
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white tracking-wide">
+                        {item.title}
+                      </h3>
+                      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-rose-600 flex items-center justify-center text-white transform translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+                        <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
           <hr />
           <h2 className="text-black rounded-xl w-fit text-2xl font-bold mt-5 mx-auto">
             What Our Customers Say
           </h2>
-          <div className="flex justify-center items-center w-full py-8 bg-white">
-            {/* max-w-7xl matches your original code, setting the content width */}
-            <div className="relative w-full max-w-7xl flex items-center justify-center">
-              {/* Left arrow */}
-              <button
-                onClick={prevSlide}
-                // Positioning the arrow slightly outside the content area
-                className="absolute -left-1 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                <FaChevronLeft size={20} className="text-gray-700" />
-              </button>
-
-              {/* Review cards Wrapper - Creates the viewport for the three cards */}
-              <div
-                className="overflow-hidden px-8"
-                style={{ width: `${(CARD_WIDTH * 3) + (GAP_WIDTH * 4)}px` }}
-              >
-                <div
-                  // This inner div holds ALL the review cards in a single row
-                  className="flex gap-6 transition-transform duration-700 ease-in-out"
-                  // Applies the translation to slide the entire row
-                  style={{
-                    transform: `translateX(-${index * CARD_WIDTH_PLUS_GAP}px)`
-                  }}
-                >
-                  {reviews.map((review, i) => (
-                    <div
-                      key={i}
-                      // Cards are full opacity and scaled to match the image
-                      className="bg-white rounded-xl shadow-md p-5 w-[320px] min-h-[230px] border shrink-0"
-                    >
+          <div className="flex justify-center items-center w-full py-8 bg-white px-4 md:px-12">
+            <Carousel className="w-full max-w-7xl relative" opts={{ align: "start", loop: true }}>
+              <CarouselContent className="-ml-4">
+                {reviews.map((review, i) => (
+                  <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/3">
+                    <div className="bg-white rounded-xl shadow-md p-5 h-full border flex flex-col">
                       {/* Header: Profile, Name, Date, Google Icon */}
                       <div className="flex justify-between items-center mb-3">
                         <div className="flex items-center">
                           {/* Profile Image and Text */}
-                          <div className="flex items-center">
-                            <img
-                              src={review.imgUrl}
-                              alt={review.name}
-                              className="w-10 h-10 rounded-full object-cover mr-3"
-                            />
-                            <div>
-                              <h3 className="font-semibold text-gray-800">{review.name}</h3>
-                              <p className="text-sm text-gray-500">{review.date}</p>
-                            </div>
+                          <img
+                            src={review.imgUrl}
+                            alt={review.name}
+                            className="w-10 h-10 rounded-full object-cover mr-3"
+                          />
+                          <div>
+                            <h3 className="font-semibold text-gray-800">{review.name}</h3>
+                            <p className="text-sm text-gray-500">{review.date}</p>
                           </div>
                         </div>
                         {/* Google Icon (Top Right) */}
@@ -323,23 +284,16 @@ export default function Component() {
                       </div>
 
                       {/* Review text */}
-                      <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap">
+                      <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap flex-1">
                         {review.text}
                       </p>
                     </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Right arrow */}
-              <button
-                onClick={nextSlide}
-                // Positioning the arrow slightly outside the content area
-                className="absolute -right-1 bg-white border rounded-full shadow-lg p-2 hover:bg-gray-100 transition-all duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                <FaChevronRight size={20} className="text-gray-700" />
-              </button>
-            </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex -left-4 lg:-left-12" />
+              <CarouselNext className="hidden md:flex -right-4 lg:-right-12" />
+            </Carousel>
           </div>
           <hr />
           <div className="bg-gray-50 py-12 px-6">
