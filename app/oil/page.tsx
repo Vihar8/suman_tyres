@@ -231,19 +231,19 @@ const OilLanding: React.FC = () => {
         <BrandMarquee
           title="Premium Engine Oil & Filter Brands"
           logos={[
-            { src: "/shelllogo.jpeg", alt: "Shell" },
-            { src: "/castrollogo.jpeg", alt: "Castrol" },
-            { src: "/repsollogo.jpg", alt: "Repsol" },
-            { src: "/servologo.jpg", alt: "Servo" },
-            { src: "/eloficlogo.jpeg", alt: "Elofic" },
-            { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
+            { src: "/shelllogo.jpeg", alt: "Shell Engine Oil Dealer" },
+            { src: "/castrollogo.jpeg", alt: "Castrol Engine Oil Dealer" },
+            { src: "/repsollogo.jpg", alt: "Repsol Engine Oil Dealer" },
+            { src: "/servologo.jpg", alt: "Servo Engine Oil Dealer" },
+            { src: "/eloficlogo.jpeg", alt: "Elofic Oil Filter Dealer" },
+            { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch Oil Filter Dealer" },
           ]}
         />
       </div>
       <hr className="my-4 border-t-2 border-gray-200" />
       <main className="container mx-auto px-4">
         <section id="product-grid" className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Our Engine Oil Products</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Engine Oil and oil filter Products</h2>
           {/* Search bar */}
           <div className="flex items-center border-2 border-red-800 rounded-full px-4 py-2 mb-4 shadow-sm">
             <SearchIcon className="w-5 h-5 text-gray-400 mr-2" />
@@ -279,7 +279,7 @@ const OilLanding: React.FC = () => {
                                 product.name.toLowerCase().includes('elofic') ? '/eloficlogo.jpeg' :
                                   product.name.toLowerCase().includes('bosch') ? 'https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180' : '/favicon.ico'
                       }
-                      alt={product.name.split(' ')[0]}
+                      alt={`${product.name.split(' ')[0]} Authorized Oil Dealer Logo`}
                       fill
                       unoptimized
                       className="object-contain mix-blend-multiply"
@@ -287,7 +287,7 @@ const OilLanding: React.FC = () => {
                   </div>
                   <Image
                     src={product.image}
-                    alt={product.name}
+                    alt={`Buy ${product.name} Engine Oil - Best Price at Suman Tyres Gandhinagar`}
                     width={200}
                     height={200}
                     className="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110"

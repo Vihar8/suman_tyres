@@ -9,7 +9,7 @@ const OrderCarBatteryOnline: React.FC = () => {
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-20 pointer-events-none">
         <div className="w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left space-y-4">
@@ -22,10 +22,10 @@ const OrderCarBatteryOnline: React.FC = () => {
           <p className="text-slate-400 max-w-lg mx-auto md:mx-0 text-base md:text-lg">
             On Suman Tyres, you can also search using our battery shop. Select to have your car battery delivered and fitted at a preferred garage, or simply delivered to your doorstep.
           </p>
-          
+
           <div className="pt-6 flex justify-center md:justify-start">
-            <a 
-              href="tel:+919426636250" 
+            <a
+              href="tel:+919426636250"
               className="inline-flex items-center gap-3 px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full shadow-lg shadow-blue-600/30 hover:shadow-cyan-500/50 hover:scale-105 active:scale-95 transition-all duration-300 group"
             >
               <PhoneCall className="w-6 h-6 group-hover:animate-pulse" />
@@ -36,20 +36,20 @@ const OrderCarBatteryOnline: React.FC = () => {
 
         {/* Images */}
         <div className="flex-1 flex justify-center items-center gap-4 relative pt-8 md:pt-0">
-          <img 
-            src="/5lbe.webp" 
-            alt="Exide Xplore Battery" 
-            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white" 
+          <img
+            src="/5lbe.webp"
+            alt="Exide Xplore Bike Battery wholesale price at Suman Tyres Gandhinagar"
+            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white"
           />
-          <img 
-            src="/acar.png" 
-            alt="Amaron Battery" 
-            className="w-28 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-2" 
+          <img
+            src="/acar.png"
+            alt="Amaron Car Battery authorized dealer in Gandhinagar Gujarat"
+            className="w-28 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-2"
           />
-          <img 
-            src="/ecar.jpeg" 
-            alt="Exide Mileage Battery" 
-            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-1" 
+          <img
+            src="/ecar.jpeg"
+            alt="Exide Mileage Car Battery replacement service by Suman Tyres"
+            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-1"
           />
         </div>
       </div>

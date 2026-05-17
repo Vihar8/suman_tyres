@@ -11,6 +11,32 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { User } from 'lucide-react';
+import FAQSection from '@/components/FAQSection';
+
+const ReviewerImage = ({ src, name }: { src: string; name: string }) => {
+  const [error, setError] = useState(false);
+
+  if (!src || error) {
+    return (
+      <div className="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center mr-3 text-gray-400 shrink-0">
+        <User className="w-6 h-6" />
+      </div>
+    );
+  }
+
+  return (
+    <Image
+      src={src}
+      alt={`${name} Profile`}
+      width={40}
+      height={40}
+      unoptimized
+      onError={() => setError(true)}
+      className="rounded-full object-cover mr-3 w-10 h-10 shrink-0"
+    />
+  );
+};
 
 export default function Component() {
 
@@ -210,7 +236,7 @@ export default function Component() {
                   Explore our premium range of products tailored for your vehicle&apos;s ultimate performance.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {[
                   { src: "/tyre1.jpeg", title: "Premium Tyres", path: "/tyres" },
@@ -218,9 +244,9 @@ export default function Component() {
                   { src: "/battery1.jpeg", title: "Car Batteries", path: "/battery" },
                   { src: "/oilfilter.jpg", title: "Filters & Parts", path: "/oil" },
                 ].map((item, index) => (
-                  <Link 
-                    key={index} 
-                    href={item.path} 
+                  <Link
+                    key={index}
+                    href={item.path}
                     className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5"
                   >
                     <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -232,7 +258,7 @@ export default function Component() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    
+
                     <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex items-end justify-between overflow-hidden">
                       <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white tracking-wide">
                         {item.title}
@@ -249,9 +275,13 @@ export default function Component() {
             </div>
           </div>
           <hr />
-          <h2 className="text-black rounded-xl w-fit text-2xl font-bold mt-5 mx-auto">
-            What Our Customers Say
-          </h2>
+          <div className="text-center mt-12 mb-8 px-4">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+              What Our Customers Say
+            </h2>
+            <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full mb-4"></div>
+          </div>
+
           <div className="flex justify-center items-center w-full py-8 bg-white px-4 md:px-12">
             <Carousel className="w-full max-w-7xl relative" opts={{ align: "start", loop: true }}>
               <CarouselContent className="-ml-4">
@@ -262,14 +292,7 @@ export default function Component() {
                       <div className="flex justify-between items-center mb-3">
                         <div className="flex items-center">
                           {/* Profile Image and Text */}
-                          <Image
-                            src={review.imgUrl}
-                            alt={review.name}
-                            width={40}
-                            height={40}
-                            unoptimized
-                            className="rounded-full object-cover mr-3"
-                          />
+                          <ReviewerImage src={review.imgUrl} name={review.name} />
                           <div>
                             <h3 className="font-semibold text-gray-800">{review.name}</h3>
                             <p className="text-sm text-gray-500">{review.date}</p>
@@ -344,6 +367,8 @@ export default function Component() {
               </div>
             </div>
           </div>
+
+          <FAQSection />
 
           {/* SEO Content Section */}
           <div className="bg-white py-12 px-6 text-center border-t border-gray-200">

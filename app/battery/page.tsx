@@ -108,7 +108,7 @@ const BatteryLanding: React.FC = () => {
           Showing <span className="text-gray-900 font-bold">{indexOfFirstItem + 1}</span> to <span className="text-gray-900 font-bold">{Math.min(indexOfLastItem, filteredBatteries.length)}</span> of <span className="text-gray-900 font-bold">{filteredBatteries.length}</span> products
         </div>
         <div className="flex items-center space-x-3">
-          <button 
+          <button
             onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
             disabled={currentPage === 1}
             className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-white border-2 border-gray-100 rounded-2xl font-semibold text-gray-700 shadow-sm hover:border-blue-200 hover:bg-blue-50 hover:text-blue-600 disabled:opacity-40 disabled:hover:bg-white disabled:hover:border-gray-100 disabled:hover:text-gray-700 disabled:cursor-not-allowed transition-all duration-200 active:scale-95"
@@ -116,15 +116,15 @@ const BatteryLanding: React.FC = () => {
             <ChevronLeft className="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
             <span className="hidden sm:inline">Previous</span>
           </button>
-          
+
           <div className="flex items-center justify-center min-w-[5rem] px-4 py-2.5 bg-gray-50 border-2 border-gray-100 rounded-2xl text-gray-600 font-medium text-sm">
             <span className="font-bold text-gray-900">{currentPage}</span><span className="mx-1.5 text-gray-300">/</span>{totalPages}
           </div>
 
-          <button 
+          <button
             onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white rounded-2xl font-semibold shadow-md hover:shadow-lg disabled:opacity-40 disabled:from-gray-300 disabled:to-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all duration-200 active:scale-95 border-2 border-transparent disabled:border-gray-200"
+            className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white rounded-2xl font-semibold shadow-md hover:shadow-lg disabled:opacity-40 disabled:from-gray-300 disabled:to-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all duration-200 active:scale-95 border-2 border-transparent disabled:border-gray-200"
           >
             <span className="hidden sm:inline">Next</span>
             <ChevronRight className="w-5 h-5 text-white/90 group-disabled:text-gray-400" />
@@ -238,10 +238,8 @@ const BatteryLanding: React.FC = () => {
         <BrandMarquee
           title="Trusted Battery Brands"
           logos={[
-            { src: "/amaronlogo.jpg", alt: "Amaron" },
-            { src: "/exidelogo.jpeg", alt: "Exide" },
-            { src: "/eloficlogo.jpeg", alt: "Elofic" },
-            { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch" },
+            { src: "/amaronlogo.jpg", alt: "Amaron Battery Authorized Dealer" },
+            { src: "/exidelogo.jpeg", alt: "Exide Battery Authorized Dealer" },
           ]}
         />
       </div>
@@ -275,18 +273,18 @@ const BatteryLanding: React.FC = () => {
                 <div className="bg-gray-50 rounded-xl mb-4 p-3 flex items-center justify-center h-48 overflow-hidden relative">
                   {/* Battery Company Logo Badge */}
                   <div className="absolute top-3 left-3 bg-white shadow-sm z-10 flex items-center justify-center border border-gray-200 rounded-md p-1.5 h-8 w-[4.5rem] overflow-hidden">
-                    <img 
+                    <img
                       src={
                         product.name.toLowerCase().includes('amaron') ? '/amaronlogo.jpg' :
-                        product.name.toLowerCase().includes('exide') ? '/exidelogo.jpeg' : ''
+                          product.name.toLowerCase().includes('exide') ? '/exidelogo.jpeg' : ''
                       }
-                      alt={product.name.split(' ')[0]} 
+                      alt={`${product.name.split(' ')[0]} Authorized Dealer Logo`}
                       className="w-full h-full object-contain mix-blend-multiply"
                     />
                   </div>
                   <Image
                     src={product.image}
-                    alt={product.name}
+                    alt={`Buy ${product.name} ${product.size} - Best Price at Suman Tyres Gandhinagar`}
                     width={300}
                     height={200}
                     className="max-h-full max-w-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110"
@@ -311,7 +309,7 @@ const BatteryLanding: React.FC = () => {
             ))}
           </div>
 
-          
+
           {renderPagination()}
 
         </section>
