@@ -9,6 +9,7 @@ module.exports = {
   siteUrl: 'https://sumantyres.in',
   generateRobotsTxt: true,
   sitemapSize: 7000,
+  generateIndexSitemap: false,
   changefreq: 'weekly',
   priority: 0.7,
   robotsTxtOptions: {
