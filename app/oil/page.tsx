@@ -247,7 +247,7 @@ const OilLanding: React.FC = () => {
         <hr className="my-4 border-t-2 border-gray-200" />
 
         {/* SEO Content Section */}
-        <section className="bg-gray-50 py-8 px-6 text-center rounded-lg my-8 border border-gray-200">
+        <section className="sr-only bg-gray-50 py-8 px-6 text-center rounded-lg my-8 border border-gray-200">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Leading Engine Oil Dealers in Gandhinagar Gujarat</h2>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Searching for reliable <strong>Engine Oil Dealers near me</strong>? Suman Tyres is proud to be one of the top <strong>Automotive Lubricant Suppliers in Gujarat</strong>. Conveniently located in Gandhinagar, we serve a wide range of customers across <strong>Gandhinagar, Ahmedabad, Vavol, Dhodakuva</strong>, and nearby areas. We stock premium synthetic, semi-synthetic, and mineral engine oils from the best brands to keep your cars, bikes, and commercial vehicles running smoothly. Visit our shop today for top-quality lubricants at unbeatable prices!

@@ -99,7 +99,7 @@ export default function Component() {
             },
             "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
             "openingHours": [
-              "Mo-Sa 09:00-21:00",
+              "Mo-Sa 09:30-19:00",
               "Su 09:00-16:00"
             ],
             "priceRange": "₹₹",
@@ -333,7 +333,7 @@ export default function Component() {
           <FAQSection />
 
           {/* SEO Content Section */}
-          <div className="bg-white py-12 px-6 text-center border-t border-gray-200">
+          <div className="sr-only bg-white py-12 px-6 text-center border-t border-gray-200">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Your Trusted Local Tyre Shop Near Me</h2>
             <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Searching for a <strong>tyre shop near me</strong>? Suman Tyres is conveniently located in Gandhinagar, providing top-notch tyres, batteries, and engine oils to customers from <strong>Gandhinagar, Ahmedabad, Vavol, Dhodakuva</strong>, and surrounding nearby areas. Whether you need an urgent tyre replacement, wheel alignment, or routine maintenance, visit the best <strong>tyre shop in Gandhinagar</strong> today! We offer a wide range of premium products and exceptional service to ensure your vehicle is always ready for the road.

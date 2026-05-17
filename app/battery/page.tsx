@@ -250,7 +250,7 @@ const BatteryLanding: React.FC = () => {
         <hr className="my-4 border-t-2 border-gray-200" />
 
         {/* SEO Content Section */}
-        <section className="bg-gray-50 py-8 px-6 text-center rounded-lg my-8 border border-gray-200">
+        <section className="sr-only bg-gray-50 py-8 px-6 text-center rounded-lg my-8 border border-gray-200">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Top Battery Dealers in Gandhinagar</h2>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Are you searching for a <strong>battery shop near me</strong> or need a <strong>car jump-start on the spot</strong>? Look no further! Suman Tyres is the leading <strong>battery shop in Gandhinagar</strong>, serving customers across <strong>Gandhinagar, Ahmedabad, Vavol, and Dhodakuva</strong>. If you are stranded, we offer <strong>car battery replacement in minutes</strong> so you can get back on the road. We are authorized <strong>Car Battery Dealers</strong>, <strong>Rechargeable Battery Dealers</strong>, and <strong>Inverter Battery Dealers</strong>. Whether you need an emergency jump start for your vehicle or reliable home power backup, we have a wide range of premium <strong>Batteries for Sale in Gandhinagar Gujarat</strong>. Visit us today for the best prices and expert installation services!

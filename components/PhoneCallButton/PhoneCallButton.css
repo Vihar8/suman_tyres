@@ -1,6 +1,6 @@
 .phonecall-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 130px;
   left: 20px;
   z-index: 1000;
   width: 80px;
@@ -57,7 +57,7 @@
   .phonecall-container {
     width: 70px;
     height: 70px;
-    bottom: 15px;
+    bottom: 115px;
     left: 15px;
   }
 }
@@ -66,7 +66,7 @@
   .phonecall-container {
     width: 70px;
     height: 70px;
-    bottom: 15px;
+    bottom: 115px;
     left: 15px;
   }
 }

@@ -48,46 +48,77 @@ export default function Navbar() {
     <>
       {/* Top Navbar */}
       <header className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="flex items-center justify-between px-4 py-3">
-          {/* Logo */}
-          <Link href="/">
-            <img src="/logo.png" alt="logo" className="h-24" />
-          </Link>
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+          {/* Logo & Contact Info Group */}
+          <div className="flex items-center gap-4 lg:gap-5 xl:gap-8">
+            <Link href="/" className="shrink-0">
+              <img src="/logo.png" alt="logo" className="h-14 md:h-18 lg:h-20 xl:h-24 object-contain" />
+            </Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8">
+            {/* Desktop & Tablet Header Info Widgets (Visible from md screen up) */}
+            <div className="hidden md:flex items-center gap-4 lg:gap-5 xl:gap-6 border-l border-gray-150 pl-4 lg:pl-5 xl:pl-8">
+              {/* Phone Widget */}
+              <a href="tel:+919426636250" className="flex items-center gap-2.5 xl:gap-3.5 group shrink-0">
+                <svg className="w-5 h-8 xl:w-6 xl:h-9 text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2.5" ry="2.5" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="3" strokeLinecap="round" />
+                  <line x1="10" y1="4" x2="14" y2="4" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+                <div className="text-left">
+                  <span className="block text-[10px] xl:text-[11px] font-bold text-[#0f3661] uppercase tracking-wider leading-none mb-1">CALL US TODAY!</span>
+                  <span className="block text-lg xl:text-xl font-black text-slate-900 tracking-tight leading-none group-hover:text-red-600 transition-colors">9426636250</span>
+                </div>
+              </a>
+
+              {/* Hours Widget */}
+              <div className="flex items-center gap-2 xl:gap-3 bg-red-50/50 px-3.5 py-2.5 xl:px-5 xl:py-3 rounded-[16px] xl:rounded-[20px] shrink-0">
+                <svg className="w-5 h-5 xl:w-6 xl:h-6 text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <div className="flex flex-col text-left">
+                  <span className="text-[9px] xl:text-[10px] font-black text-red-700 uppercase tracking-wider leading-none mb-1 xl:mb-1.5">WE ARE OPEN!</span>
+                  <span className="text-xs xl:text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:30 – 7:00</span>
+                  <span className="text-[10px] xl:text-[11px] font-bold text-gray-500 tracking-tight leading-none">Sunday 9:00 – 4:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Menu (Visible from lg screen up) */}
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => {
               const Icon = link.icon;
               return (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`flex items-center gap-1.5 text-sm font-medium ${pathname === link.path
+                className={`flex items-center gap-1 xl:gap-1.5 text-xs xl:text-sm font-medium ${pathname === link.path
                   ? "text-red-600 border-b-2 border-red-600 pb-1"
                   : "text-gray-700 hover:text-red-600"
                   }`}
               >
-                {Icon && <Icon className="w-4 h-4" />}
+                {Icon && <Icon className="w-3.5 h-3.5 xl:w-4 xl:h-4" />}
                 {link.name}
               </Link>
             )})}
 
             <a
               href="tel:+919426636250"
-              className="bg-red-600 text-white px-4 py-2 rounded-full text-sm"
+              className="bg-red-600 text-white px-3 py-1.5 xl:px-4 xl:py-2 rounded-full text-xs xl:text-sm font-semibold hover:bg-red-700 transition-colors"
             >
               Call Now
             </a>
           </nav>
 
-          {/* Hamburger */}
-          <button onClick={() => setMenuOpen(true)} className="md:hidden p-2 text-2xl">
+          {/* Hamburger (Visible on mobile and tablet, hidden on desktop lg and above) */}
+          <button onClick={() => setMenuOpen(true)} className="lg:hidden p-2 text-2xl text-gray-700 hover:text-red-600 transition-colors">
             ☰
           </button>
         </div>
       </header>
 
-      {/* MOBILE SIDE DRAWER */}
+      {/* MOBILE & TABLET SIDE DRAWER */}
       {/* Dark Backdrop */}
       <div
         className={`fixed inset-0 z-50 bg-black/50 transition-opacity duration-300 ${menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -127,11 +158,40 @@ export default function Navbar() {
             )})}
           </div>
 
+          {/* Mobile Info Widgets */}
+          <div className="mt-auto px-6 py-6 border-t border-gray-150 bg-gray-50/80 space-y-4">
+            {/* Phone Widget */}
+            <a href="tel:+919426636250" className="flex items-center gap-3.5 group shrink-0">
+              <svg className="w-6 h-9 text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="2.5" ry="2.5" />
+                <line x1="12" y1="18" x2="12.01" y2="18" strokeWidth="3" strokeLinecap="round" />
+                <line x1="10" y1="4" x2="14" y2="4" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+              <div className="text-left">
+                <span className="block text-[11px] font-bold text-[#0f3661] uppercase tracking-wider leading-none mb-1">CALL US TODAY!</span>
+                <span className="block text-xl font-black text-slate-900 tracking-tight leading-none group-hover:text-red-600 transition-colors">9426636250</span>
+              </div>
+            </a>
+
+            {/* Hours Widget */}
+            <div className="flex items-center gap-3 bg-red-50/50 px-5 py-3 rounded-[20px]">
+              <svg className="w-6 h-6 text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] font-black text-red-700 uppercase tracking-wider leading-none mb-1.5">WE ARE OPEN!</span>
+                <span className="text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:30 – 7:00</span>
+                <span className="text-[11px] font-bold text-gray-500 tracking-tight leading-none">Sunday 9:00 – 4:00</span>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom CTA */}
-          <div className="mt-auto px-6 pb-8">
+          <div className="px-6 pb-8 bg-gray-50/80">
             <a
               href="tel:+919426636250"
-              className="block text-center bg-red-600 text-white py-3 rounded-lg text-md font-medium"
+              className="block text-center bg-red-600 text-white py-3 rounded-lg text-md font-medium hover:bg-red-700 transition-colors"
             >
               Call Now
             </a>

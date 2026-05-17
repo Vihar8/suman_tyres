@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
         "addressCountry": "IN"
       },
       "openingHours": [
-        "Mo-Sa 09:00-21:00",
+        "Mo-Sa 09:30-19:00",
         "Su 09:00-16:00"
       ],
       "priceRange": "₹₹",
