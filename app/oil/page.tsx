@@ -1,7 +1,6 @@
 // pages/oil-landing.tsx
 'use client';
 import React, { useState } from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -130,101 +129,31 @@ const OilLanding: React.FC = () => {
 
   return (
     <>
-      {/* <Head>
-  <title>Suman Tyres - Premium Engine Oils in Gandhinagar, Gujarat | Car & Bike Oil Shop</title>
-  <meta
-    name="description"
-    content="Discover high-quality engine oils at Suman Tyres in Gandhinagar, Gujarat. Wide range of synthetic, mineral, and scooter oils for cars, bikes, and trucks. Affordable rates & trusted brands!"
-  />
-  <meta
-    name="keywords"
-    content="Engine Oils Gandhinagar, Car Oil Gujarat, Bike Oil Gandhinagar, Synthetic Engine Oil, Mineral Oil, Car & Bike Lubricants, Best Oil Shop in Gandhinagar, Suman Tyres, Oil Dealer Gujarat"
-  />
-  <meta name="author" content="Suman Tyres" />
-  <meta property="og:title" content="Suman Tyres - Best Engine Oils in Gandhinagar, Gujarat" />
-  <meta
-    property="og:description"
-    content="Visit Suman Tyres in Gandhinagar for a wide selection of engine oils suitable for cars, bikes, trucks, and scooters. Premium brands, affordable prices, expert advice!"
-  />
-  <meta property="og:image" content="/sumantyresshop.jpg" />
-  <meta property="og:url" content="https://sumantyres.in/oil" />
-  <meta property="og:type" content="website" />
-</Head> */}
-      <Head>
-        <title>
-          Engine Oil Dealers in Gandhinagar & Near Me | Automotive Lubricant Suppliers
-        </title>
-
-        <meta
-          name="description"
-          content="Looking for Engine Oil Dealers near me? Suman Tyres is the top Automotive Lubricant Supplier serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
-        />
-
-        <meta
-          name="keywords"
-          content="Engine Oil Dealers in Gandhinagar Gujarat, Automotive Lubricant Suppliers Gujarat, Engine Oil Dealers near me, Automotive Lubricant Suppliers near me, Engine Oils Gandhinagar, Car Oil Gujarat, Bike Oil Gandhinagar, Synthetic Engine Oil, Mineral Oil, Car & Bike Lubricants, Suman Tyres, Oil Dealer Gandhinagar, oil dealers in Ahmedabad, oil dealers in Vavol, oil dealers in Dhodakuva"
-        />
-
-        <meta name="author" content="Suman Tyres" />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Engine Oil Dealers in Gandhinagar & Near Me | Automotive Lubricant Suppliers"
-        />
-        <meta
-          property="og:description"
-          content="Looking for Engine Oil Dealers near me? Suman Tyres is the top Automotive Lubricant Supplier serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
-        />
-        <meta
-          property="og:image"
-          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-        />
-        <meta property="og:url" content="https://sumantyres.in/oil" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Engine Oil Dealers in Gandhinagar & Near Me | Automotive Lubricant Suppliers"
-        />
-        <meta
-          name="twitter:description"
-          content="Looking for Engine Oil Dealers near me? Suman Tyres is the top Automotive Lubricant Supplier serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
-        />
-        <meta
-          name="twitter:image"
-          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Structured Data for Local Business */}
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "AutoPartsStore",
-          "name": "Suman Tyres Engine Oil Shop",
-          "description": "Leading Engine Oil Dealers in Gandhinagar Gujarat and Automotive Lubricant Suppliers.",
-          "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
-          "url": "https://sumantyres.in/oil",
-          "telephone": "+91-9426636250",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Sector 11",
-            "addressLocality": "Gandhinagar",
-            "addressRegion": "Gujarat",
-            "postalCode": "382017",
-            "addressCountry": "IN"
-          },
-          "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
-          "openingHours": "Mo-Sa 09:00-20:00"
-        }
-        `}
-        </script>
-      </Head>
+      {/* Structured Data for Local Business */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoPartsStore",
+            "name": "Suman Tyres Engine Oil Shop",
+            "description": "Leading Engine Oil Dealers in Gandhinagar Gujarat and Automotive Lubricant Suppliers.",
+            "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+            "url": "https://sumantyres.in/oil",
+            "telephone": "+91-9426636250",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sector 11",
+              "addressLocality": "Gandhinagar",
+              "addressRegion": "Gujarat",
+              "postalCode": "382011",
+              "addressCountry": "IN"
+            },
+            "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
+            "openingHours": "Mo-Sa 09:00-20:00"
+          })
+        }}
+      />
       <Navbar />
       <div>
         <OrderCarOilOnline />

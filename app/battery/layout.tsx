@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://sumantyres.in/battery"
+  },
   title: "Top Battery Dealers in Gandhinagar Gujarat | Best Battery Dealers Near Me | Suman Tyres",
   description:
     "Suman Tyres in Gandhinagar Gujarat (Sector 11). Find ✓Car Battery Dealers, ✓Inverter Battery, ✓Batteries for Sale near me. Get Address, Reviews & Best Prices!",
