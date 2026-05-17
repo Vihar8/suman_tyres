@@ -97,7 +97,7 @@ export default function Component() {
           content="Looking for a tyre shop near me? Suman Tyres offers top-quality tyres, batteries, and engine oils in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
         />
         <meta property="og:image" content="/sumantyresshop.jpg" />
-        <meta property="og:url" content="https://sumantyres.vercel.app/" />
+        <meta property="og:url" content="https://sumantyres.in/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -118,7 +118,7 @@ export default function Component() {
       "name": "Suman Tyres",
       "description": "Leading tyre, oil, and battery shop serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva.",
       "image": "/sumantyresshop.jpg",
-      "url": "https://sumantyres.vercel.app/",
+      "url": "https://sumantyres.in/",
       "telephone": "+91-9426636250",
       "address": {
         "@type": "PostalAddress",

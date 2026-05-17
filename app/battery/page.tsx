@@ -153,7 +153,7 @@ const BatteryLanding: React.FC = () => {
         content="Purchase batteries for 2-wheelers and cars at wholesale rates from Suman Tyres in Gandhinagar, Gujarat. Trusted brands, bulk discounts, and expert service for all vehicle needs!"
       />
       <meta property="og:image" content="/sumantyresshop.jpg" />
-      <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
+      <meta property="og:url" content="https://sumantyres.in/battery" />
       <meta property="og:type" content="website" />
     </Head> */}
       <Head>
@@ -184,9 +184,9 @@ const BatteryLanding: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
         />
-        <meta property="og:url" content="https://sumantyres.vercel.app/battery" />
+        <meta property="og:url" content="https://sumantyres.in/battery" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -201,7 +201,7 @@ const BatteryLanding: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
         />
 
         <link rel="icon" href="/favicon.ico" />
@@ -215,8 +215,8 @@ const BatteryLanding: React.FC = () => {
           "@type": "AutoPartsStore",
           "name": "Suman Tyres Battery Shop",
           "description": "Top Battery Dealers in Gandhinagar Gujarat offering Car Battery, Rechargeable Battery, and Inverter Battery.",
-          "image": "https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
-          "url": "https://sumantyres.vercel.app/battery",
+          "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+          "url": "https://sumantyres.in/battery",
           "telephone": "+91-9426636250",
           "address": {
             "@type": "PostalAddress",

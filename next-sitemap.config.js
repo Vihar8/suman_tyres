@@ -1,12 +1,12 @@
 // module.exports = {
-//   siteUrl: 'https://sumantyres.vercel.app',
+//   siteUrl: 'https://sumantyres.in',
 //   generateRobotsTxt: true,
 //   sitemapSize: 7000,
 // };
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://sumantyres.vercel.app',
+  siteUrl: 'https://sumantyres.in',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: 'weekly',

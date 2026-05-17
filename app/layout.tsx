@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     title: "Suman Tyres – Your One-Stop Tyre Shop in Gandhinagar",
     description:
       "Explore a comprehensive range of tyres, batteries, and automotive accessories at Suman Tyres, serving Gandhinagar since 1997.",
-    url: "https://sumantyres.vercel.app/",
+    url: "https://sumantyres.in/",
     type: "website",
     locale: "en_IN",
     siteName: "Suman Tyres",
     images: [
       {
-        url: "https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+        url: "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
         width: 1200,
         height: 630,
         alt: "Suman Tyres Storefront"
@@ -78,9 +78,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "TireShop",
               name: "Suman Tyres",
-              image: "https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
-              "@id": "https://sumantyres.vercel.app",
-              url: "https://sumantyres.vercel.app",
+              image: "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+              "@id": "https://sumantyres.in",
+              url: "https://sumantyres.in",
               telephone: "+91-9426636250",
               address: {
                 "@type": "PostalAddress",

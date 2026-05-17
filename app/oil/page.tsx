@@ -147,7 +147,7 @@ const OilLanding: React.FC = () => {
     content="Visit Suman Tyres in Gandhinagar for a wide selection of engine oils suitable for cars, bikes, trucks, and scooters. Premium brands, affordable prices, expert advice!"
   />
   <meta property="og:image" content="/sumantyresshop.jpg" />
-  <meta property="og:url" content="https://sumantyres.vercel.app/oil" />
+  <meta property="og:url" content="https://sumantyres.in/oil" />
   <meta property="og:type" content="website" />
 </Head> */}
       <Head>
@@ -178,9 +178,9 @@ const OilLanding: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
         />
-        <meta property="og:url" content="https://sumantyres.vercel.app/oil" />
+        <meta property="og:url" content="https://sumantyres.in/oil" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
@@ -195,7 +195,7 @@ const OilLanding: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
+          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -208,8 +208,8 @@ const OilLanding: React.FC = () => {
           "@type": "AutoPartsStore",
           "name": "Suman Tyres Engine Oil Shop",
           "description": "Leading Engine Oil Dealers in Gandhinagar Gujarat and Automotive Lubricant Suppliers.",
-          "image": "https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
-          "url": "https://sumantyres.vercel.app/oil",
+          "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+          "url": "https://sumantyres.in/oil",
           "telephone": "+91-9426636250",
           "address": {
             "@type": "PostalAddress",

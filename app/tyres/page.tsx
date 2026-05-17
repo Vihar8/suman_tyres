@@ -229,7 +229,7 @@ const TyreLanding: React.FC = () => {
         content="Explore a wide range of car and bike tyres at Suman Tyres in Gandhinagar, Gujarat. Quality brands, affordable prices, and expert service. Visit us today!"
       />
       <meta property="og:image" content="/sumantyresshop.jpg" />
-      <meta property="og:url" content="https://sumantyres.vercel.app/tyres" />
+      <meta property="og:url" content="https://sumantyres.in/tyres" />
       <meta property="og:type" content="website" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -257,8 +257,8 @@ const TyreLanding: React.FC = () => {
         property="og:description"
         content="Discover top-quality car and bike tyres at Suman Tyres, Gandhinagar. Trusted brands, affordable prices, and expert service all in one place."
       />
-      <meta property="og:image" content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
-      <meta property="og:url" content="https://sumantyres.vercel.app/tyres" />
+      <meta property="og:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+      <meta property="og:url" content="https://sumantyres.in/tyres" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
@@ -268,7 +268,7 @@ const TyreLanding: React.FC = () => {
         name="twitter:description"
         content="Wide range of premium tyres from Ceat, Bridgestone, Michelin & Apollo for cars and bikes at Suman Tyres, Gandhinagar. Quality products, great prices, expert support."
       />
-      <meta name="twitter:image" content="https://sumantyres.vercel.app/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+      <meta name="twitter:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
 
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

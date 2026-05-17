@@ -4,7 +4,7 @@
 
 Suman Tyres is a leading tyre, oil, and battery shop located in Gandhinagar, Gujarat. Established in 1997, the shop offers a wide range of products, including Michelin, Falken, Ceat, Bridgestone, Shell Lubricants, Castrol, and more. The website serves as a platform to showcase the products, provide store information, and offer a user-friendly experience to customers.
 
-This repository contains the source code for the Suman Tyres website hosted at [Suman Tyres](https://sumantyres.vercel.app).
+This repository contains the source code for the Suman Tyres website hosted at [Suman Tyres](https://sumantyres.in).
 
 ---
 

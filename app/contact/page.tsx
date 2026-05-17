@@ -17,7 +17,7 @@ export default function Component() {
         <title>Suman Tyres</title>
         <meta name="description" content="Get in touch with our team for any inquiries or support. Contact us via address, phone, or email." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://sumantyres.vercel.app/" />
+        <link rel="canonical" href="https://sumantyres.in/" />
       </Head>
       <div className="min-h-screen">
         <Navbar />
@@ -105,7 +105,7 @@ export default function Component() {
                   "latitude": 23.2156,
                   "longitude": 72.6369
                 },
-                "url": "https://sumantyres.vercel.app"
+                "url": "https://sumantyres.in"
               })
             }}
           />

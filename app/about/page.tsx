@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
     content="Discover Suman Tyres, a trusted tyre dealer in Gandhinagar since 1997. Wide range of tyres, oils, and batteries. Visit us near Cinemax, Sector 11."
   />
   <meta property="og:image" content="/sumanty.webp" /> {/* Replace with your actual image path */}
-  <meta property="og:url" content="https://sumantyres.vercel.app/about" /> {/* Your page URL */}
+  <meta property="og:url" content="https://sumantyres.in/about" /> {/* Your page URL */}
   <meta property="og:type" content="website" />
 
   {/* Twitter Card */}
@@ -50,7 +50,7 @@ const AboutPage: React.FC = () => {
       "name": "Suman Tyres",
       "description": "Trusted tyre dealer and auto service provider in Gandhinagar, Gujarat since 1997.",
       "image": "/images/about-suman-tyres.jpg",
-      "url": "https://sumantyres.vercel.app/about",
+      "url": "https://sumantyres.in/about",
       "telephone": "+91-9426636250",
       "address": {
         "@type": "PostalAddress",
