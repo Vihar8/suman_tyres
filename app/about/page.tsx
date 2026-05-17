@@ -112,37 +112,84 @@ const AboutPage: React.FC = () => {
         </section>
 
         {/* Wide Range of Tyres Section */}
-        <section className="mt-16 bg-gray-50 rounded-lg shadow-md p-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-800">
-              Wide Range of Tyres
-            </h2>
-            <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              Suman Tyres offers a great variety of tyres, oils, and batteries for all two-wheelers, three-wheelers, cars, etc. We display products from brands like <strong>Ceat, Michelin, Bridgestone, JK Tyres, Apollo, Amaron, Exide, Shell, Castrol, Repsol</strong>, and more.
-            </p>
-            <p className="mt-6 text-gray-700">
-              If you don’t find the tyres, oils, or batteries you need in our list, kindly contact us at 
-              <a href="tel:+919426636250" className="text-blue-600 hover:underline ml-1">
-                (+91) 9426636250
-              </a>. We’ll be happy to assist you!
-            </p>
-          </div>
-          <div className="flex justify-center items-center mt-8">
-            <Image
-              src="/stferr.webp"
-              alt="Wide Range of Tyres, Battery and Engine Oil at Suman Tyres"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="text-center mt-10">
-            <a 
-              href="/tyres" 
-              className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105"
-            >
-              Search Tyres
-            </a>
+        <section className="mt-24 relative overflow-hidden rounded-3xl bg-slate-900 text-white shadow-2xl py-12 px-6 sm:px-12 md:py-16">
+          {/* Decorative background grid pattern & glowing ambient dots */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-35 pointer-events-none" />
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Image Column */}
+            <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
+              <div className="group relative w-full max-w-[480px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 bg-slate-800">
+                <Image
+                  src="/stferr.webp"
+                  alt="Wide Range of Tyres, Battery and Engine Oil at Suman Tyres"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  priority
+                />
+                {/* Floating Badge */}
+                <div className="absolute top-4 left-4 bg-red-600/90 backdrop-blur-md text-white text-[11px] font-black tracking-widest uppercase px-3.5 py-1.5 rounded-full shadow-lg border border-red-500/30">
+                  Authorized Dealer
+                </div>
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+            </div>
+
+            {/* Content Column */}
+            <div className="lg:col-span-7 flex flex-col order-1 lg:order-2 space-y-6">
+              {/* Category Tag */}
+              <div className="inline-flex items-center space-x-2 bg-red-500/10 border border-red-500/20 text-red-400 px-3.5 py-1.5 rounded-full text-xs font-black tracking-wider uppercase w-fit self-center lg:self-start">
+                <span>OUR EXPERTISE</span>
+              </div>
+
+              <div className="text-center lg:text-left space-y-3">
+                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                  Wide Range of <span className="text-red-500 bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">Tyres, Batteries & Oils</span>
+                </h2>
+                <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Suman Tyres offers an unmatched variety of top-tier automotive essentials. We carry industry-leading brands, ensuring maximum safety, performance, and durability for your vehicles.
+                </p>
+              </div>
+
+              {/* Quick Feature Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {/* Tyres Card */}
+                <div className="bg-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-4 rounded-xl hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-red-500 font-bold mb-1 text-sm tracking-wide uppercase">Tyres</div>
+                  <div className="text-slate-400 text-xs leading-relaxed">Michelin, CEAT, Bridgestone, Apollo, JK & more.</div>
+                </div>
+                {/* Batteries Card */}
+                <div className="bg-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-4 rounded-xl hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-red-500 font-bold mb-1 text-sm tracking-wide uppercase">Batteries</div>
+                  <div className="text-slate-400 text-xs leading-relaxed">High-performance Amaron & Exide power systems.</div>
+                </div>
+                {/* Lubricants Card */}
+                <div className="bg-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-4 rounded-xl hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-red-500 font-bold mb-1 text-sm tracking-wide uppercase">Engine Oils</div>
+                  <div className="text-slate-400 text-xs leading-relaxed">Premium protection with Shell, Castrol & Repsol.</div>
+                </div>
+              </div>
+
+              {/* Action and Helpline Footer */}
+              <div className="pt-4 flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start border-t border-slate-800">
+                <a
+                  href="/tyres"
+                  className="w-full sm:w-auto text-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-red-600/20 hover:shadow-red-600/30 transition-all duration-300 transform hover:scale-105 text-sm uppercase tracking-wider"
+                >
+                  Search Tyres
+                </a>
+                <div className="text-center sm:text-left text-xs sm:text-sm text-slate-400">
+                  Don&apos;t find what you need? Call our team:
+                  <a href="tel:+919426636250" className="block sm:inline sm:ml-1 font-bold text-red-400 hover:text-red-300 transition-colors">
+                    +91 9426636250
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

@@ -48,11 +48,11 @@ export default function Navbar() {
     <>
       {/* Top Navbar */}
       <header className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 md:py-3">
           {/* Logo & Contact Info Group */}
           <div className="flex items-center gap-4 lg:gap-5 xl:gap-8">
             <Link href="/" className="shrink-0">
-              <img src="/logo.png" alt="logo" className="h-14 md:h-18 lg:h-20 xl:h-24 object-contain" />
+              <img src="/logo.png" alt="logo" className="h-20 md:h-24 lg:h-24 xl:h-28 object-contain" />
             </Link>
 
             {/* Desktop & Tablet Header Info Widgets (Visible from md screen up) */}
@@ -90,18 +90,19 @@ export default function Navbar() {
             {navLinks.map((link) => {
               const Icon = link.icon;
               return (
-              <Link
-                key={link.name}
-                href={link.path}
-                className={`flex items-center gap-1 xl:gap-1.5 text-xs xl:text-sm font-medium ${pathname === link.path
-                  ? "text-red-600 border-b-2 border-red-600 pb-1"
-                  : "text-gray-700 hover:text-red-600"
-                  }`}
-              >
-                {Icon && <Icon className="w-3.5 h-3.5 xl:w-4 xl:h-4" />}
-                {link.name}
-              </Link>
-            )})}
+                <Link
+                  key={link.name}
+                  href={link.path}
+                  className={`flex items-center gap-1 xl:gap-1.5 text-xs xl:text-sm font-medium ${pathname === link.path
+                    ? "text-red-600 border-b-2 border-red-600 pb-1"
+                    : "text-gray-700 hover:text-red-600"
+                    }`}
+                >
+                  {Icon && <Icon className="w-3.5 h-3.5 xl:w-4 xl:h-4" />}
+                  {link.name}
+                </Link>
+              )
+            })}
 
             <a
               href="tel:+919426636250"
@@ -112,7 +113,7 @@ export default function Navbar() {
           </nav>
 
           {/* Hamburger (Visible on mobile and tablet, hidden on desktop lg and above) */}
-          <button onClick={() => setMenuOpen(true)} className="lg:hidden p-2 text-2xl text-gray-700 hover:text-red-600 transition-colors">
+          <button onClick={() => setMenuOpen(true)} className="lg:hidden p-3 text-3xl text-gray-700 hover:text-red-600 transition-colors">
             ☰
           </button>
         </div>
@@ -145,17 +146,18 @@ export default function Navbar() {
             {navLinks.map((link) => {
               const Icon = link.icon;
               return (
-              <Link
-                key={link.name}
-                href={link.path}
-                onClick={() => setMenuOpen(false)}
-                className={`flex items-center gap-3 text-lg font-medium ${pathname === link.path ? "text-red-600" : "text-gray-800"
-                  }`}
-              >
-                {Icon && <Icon className="w-5 h-5" />}
-                {link.name}
-              </Link>
-            )})}
+                <Link
+                  key={link.name}
+                  href={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className={`flex items-center gap-3 text-lg font-medium ${pathname === link.path ? "text-red-600" : "text-gray-800"
+                    }`}
+                >
+                  {Icon && <Icon className="w-5 h-5" />}
+                  {link.name}
+                </Link>
+              )
+            })}
           </div>
 
           {/* Mobile Info Widgets */}
