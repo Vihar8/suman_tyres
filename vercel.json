@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "sumantyres.vercel.app"
+        }
+      ],
+      "destination": "https://sumantyres.in/$1",
+      "permanent": true
+    }
+  ]
+}

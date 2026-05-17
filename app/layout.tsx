@@ -7,6 +7,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sumantyres.in"),
   title: "Suman Tyres - Best Tyre Shop in Gandhinagar & Near Me",
   description:
     "Established in 1997, Suman Tyres is your trusted tyre shop in Gandhinagar. We serve Gandhinagar, Ahmedabad, Vavol, Dhodakuva, and nearby areas with premium tyres, batteries, and engine oils.",
