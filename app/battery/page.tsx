@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useState } from 'react';
-import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { SearchIcon, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -136,102 +135,31 @@ const BatteryLanding: React.FC = () => {
 
   return (
     <>
-      {/* <Head>
-      <title>Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat | Best Prices</title>
-      <meta
-        name="description"
-        content="Get high-quality batteries for 2-wheelers and 4-wheelers at wholesale rates in Gandhinagar, Gujarat. Wide selection of trusted brands for bikes and cars. Affordable prices & bulk discounts!"
+      {/* Structured Data for Local Business */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AutoPartsStore",
+            "name": "Suman Tyres Battery Shop",
+            "description": "Top Battery Dealers in Gandhinagar Gujarat offering Car Battery, Rechargeable Battery, and Inverter Battery.",
+            "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+            "url": "https://sumantyres.in/battery",
+            "telephone": "+91-9426636250",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sector 11",
+              "addressLocality": "Gandhinagar",
+              "addressRegion": "Gujarat",
+              "postalCode": "382011",
+              "addressCountry": "IN"
+            },
+            "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
+            "openingHours": "Mo-Sa 09:00-20:00"
+          })
+        }}
       />
-      <meta
-        name="keywords"
-        content="Wholesale Bike Batteries Gandhinagar, Car Batteries Wholesale Gujarat, 2 Wheeler Batteries Bulk Prices, Car Batteries Discount Gandhinagar, Best Wholesale Battery Shop, Suman Tyres, Bulk Battery Deals Gujarat"
-      />
-      <meta name="author" content="Suman Tyres" />
-      <meta property="og:title" content="Suman Tyres - Wholesale Batteries for Bikes & Cars in Gandhinagar, Gujarat" />
-      <meta
-        property="og:description"
-        content="Purchase batteries for 2-wheelers and cars at wholesale rates from Suman Tyres in Gandhinagar, Gujarat. Trusted brands, bulk discounts, and expert service for all vehicle needs!"
-      />
-      <meta property="og:image" content="/sumantyresshop.jpg" />
-      <meta property="og:url" content="https://sumantyres.in/battery" />
-      <meta property="og:type" content="website" />
-    </Head> */}
-      <Head>
-        <title>
-          Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres
-        </title>
-
-        <meta
-          name="description"
-          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
-        />
-
-        <meta
-          name="keywords"
-          content="car battery replacement in minutes, car jump-start on the spot, battery shop in gandhinagar, emergency jump start near me, Top Battery Dealers in Gandhinagar Gujarat, Best Battery Dealers near me, Car Battery Dealers, Rechargeable Battery Dealers, Inverter Battery Dealers, Batteries for Sale in Gandhinagar Gujarat, battery dealers in Ahmedabad, Suman Tyres"
-        />
-
-        <meta name="author" content="Suman Tyres" />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres"
-        />
-        <meta
-          property="og:description"
-          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
-        />
-        <meta
-          property="og:image"
-          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-        />
-        <meta property="og:url" content="https://sumantyres.in/battery" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Top Battery Dealers & Car Jump-Start in Gandhinagar | Suman Tyres"
-        />
-        <meta
-          name="twitter:description"
-          content="Need a car jump-start on the spot or battery replacement in minutes? Suman Tyres is the top battery dealer in Gandhinagar offering fast onsite service and premium batteries."
-        />
-        <meta
-          name="twitter:image"
-          content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75"
-        />
-
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Structured Data for Local Business */}
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "AutoPartsStore",
-          "name": "Suman Tyres Battery Shop",
-          "description": "Top Battery Dealers in Gandhinagar Gujarat offering Car Battery, Rechargeable Battery, and Inverter Battery.",
-          "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
-          "url": "https://sumantyres.in/battery",
-          "telephone": "+91-9426636250",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Sector 11",
-            "addressLocality": "Gandhinagar",
-            "addressRegion": "Gujarat",
-            "postalCode": "382017",
-            "addressCountry": "IN"
-          },
-          "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
-          "openingHours": "Mo-Sa 09:00-20:00"
-        }
-        `}
-        </script>
-      </Head>
       <Navbar />
       <div>
         <OrderCarBatteryOnline />

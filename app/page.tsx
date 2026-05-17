@@ -1,5 +1,4 @@
 'use client'
-import Head from 'next/head';
 import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
@@ -78,77 +77,40 @@ export default function Component() {
 
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden w-full max-w-[100vw]">
-      <Head>
-        <title>Suman Tyres | Best Tyre Shop in Gandhinagar, Ahmedabad & Near Me</title>
-        <meta
-          name="description"
-          content="Looking for a tyre shop near me? Suman Tyres offers the best tyres, oils, and batteries in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva. Trusted wholesaler with the lowest rates."
-        />
-        <meta
-          name="keywords"
-          content="tyre shop in gandhinagar, tyre shop near me, tyres shop ahmedabad, tyres shop vavol, tyres shop dhodakuva, Suman Tyres, Best Tyre Shop in Gandhinagar, car tyres Gandhinagar, bike tyres near me, puncture repair near me, tyre dealers Gandhinagar, car batteries near me, auto parts near me, wheel alignment near me, tyre showroom Gandhinagar, tyre repair near me, battery shop Gandhinagar, engine oil Gandhinagar"
-        />
-        <meta name="author" content="Suman Tyres" />
-
-        {/* Open Graph / Social Media */}
-        <meta property="og:title" content="Suman Tyres | Best Tyre Shop in Gandhinagar & Near Me" />
-        <meta
-          property="og:description"
-          content="Looking for a tyre shop near me? Suman Tyres offers top-quality tyres, batteries, and engine oils in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
-        />
-        <meta property="og:image" content="/sumantyresshop.jpg" />
-        <meta property="og:url" content="https://sumantyres.in/" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:title" content="Suman Tyres | Best Tyre Shop in Gandhinagar & Near Me" />
-        <meta
-          name="twitter:description"
-          content="Looking for a tyre shop near me? Suman Tyres offers top-quality tyres, batteries, and engine oils in Gandhinagar, Ahmedabad, Vavol, and Dhodakuva."
-        />
-        <meta name="twitter:image" content="/sumantyresshop.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-
-        {/* Structured Data for Local Business */}
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "TireShop",
-      "name": "Suman Tyres",
-      "description": "Leading tyre, oil, and battery shop serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva.",
-      "image": "/sumantyresshop.jpg",
-      "url": "https://sumantyres.in/",
-      "telephone": "+91-9426636250",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Sector 11, Suman Tyres, Suman Tower",
-        "addressLocality": "Gandhinagar",
-        "addressRegion": "Gujarat",
-        "postalCode": "382011",
-        "addressCountry": "India"
-      },
-      "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
-      "openingHours": [
-        "Mo-Sa 09:00-21:00",
-        "Su 09:00-16:00"
-      ],
-      "priceRange": "₹₹",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9426636250",
-        "contactType": "Customer Service"
-      }
-    }
-    `}
-        </script>
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* Viewport for responsiveness */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      {/* Structured Data for Local Business */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TireShop",
+            "name": "Suman Tyres",
+            "description": "Leading tyre, oil, and battery shop serving Gandhinagar, Ahmedabad, Vavol, and Dhodakuva.",
+            "image": "https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75",
+            "url": "https://sumantyres.in/",
+            "telephone": "+91-9426636250",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sector 11, Suman Tyres, Suman Tower",
+              "addressLocality": "Gandhinagar",
+              "addressRegion": "Gujarat",
+              "postalCode": "382011",
+              "addressCountry": "India"
+            },
+            "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
+            "openingHours": [
+              "Mo-Sa 09:00-21:00",
+              "Su 09:00-16:00"
+            ],
+            "priceRange": "₹₹",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9426636250",
+              "contactType": "Customer Service"
+            }
+          })
+        }}
+      />
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
