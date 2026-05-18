@@ -11,7 +11,7 @@ module.exports = {
   sitemapSize: 7000,
   generateIndexSitemap: false,
   changefreq: 'weekly',
-  priority: 0.7,
+  priority: 0.9,
   robotsTxtOptions: {
     policies: [
       {

@@ -4,9 +4,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://sumantyres.in/oil"
   },
-  title: "Engine Oil Dealers in Gandhinagar & Near Me | Automotive Lubricant Suppliers",
-  description:
-    "Looking for Engine Oil Dealers near me? Suman Tyres in Gandhinagar Sector 11 is the top Automotive Lubricant Supplier serving Gandhinagar, Ahmedabad, and Vavol.",
+  title: "Engine Oil Dealers in Gandhinagar & Near Me | Engine oil store | Automotive Lubricant Suppliers",
+  description: "Looking for Engine Oil Dealers near me? Suman Tyres in Gandhinagar Sector 11 is the top Automotive Lubricant Supplier in Gandhinagar. Find ✓Castrol Engine Oil Dealers, ✓Castrol Oil Shop, ✓Castrol Lubricants Store, ✓Castrol Oil Distributors, ✓Repsol Engine Oil Dealers, ✓Repsol Oil Shop, ✓Repsol Lubricants Store, ✓Repsol Oil Distributors, ✓Gulf Engine Oil Dealers, ✓Gulf Oil Shop, ✓Gulf Lubricants Store, ✓Gulf Oil Distributors, ✓Servo Engine Oil Dealers, ✓Servo Oil Shop, ✓Servo Lubricants Store, ✓Servo Oil Distributors in Gandhinagar Gujarat.",
   keywords: [
     "Engine Oil Dealers in Gandhinagar Gujarat",
     "Automotive Lubricant Suppliers Gujarat",
@@ -18,6 +17,18 @@ export const metadata: Metadata = {
     "Synthetic Engine Oil",
     "Mineral Oil",
     "Car & Bike Lubricants",
+    "Shell Engine Oil Dealers",
+    "Castrol Engine Oil Dealers",
+    "Servo Engine Oil Dealers",
+    "Gulf Engine Oil Dealers",
+    "Shell Oil Shop Gandhinagar",
+    "Castrol Oil Shop Gandhinagar",
+    "Servo Oil Shop Gandhinagar",
+    "Gulf Oil Shop Gandhinagar",
+    "Shell Lubricants Gujarat",
+    "Castrol Lubricants Gujarat",
+    "Servo Lubricants Gujarat",
+    "Gulf Lubricants Gujarat",
     "Suman Tyres",
     "Oil Dealer Gandhinagar",
     "oil dealers in Ahmedabad",

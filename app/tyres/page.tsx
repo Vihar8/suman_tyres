@@ -184,7 +184,7 @@ const TyreLanding: React.FC = () => {
           Showing <span className="text-gray-900 font-bold">{indexOfFirstItem + 1}</span> to <span className="text-gray-900 font-bold">{Math.min(indexOfLastItem, filteredTyres.length)}</span> of <span className="text-gray-900 font-bold">{filteredTyres.length}</span> products
         </div>
         <div className="flex items-center space-x-3">
-          <button 
+          <button
             onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
             disabled={currentPage === 1}
             className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-white border-2 border-gray-100 rounded-2xl font-semibold text-gray-700 shadow-sm hover:border-red-200 hover:bg-red-50 hover:text-red-600 disabled:opacity-40 disabled:hover:bg-white disabled:hover:border-gray-100 disabled:hover:text-gray-700 disabled:cursor-not-allowed transition-all duration-200 active:scale-95"
@@ -192,12 +192,12 @@ const TyreLanding: React.FC = () => {
             <ChevronLeft className="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" />
             <span className="hidden sm:inline">Previous</span>
           </button>
-          
+
           <div className="flex items-center justify-center min-w-[5rem] px-4 py-2.5 bg-gray-50 border-2 border-gray-100 rounded-2xl text-gray-600 font-medium text-sm">
             <span className="font-bold text-gray-900">{currentPage}</span><span className="mx-1.5 text-gray-300">/</span>{totalPages}
           </div>
 
-          <button 
+          <button
             onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
             disabled={currentPage === totalPages}
             className="group flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white rounded-2xl font-semibold shadow-md hover:shadow-lg disabled:opacity-40 disabled:from-gray-300 disabled:to-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all duration-200 active:scale-95 border-2 border-transparent disabled:border-gray-200"
@@ -212,7 +212,7 @@ const TyreLanding: React.FC = () => {
 
   return (
     <>
-        {/* <Head>
+      {/* <Head>
       <title>Suman Tyres - Best Tyre Shop in Gandhinagar, Gujarat | Wide Range of Car & Bike Tyres</title>
       <meta
         name="description"
@@ -233,58 +233,66 @@ const TyreLanding: React.FC = () => {
       <meta property="og:type" content="website" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head> */} 
-    <Head>
-      <title>
-        Car & Bike Tyres shop in Gandhinagar | Suman Tyres - Quality & Affordable
-      </title>
+    </Head> */}
+      <Head>
+        <title>
+          Top Tyres shop in Gandhinagar Gujarat | Best Car Tyres Dealers in Gandhinagar | Suman Tyres
+        </title>
 
-      <meta
-        name="description"
-        content="Suman Tyres offers a wide range of premium car and bike tyres in Gandhinagar, Gujarat. Shop trusted brands at affordable prices with expert advice and service."
-      />
+        <meta
+          name="description"
+          content="Suman Tyres offers a wide range of premium four wheelers and two wheelers  tyres in Gandhinagar, Gujarat. ✓Car Tyres, ✓Radial Tyres, ✓Tubeless Tyres, ✓Bike Tyre Shops in Gandhinagar Gujarat. Find ✓Michelin Tyre Shops, ✓Michelin Tyre Showroom, ✓Michelin Tyres Store, ✓Michelin Tyres Dealership in Gandhinagar Gujarat.
 
-      <meta
-        name="keywords"
-        content="car tyres Gandhinagar, bike tyres Gandhinagar, best tyre shop Gujarat, affordable tyres Gandhinagar, Suman Tyres, quality car tyres, bike tyre dealer"
-      />
+Find ✓Bridgestone Tyre Shops, ✓Bridgestone Tyre Showroom, ✓Bridgestone Tyres Store, ✓Bridgestone Tyres Dealership in Gandhinagar Gujarat.
 
-      <meta name="author" content="Suman Tyres" />
+Find ✓MRF Tyre Shops, ✓MRF Tyre Showroom, ✓MRF Tyres Store, ✓MRF Tyres Dealership in Gandhinagar Gujarat.
 
-      {/* Open Graph / Facebook */}
-      <meta property="og:title" content="Car & Bike Tyres shop in Gandhinagar | Suman Tyres" />
-      <meta
-        property="og:description"
-        content="Discover top-quality car and bike tyres at Suman Tyres, Gandhinagar. Trusted brands, affordable prices, and expert service all in one place."
-      />
-      <meta property="og:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
-      <meta property="og:url" content="https://sumantyres.in/tyres" />
-      <meta property="og:type" content="website" />
+Find ✓Apollo Tyre Shops, ✓Apollo Tyre Showroom, ✓Apollo Tyres Store, ✓Apollo Tyres Dealership in Gandhinagar Gujarat.
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Car & Bike Tyres shop in Gandhinagar | Suman Tyres" />
-      <meta
-        name="twitter:description"
-        content="Wide range of premium tyres from Ceat, Bridgestone, Michelin & Apollo for cars and bikes at Suman Tyres, Gandhinagar. Quality products, great prices, expert support."
-      />
-      <meta name="twitter:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+Find ✓JK Tyre Shops, ✓JK Tyre Showroom, ✓JK Tyres Store, ✓JK Tyres Dealership in Gandhinagar Gujarat. Get Phone Numbers, Address, Reviews, Photos, Maps for top Tyre Shops near me in Gandhinagar, Gujarat. Shop trusted brands at affordable prices with expert advice and service."
+        />
 
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head>
+        <meta
+          name="keywords"
+          content="top tyre shop in gandhinagar gujarat, tyre shop in Gandhinagar, best car tyre dealer in Gandhinagar, bridgestone tyre dealer in Gandhinagar, ceat tyres dealer in Gandhinagar, apollo tyres dealer in Gandhinagar, ceat tyre near me, mrf tyre dealer in Gandhinagar, mrf tyre near me, bridgestone tyre near me, apollo tyre near me, jk tyre near me,  michelin tyre dealer in Gandhinagar, ceat tyre dealer in Gandhinagar, jk tyre dealer in Gandhinagar, car tyres Gandhinagar, bike tyres Gandhinagar, best tyre shop Gujarat, affordable tyres Gandhinagar, Suman Tyres, quality car tyres, bike tyre dealer"
+        />
+
+        <meta name="author" content="Suman Tyres" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Best Tyres shop in Gandhinagar | Suman Tyres" />
+        <meta
+          property="og:description"
+          content="Discover top-quality car and bike tyres at Suman Tyres, Gandhinagar. Trusted brands, affordable prices, and expert service all in one place."
+        />
+        <meta property="og:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+        <meta property="og:url" content="https://sumantyres.in/tyres" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Car & Bike Tyres shop in Gandhinagar | Suman Tyres" />
+        <meta
+          name="twitter:description"
+          content="Wide range of premium tyres from Ceat, Bridgestone, Michelin & Apollo for cars and bikes at Suman Tyres, Gandhinagar. Quality products, great prices, expert support."
+        />
+        <meta name="twitter:image" content="https://sumantyres.in/_next/image?url=%2Fsumantyresshop.jpg&w=640&q=75" />
+
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Navbar />
       <div>
         <OrderCarTyreOnline />
-        <BrandMarquee 
-          title="Our Partnered Tyre Brands" 
+        <BrandMarquee
+          title="Our Partnered Tyre Brands"
           logos={[
             { src: "/ceatlogo.jpg", alt: "Ceat" },
             { src: "/michelinlogo.jpg", alt: "Michelin" },
             { src: "/bridgestonelogo.jpg", alt: "Bridgestone" },
             { src: "/apollologo.jpeg", alt: "Apollo" },
             { src: "/jklogo.png", alt: "JK Tyre" },
-          ]} 
+          ]}
         />
       </div>
       <hr className="my-4 border-t-2 border-gray-200" />
@@ -307,49 +315,49 @@ const TyreLanding: React.FC = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {currentTyres.map(product => (
-              <div 
-                key={product.id} 
+              <div
+                key={product.id}
                 className="group bg-white border border-gray-100 rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out flex flex-col relative overflow-hidden"
               >
                 {/* Subtle gradient overlay at top */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 to-rose-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 <div className="bg-gray-50 rounded-xl mb-4 p-3 flex items-center justify-center h-48 overflow-hidden relative">
                   {/* Tyre Company Logo Badge */}
                   <div className="absolute top-3 left-3 bg-white shadow-sm z-10 flex items-center justify-center border border-gray-200 rounded-md p-1.5 h-8 w-[4.5rem] overflow-hidden">
-                    <Image 
+                    <Image
                       src={
                         product.name.toLowerCase().includes('ceat') ? '/ceatlogo.jpg' :
-                        product.name.toLowerCase().includes('michelin') ? '/michelinlogo.jpg' :
-                        product.name.toLowerCase().includes('bridgestone') ? '/bridgestonelogo.jpg' :
-                        product.name.toLowerCase().includes('apollo') ? '/apollologo.jpeg' :
-                        product.name.toLowerCase().includes('jk') ? '/jklogo.png' : '/favicon.ico'
+                          product.name.toLowerCase().includes('michelin') ? '/michelinlogo.jpg' :
+                            product.name.toLowerCase().includes('bridgestone') ? '/bridgestonelogo.jpg' :
+                              product.name.toLowerCase().includes('apollo') ? '/apollologo.jpeg' :
+                                product.name.toLowerCase().includes('jk') ? '/jklogo.png' : '/favicon.ico'
                       }
-                      alt={product.name.split(' ')[0]} 
+                      alt={product.name.split(' ')[0]}
                       fill
                       className="object-contain mix-blend-multiply"
                     />
                   </div>
-                  
-                  <Image 
-                    src={product.image} 
-                    alt={product.name} 
+
+                  <Image
+                    src={product.image}
+                    alt={product.name}
                     fill
-                    className="object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110" 
+                    className="object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                
+
                 <div className="flex-grow flex flex-col justify-between">
                   <div>
                     <h3 className="font-bold text-gray-900 text-lg leading-tight mb-2 line-clamp-2">{product.name}</h3>
                     <p className="text-xs font-semibold text-red-600 bg-red-50 border border-red-100 inline-block px-2.5 py-1 rounded-md mb-4 uppercase tracking-wider">{product.size}</p>
                   </div>
-                  
-                  <a 
-                    href="tel:+919426636250" 
+
+                  <a
+                    href="tel:+919426636250"
                     className="mt-auto w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-xl text-center shadow-md hover:shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                     Get Quote
                   </a>
                 </div>
@@ -357,15 +365,15 @@ const TyreLanding: React.FC = () => {
             ))}
           </div>
 
-          
+
           {renderPagination()}
 
         </section>
         <hr className="my-4 border-t-2 border-gray-200" />
       </main>
       <div>
-              <WhatsAppButton />
-            </div>
+        <WhatsAppButton />
+      </div>
       <Footer />
     </>
   );

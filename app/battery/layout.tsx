@@ -4,13 +4,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://sumantyres.in/battery"
   },
-  title: "Top Battery Dealers in Gandhinagar Gujarat | Best Battery Dealers Near Me | Suman Tyres",
+  title: "Top Battery Dealers in Gandhinagar Gujarat | Best Battery Dealers Near Me | Top Battery Dealers Amaron in Gandhinagar Gujarat | Suman Tyres | Top Battery Dealers Exide in Gandhinagar Gujarat | Battery Store | Gandhinagar",
   description:
-    "Suman Tyres in Gandhinagar Gujarat (Sector 11). Find ✓Car Battery Dealers, ✓Inverter Battery, ✓Batteries for Sale near me. Get Address, Reviews & Best Prices!",
+    "Suman Tyres in Gandhinagar Gujarat (Sector 11). Find ✓Car Battery Dealers, ✓Inverter Battery, ✓Batteries for Sale near me,  ✓Batteries for Sale in Gandhinagar Gujarat,  ✓Battery Dealers-Exide, ✓Car Battery Dealers Amaron, ✓Two Wheeler Battery Dealers in Gandhinagar Gujarat. Get Address, Reviews & Best Prices!",
   keywords: [
     "Top Battery Dealers in Gandhinagar Gujarat",
     "Best Battery Dealers near me",
     "Suman Tyres Battery Shop",
+    "Top Battery Dealers Amaron in Gandhinagar Gujarat",
+    "Top Battery Dealers Exide in Gandhinagar Gujarat",
+    "Battery Store | Gandhinagar",
     "Car Battery Dealers Gandhinagar",
     "Rechargeable Battery Dealers",
     "Inverter Battery Dealers Gandhinagar",
