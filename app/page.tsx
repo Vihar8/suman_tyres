@@ -114,6 +114,7 @@ export default function Component() {
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
+          <h1 className='sr-only'>Suman Tyres Gandhinagar | Suman Battery Services</h1>
           <Carousel className="w-full p-5 max-w-[500px] mx-auto relative">
             <CarouselContent>
               {["animatedtyre.jpg", "animatedoil.jpg", "animatedbattery.jpg", "animatedoilfilter.jpg", "animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (

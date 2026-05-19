@@ -11,39 +11,39 @@ const AboutPage: React.FC = () => {
     <>
       <Navbar />
       <Head>
-  <title>About Suman Tyres | Best Tyre Dealers in Gandhinagar</title>
-  <meta
-    name="description"
-    content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more. Trusted tyre dealer near Cinemax, Sector 11."
-  />
+        <title>About Suman Tyres | Best Tyre Dealers in Gandhinagar</title>
+        <meta
+          name="description"
+          content="Learn about Suman Tyres in Gandhinagar, established in 1997. We offer a wide range of tyres including Michelin, Ceat, Bridgestone, and more. Trusted tyre dealer near Cinemax, Sector 11."
+        />
 
-  {/* Keywords (optional but can be useful) */}
-  <meta
-    name="keywords"
-    content="Tyres Gandhinagar, Car Tyres Gandhinagar, Bike Tyres Gandhinagar, Tyre Dealer Gandhinagar, Suman Tyres, Michelin Gandhinagar, Ceat Gandhinagar, Bridgestone Gandhinagar, auto service Gandhinagar"
-  />
+        {/* Keywords (optional but can be useful) */}
+        <meta
+          name="keywords"
+          content="Tyres Gandhinagar, Car Tyres Gandhinagar, Bike Tyres Gandhinagar, Tyre Dealer Gandhinagar, Suman Tyres, Michelin Gandhinagar, Ceat Gandhinagar, Bridgestone Gandhinagar, auto service Gandhinagar"
+        />
 
-  {/* Open Graph / Social Media */}
-  <meta property="og:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
-  <meta
-    property="og:description"
-    content="Discover Suman Tyres, a trusted tyre dealer in Gandhinagar since 1997. Wide range of tyres, oils, and batteries. Visit us near Cinemax, Sector 11."
-  />
-  <meta property="og:image" content="/sumanty.webp" /> {/* Replace with your actual image path */}
-  <meta property="og:url" content="https://sumantyres.in/about" /> {/* Your page URL */}
-  <meta property="og:type" content="website" />
+        {/* Open Graph / Social Media */}
+        <meta property="og:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
+        <meta
+          property="og:description"
+          content="Discover Suman Tyres, a trusted tyre dealer in Gandhinagar since 1997. Wide range of tyres, oils, and batteries. Visit us near Cinemax, Sector 11."
+        />
+        <meta property="og:image" content="/sumanty.webp" /> {/* Replace with your actual image path */}
+        <meta property="og:url" content="https://sumantyres.in/about" /> {/* Your page URL */}
+        <meta property="og:type" content="website" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
-  <meta
-    name="twitter:description"
-    content="Learn about Suman Tyres, a reputed tyre dealer in Gandhinagar since 1997. Wide selection of tyres and auto accessories near Cinemax."
-  />
-  <meta name="twitter:image" content="/sumanty.webp" /> {/* Your image path */}
+        {/* Twitter Card */}
+        <meta name="twitter:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />
+        <meta
+          name="twitter:description"
+          content="Learn about Suman Tyres, a reputed tyre dealer in Gandhinagar since 1997. Wide selection of tyres and auto accessories near Cinemax."
+        />
+        <meta name="twitter:image" content="/sumanty.webp" /> {/* Your image path */}
 
-  {/* Structured Data (JSON-LD) */}
-  <script type="application/ld+json">
-    {`
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json">
+          {`
     {
       "@context": "https://schema.org",
       "@type": "Store",
@@ -72,8 +72,8 @@ const AboutPage: React.FC = () => {
       }
     }
     `}
-  </script>
-</Head>
+        </script>
+      </Head>
       <main className="container mx-auto px-4 py-12">
         {/* About Us Section */}
         <section className="flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
@@ -130,10 +130,6 @@ const AboutPage: React.FC = () => {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   priority
                 />
-                {/* Floating Badge */}
-                <div className="absolute top-4 left-4 bg-red-600/90 backdrop-blur-md text-white text-[11px] font-black tracking-widest uppercase px-3.5 py-1.5 rounded-full shadow-lg border border-red-500/30">
-                  Authorized Dealer
-                </div>
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>

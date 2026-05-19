@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { Instagram, Youtube, Twitter} from 'lucide-react';
+import { Instagram, Youtube, Twitter } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 // ✅ SEO Metadata (Next.js App Router Way)
@@ -28,7 +29,10 @@ function Footer() {
 
   return (
     <footer className="bg-gray-200 text-gray-700">
-      
+
+      {/* ✅ Logo & Brand Card — styled like reference */}
+
+
       {/* ✅ Structured Data (Local SEO Boost 🚀) */}
       <script
         type="application/ld+json"
@@ -52,17 +56,33 @@ function Footer() {
       />
 
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12 px-4 md:px-6">
-      <div className="space-y-4">
-          <h4 className="text-lg font-bold mb-3">About Us</h4>
-          <p>
-          Suman Tyres is one of the Oldest and influential hub for Tyres, Battery, Oil, etc in Gandhinagar-Gujarat. We offer all sizes of tyres, all Range of Batteries, Types of Engine Oil for your cars and two-wheelers. At Suman Tyres Gandhinagar, you can choose from a wide range of tyers from all leading manufacturers and Company. We make your life simple! Best Shop for Tyre, Battery, Engine Oil in Sector 11, Gandhinagar-Gujarat 382010.
+        <div className="space-y-4">
+          {/* Logo */}
+          <div className="mb-2">
+            <Image
+              src="/logo.png"
+              alt="Suman Tyres Logo"
+              width={110}
+              height={110}
+              className="rounded-md shadow-sm border border-gray-300 bg-white p-1"
+            />
+          </div>
+
+          {/* Bold uppercase business name */}
+          <h2 className="text-base font-extrabold text-gray-900 tracking-widest uppercase">
+            Suman Tyres
+          </h2>
+
+          {/* Rich description paragraph */}
+          <p className="text-sm leading-relaxed text-gray-700">
+            Suman Tyres has 20000+ satisfied customers. Suman Tyres, Sector 11 Gandhinagar&#8211;Gujarat, is one of the oldest and most trusted hubs for Tyres, Battery &amp; Engine Oil in Gandhinagar. We provide all sizes of car &amp; bike tyres from all leading brands, with a strong 4.4/5 rating from our customers. We are known for delivering high-quality service and outstanding results. Committed to excellence in every service. Best Tyre Shop in Gandhinagar. Best Battery Shop in Gandhinagar. Tyre Shop Near Me.
           </p>
         </div>
-        
+
         <div className="space-y-2">
           <h4 className="text-lg font-bold mb-3">Follow Us</h4>
           <div className="flex gap-4">
-          <a href="https://www.youtube.com/@SumanTyres" className="text-gray-700 hover:text-black transition-colors duration-300">
+            <a href="https://www.youtube.com/@SumanTyres" className="text-gray-700 hover:text-black transition-colors duration-300">
               <Youtube className="w-6 h-6" />
             </a>
             <a href="https://www.instagram.com/suman_tyres?igsh=bGl3amx4M2ViNXM5" className="text-gray-700 hover:text-black transition-colors duration-300">
@@ -127,9 +147,9 @@ function Footer() {
 
       <div className="bg-gray-300 py-4 text-center text-sm">
         Copyright &copy; {new Date().getFullYear()} Suman Tyres. All rights reserved. | Designed & Developed by{" "}
-        <a 
-          href="https://www.linkedin.com/in/cse-viharmodi/" 
-          target="_blank" 
+        <a
+          href="https://www.linkedin.com/in/cse-viharmodi/"
+          target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-black"
         >
