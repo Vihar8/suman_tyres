@@ -103,6 +103,9 @@ export const metadata: Metadata = {
     description: "Suman Tyres is the leading tyre & battery shop in Gandhinagar. We offer premium tyres, engine oils, wheel alignment, and puncture repair. Serving Randesan, Sargasan, Kudasan, and nearby areas.",
     site: "@SumanTyres",
     creator: "@SumanTyres"
+  },
+  other: {
+    "google-adsense-account": "ca-pub-3879802047017698"
   }
 };
 
