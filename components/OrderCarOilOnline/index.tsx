@@ -9,7 +9,7 @@ const OrderCarOilOnline: React.FC = () => {
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-20 pointer-events-none">
         <div className="w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left space-y-4">
@@ -22,10 +22,10 @@ const OrderCarOilOnline: React.FC = () => {
           <p className="text-slate-400 max-w-lg mx-auto md:mx-0 text-base md:text-lg">
             On Suman Tyres, you can find the perfect premium engine oil for your vehicle at unbeatable prices to ensure maximum engine life.
           </p>
-          
+
           <div className="pt-6 flex justify-center md:justify-start">
-            <a 
-              href="tel:+919426636250" 
+            <a
+              href="tel:+919426636250"
               className="inline-flex items-center gap-3 px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-amber-600 to-orange-600 rounded-full shadow-lg shadow-orange-600/30 hover:shadow-orange-500/50 hover:scale-105 active:scale-95 transition-all duration-300 group"
             >
               <PhoneCall className="w-6 h-6 group-hover:animate-pulse" />
@@ -36,20 +36,20 @@ const OrderCarOilOnline: React.FC = () => {
 
         {/* Images */}
         <div className="flex-1 flex justify-center items-center gap-4 relative pt-8 md:pt-0">
-          <img 
-            src="/1040c.jpeg" 
-            alt="Shell 10W-40 Synthetic Car Engine Oil at wholesale price in Gandhinagar" 
-            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white" 
+          <img
+            src="/1040c.jpeg"
+            alt="Shell 10W-40 Synthetic Car Engine Oil at wholesale price in Gandhinagar"
+            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white"
           />
-          <img 
-            src="/castrolcom.jpeg" 
-            alt="Castrol Premium Engine Oil Authorized Dealer Suman Tyres" 
-            className="w-28 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-1" 
+          <img
+            src="/castrolcom.jpeg"
+            alt="Castrol Engine Oil Authorized Dealer Suman Tyres"
+            className="w-28 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-1"
           />
-          <img 
-            src="/repsol-elite.jpeg" 
-            alt="Repsol Elite Car Engine Oil Replacement Service Gandhinagar" 
-            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white" 
+          <img
+            src="/repsol-elite.jpeg"
+            alt="Repsol Elite Car Engine Oil Replacement Service Gandhinagar"
+            className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white"
           />
         </div>
       </div>
