@@ -1,9 +1,9 @@
-# *
+# Allow all bots on the canonical domain
 User-agent: *
 Allow: /
 
-# Host
+# Canonical domain
 Host: https://sumantyres.in
 
-# Sitemaps
+# Sitemap
 Sitemap: https://sumantyres.in/sitemap.xml
