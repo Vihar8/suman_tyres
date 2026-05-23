@@ -16,7 +16,6 @@ const Gallery: React.FC = () => {
 
   const media: MediaItem[] = [
     { src: "https://lh3.googleusercontent.com/p/AF1QipOAy9NvDwpq0JJQIL8Pt4-QOUZ2--6DlbUWS0ys=s680-w680-h510-rw", category: "Products", type: "image" },
-    { src: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAMw9GvYtwPqrgZMzpbMMhA8HQVVtxbakruhpePdzW5vODHiYgl9K5-_UbGLSdbz0XFMinTx3uMJyCHYz67nbbllrh5FargNbNCFgXXRX_NA_qtIEKLdVkyGZfadECyJNErVFbxfwmgAdq=w207-h148-n-k-no-nu", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipNoNDCCsGuDA78nEqzggW-yjX5Hp3MjqTzX7bx5=s680-w680-h510-rw", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipN6wqs5Nt5RP2dHGiEE23kdy5LqYjwJUg_QUcK1=w207-h346-n-k-no-nu", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipO2vhNiEvDopaAaB1ot4AyZoFpC3WJdkWsIYNYW=w207-h148-n-k-no-nu", category: "Products", type: "image" },
