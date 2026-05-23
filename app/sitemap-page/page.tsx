@@ -511,7 +511,7 @@ export default function SitemapPage() {
               🏷️ Brands We Stock – Tyres, Battery & Engine Oil
             </h2>
             <p className="text-gray-600 mb-8 text-sm">
-              Suman Tyres, Sector 11 Gandhinagar is an authorised dealer of India's most trusted tyre, battery and engine oil brands. Buy genuine products at the best prices.
+              Suman Tyres, Sector 11 Gandhinagar is an authorised dealer of India&apos;s most trusted tyre, battery and engine oil brands. Buy genuine products at the best prices.
             </p>
             <div className="space-y-10">
               {brandKeywords.map(({ brand, icon, color, accent, keywords }) => (
