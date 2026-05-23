@@ -75,7 +75,7 @@ function Footer() {
 
           {/* Rich description paragraph */}
           <p className="text-sm leading-relaxed text-gray-700">
-            Suman Tyres has 20000+ satisfied customers. Suman Tyres, Sector 11 Gandhinagar&#8211;Gujarat, is one of the oldest and most trusted hubs for Tyres, Battery &amp; Engine Oil in Gandhinagar. We provide all sizes of car &amp; bike tyres from all leading brands, with a strong 4.4/5 rating from our customers. We are known for delivering high-quality service and outstanding results. Committed to excellence in every service. Best Tyre Shop in Gandhinagar. Best Battery Shop in Gandhinagar. Tyre Shop Near Me.
+            Suman Tyres has 50000+ satisfied customers. Suman Tyres, Sector 11 Gandhinagar&#8211;Gujarat, is one of the oldest and most trusted hubs for Tyres, Battery &amp; Engine Oil in Gandhinagar. We provide all sizes of car &amp; bike tyres from all leading brands, with a strong 4.4/5 rating from our customers. We are known for delivering high-quality service and outstanding results. Committed to excellence in every service. Best Tyre Shop in Gandhinagar. Best Battery Shop in Gandhinagar. Tyre Shop Near Me, Battery Shop Near Me.
           </p>
         </div>
 

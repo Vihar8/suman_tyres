@@ -16,6 +16,7 @@ const Gallery: React.FC = () => {
 
   const media: MediaItem[] = [
     { src: "https://lh3.googleusercontent.com/p/AF1QipOAy9NvDwpq0JJQIL8Pt4-QOUZ2--6DlbUWS0ys=s680-w680-h510-rw", category: "Products", type: "image" },
+    { src: "https://lh3.googleusercontent.com/p/AF1QipNv_Fe4H3Qa5NaupfJg6jAzMorBPVdqPa-BqKS0=w181-h302-n-k-no-nu", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipNoNDCCsGuDA78nEqzggW-yjX5Hp3MjqTzX7bx5=s680-w680-h510-rw", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipN6wqs5Nt5RP2dHGiEE23kdy5LqYjwJUg_QUcK1=w207-h346-n-k-no-nu", category: "Products", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipO2vhNiEvDopaAaB1ot4AyZoFpC3WJdkWsIYNYW=w207-h148-n-k-no-nu", category: "Products", type: "image" },
@@ -25,6 +26,7 @@ const Gallery: React.FC = () => {
     { src: "https://lh3.googleusercontent.com/p/AF1QipMSg4nOXRDy2XP_53E-88_NXWk8tnKBoAdFrHyK=w207-h346-n-k-no-nu", category: "Services", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipM5TydlOQ3p3U_TKND_-wjTANwdYxgNYq2b2WUq=s680-w680-h510-rw", category: "Services", type: "image" },
     { src: "https://lh3.googleusercontent.com/p/AF1QipM3fjYOdIHYI5KZABns76MUmFCyZ-vkqHnqoTTL=w207-h208-n-k-no-nu", category: "Services", type: "image" },
+    { src: "https://lh3.googleusercontent.com/p/AF1QipOiPMDfU3AjqCrINBHdCEtMhDprFU8_cf51WJJP=w181-h181-n-k-no-nu", category: "Products", type: "image" },
   ];
 
   const [active, setActive] = useState<string>("All");

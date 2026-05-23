@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { User } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
+import YouTubeCarousel from '@/components/YouTubeCarousel';
 
 const ReviewerImage = ({ src, name }: { src: string; name: string }) => {
   const [error, setError] = useState(false);
@@ -330,6 +331,9 @@ export default function Component() {
               </div>
             </div>
           </div>
+
+          <hr />
+          <YouTubeCarousel />
 
           <FAQSection />
 
