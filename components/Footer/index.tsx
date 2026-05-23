@@ -111,6 +111,7 @@ function Footer() {
             <li><Link href="/about" className="font-medium text-lg hover:underline">About Us</Link></li>
             <li><Link href="/warrantyandGuarantee" className="font-medium text-lg hover:underline">Guarantee Warranty</Link></li>
             <li><Link href="/contact" className="font-medium text-lg hover:underline">Contact Us</Link></li>
+            <li><Link href="/sitemap-page" className="font-medium text-lg hover:underline">Sitemap</Link></li>
           </ul>
         </div>
 

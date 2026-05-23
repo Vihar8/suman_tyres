@@ -99,7 +99,7 @@ export default function Component() {
             },
             "areaServed": ["Gandhinagar", "Ahmedabad", "Vavol", "Dhodakuva"],
             "openingHours": [
-              "Mo-Sa 09:30-19:00",
+              "Mo-Sa 09:00-20:00",
               "Su 09:00-16:00"
             ],
             "priceRange": "₹₹",

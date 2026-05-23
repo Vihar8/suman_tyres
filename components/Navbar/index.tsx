@@ -78,7 +78,7 @@ export default function Navbar() {
                 </svg>
                 <div className="flex flex-col text-left">
                   <span className="text-[9px] xl:text-[10px] font-black text-red-700 uppercase tracking-wider leading-none mb-1 xl:mb-1.5">WE ARE OPEN!</span>
-                  <span className="text-xs xl:text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:30 – 7:00</span>
+                  <span className="text-xs xl:text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:00 – 8:00</span>
                   <span className="text-[10px] xl:text-[11px] font-bold text-gray-500 tracking-tight leading-none">Sunday 9:00 – 4:00</span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function Navbar() {
               </svg>
               <div className="flex flex-col text-left">
                 <span className="text-[10px] font-black text-red-700 uppercase tracking-wider leading-none mb-1.5">WE ARE OPEN!</span>
-                <span className="text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:30 – 7:00</span>
+                <span className="text-sm font-extrabold text-slate-900 tracking-tight leading-tight mb-0.5">Mon–Sat 9:00 – 8:00</span>
                 <span className="text-[11px] font-bold text-gray-500 tracking-tight leading-none">Sunday 9:00 – 4:00</span>
               </div>
             </div>
