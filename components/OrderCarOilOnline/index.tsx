@@ -37,17 +37,17 @@ const OrderCarOilOnline: React.FC = () => {
         {/* Images */}
         <div className="flex-1 flex justify-center items-center gap-4 relative pt-8 md:pt-0">
           <img
-            src="/1040c.jpeg"
+            src="/shell-10w40-hx7-synthetic-car.jpeg"
             alt="Shell 10W-40 Synthetic Car Engine Oil at wholesale price in Gandhinagar"
             className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white"
           />
           <img
-            src="/castrolcom.jpeg"
+            src="/castrol-edge-car.jpg"
             alt="Castrol Engine Oil Authorized Dealer Suman Tyres"
             className="w-28 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50 bg-white p-1"
           />
           <img
-            src="/repsol-elite.jpeg"
+            src="/repsol-elite-car.jpeg"
             alt="Repsol Elite Car Engine Oil Replacement Service Gandhinagar"
             className="w-24 md:w-32 lg:w-40 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50 bg-white"
           />
