@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import Head from 'next/head';
 
 const companies = [
   {
@@ -109,6 +110,11 @@ const companies = [
 export default function WarrantyPage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <link rel="canonical" href="https://sumantyres.in/warrantyandGuarantee" />
+        <title>Warranty & Guarantee | Suman Tyres Gandhinagar - Tyre & Battery Warranty Info</title>
+        <meta name="description" content="Find warranty and guarantee information for tyre and battery brands at Suman Tyres, Gandhinagar. Contact brand helplines for Ceat, Michelin, Bridgestone, Amaron, Exide and more." />
+      </Head>
       <Navbar />
 
       {/* Warranty Section */}

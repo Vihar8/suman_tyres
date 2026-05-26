@@ -280,6 +280,7 @@ Find ✓JK Tyre Shops, ✓JK Tyre Showroom, ✓JK Tyres Store, ✓JK Tyres Deale
 
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://sumantyres.in/tyres" />
       </Head>
       <Navbar />
       <div>

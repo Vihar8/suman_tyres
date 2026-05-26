@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import React, { useState } from "react";
+import Head from 'next/head';
 
 type MediaItem = {
   src: string;
@@ -58,6 +59,11 @@ const Gallery: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://sumantyres.in/gallery" />
+        <title>Gallery | Suman Tyres Gandhinagar - Tyre & Battery Shop Photos</title>
+        <meta name="description" content="View photos of Suman Tyres shop, our tyre products, battery services and car care in Gandhinagar Sector 11, Gujarat." />
+      </Head>
       <div>
         <WhatsAppButton />
       </div>

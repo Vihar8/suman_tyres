@@ -8,9 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sumantyres.in"),
-  alternates: {
-    canonical: "https://sumantyres.in"
-  },
   title: "Best Tyre Shop in Gandhinagar Gujarat | Car Tyres & Battery Dealer | Suman Tyres",
   description:
     "Best Tyre Shop & Battery Dealer in Gandhinagar. ✓Car Tyres ✓Wheel Alignment ✓Puncture Repair ✓Alloy Wheels ✓Radial Tyres, ✓Tubeless Tyres, ✓Bike Tyre Shops in Gandhinagar Gujarat. Serving Randesan, Raysan, Kudasan, Sargasan, PDPU, GIFT City & Vavol. Call +91-9426636250 for best price!, Tyre shops near me in Gandhinagr Gujarat",

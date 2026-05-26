@@ -32,6 +32,7 @@ const AboutPage: React.FC = () => {
         <meta property="og:image" content="/sumanty.webp" /> {/* Replace with your actual image path */}
         <meta property="og:url" content="https://sumantyres.in/about" /> {/* Your page URL */}
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://sumantyres.in/about" />
 
         {/* Twitter Card */}
         <meta name="twitter:title" content="About Suman Tyres | Best Tyre Dealers in Gandhinagar" />

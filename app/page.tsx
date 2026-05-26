@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { User } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
 import YouTubeCarousel from '@/components/YouTubeCarousel';
+import Head from 'next/head';
 
 const ReviewerImage = ({ src, name }: { src: string; name: string }) => {
   const [error, setError] = useState(false);
@@ -112,13 +113,16 @@ export default function Component() {
           })
         }}
       />
+      <Head>
+        <link rel="canonical" href="https://sumantyres.in/" />
+      </Head>
       <Navbar />
       <main className="flex-1">
         <section className="w-full">
           <h1 className='sr-only'>Suman Tyres Gandhinagar | Suman Battery Services</h1>
           <Carousel className="w-full p-5 max-w-[500px] mx-auto relative">
             <CarouselContent>
-              {["animatedtyre.jpg", "animatedoil.jpg", "animatedbattery.jpg", "animatedoilfilter.jpg", "animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
+              {["sumantyregandhinagar.jpg", "animatedtyre.jpg", "animatedoil.jpg", "animatedbattery.jpg", "animatedoilfilter.jpg", "animatedairfilter.jpg", "animatedbatterycharging.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
                   <Image
                     src={`/${src}`}
