@@ -37,17 +37,17 @@ const OrderCarTyreOnline: React.FC = () => {
         {/* Images */}
         <div className="flex-1 flex justify-center items-center gap-4 relative pt-8 md:pt-0">
           <img 
-            src="/ceatcar.jpeg" 
+            src="/ceat-milaze-x3-car-tyre.jpeg" 
             alt="CEAT Car Tyre" 
             className="w-24 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50" 
           />
           <img 
-            src="/michelinbike.jpg" 
+            src="/michelin-pilot-street-bike-tyre.jpg" 
             alt="Michelin Bike Tyre" 
             className="w-28 md:w-40 lg:w-48 h-auto rounded-xl shadow-2xl z-10 scale-110 hover:scale-125 transition-transform duration-500 border-4 border-slate-700/50" 
           />
           <img 
-            src="/apollo.jpeg" 
+            src="/apollo-alnac-car-tyre.jpeg" 
             alt="Apollo Tyre" 
             className="w-24 md:w-36 lg:w-44 h-auto rounded-xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500 border-4 border-slate-700/50" 
           />
