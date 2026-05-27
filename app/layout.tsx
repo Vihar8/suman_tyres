@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Alloy Wheels",
     "nitrogen air",
     "complete car care services in Gandhinagar",
-    "20000+ Happy Customers",
+    "50000+ Happy Customers",
     "Randesan",
     "Raysan",
     "Sargasan",

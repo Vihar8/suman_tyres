@@ -12,6 +12,10 @@ const faqs = [
     answer: "Yes! We provide emergency car battery replacement and jump-start services. Our technicians can be dispatched to your location in Gandhinagar quickly to get you back on the road."
   },
   {
+    question: "What makes us the best tyre shop in Gandhinagar??",
+    answer: "At Suman Tyres, we are committed to providing high-quality tyres, batteries, engine oils, and vehicle care solutions to our customers. We offer a wide range of tyres from trusted brands for cars, bikes, SUVs, and commercial vehicles, ensuring the perfect fit for every vehicle and driving need. Whether you are looking for durable everyday tyres, high-performance tyres, or complete tyre care services, we have you covered.\n\nWe believe that vehicle safety and performance start with the right products and expert service.That’s why we focus on delivering reliable solutions, genuine products, competitive pricing, and excellent customer support.At Suman Tyres, customer satisfaction is our priority, and we strive to help every customer get the best value for their investment."
+  },
+  {
     question: "Where is Suman Tyres located?",
     answer: "We are conveniently located in Sector 11, Gandhinagar, Gujarat. We serve customers from Gandhinagar, Ahmedabad, Vavol, Dhodakuva, and surrounding areas."
   },

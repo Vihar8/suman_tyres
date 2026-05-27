@@ -429,7 +429,7 @@ const longTailKeywords = [
   "commercial tyre dealer Gandhinagar",
   "auto parts near me Gandhinagar",
   "best car service in Gandhinagar",
-  "20000 happy customers Suman Tyres",
+  "50000 happy customers Suman Tyres",
   "4.4 star tyre shop Gandhinagar",
   "established 1997 tyre shop Gandhinagar",
 ];

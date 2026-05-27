@@ -39,7 +39,24 @@ const ReviewerImage = ({ src, name }: { src: string; name: string }) => {
   );
 };
 
+const brands = [
+  { src: "/ceatlogo.jpg", alt: "CEAT", category: "tyres" },
+  { src: "/michelinlogo.jpg", alt: "Michelin", category: "tyres" },
+  { src: "/bridgestonelogo.jpg", alt: "Bridgestone", category: "tyres" },
+  { src: "/apollologo.jpeg", alt: "Apollo", category: "tyres" },
+  { src: "/jklogo.png", alt: "JK Tyre", category: "tyres" },
+  { src: "/shelllogo.jpeg", alt: "Shell", category: "oils" },
+  { src: "/castrollogo.jpeg", alt: "Castrol", category: "oils" },
+  { src: "/repsollogo.jpg", alt: "Repsol", category: "oils" },
+  { src: "/servologo.jpg", alt: "Servo", category: "oils" },
+  { src: "/amaronlogo.jpg", alt: "Amaron", category: "batteries" },
+  { src: "/exidelogo.jpeg", alt: "Exide", category: "batteries" },
+  { src: "/eloficlogo.jpeg", alt: "Elofic", category: "batteries" },
+  { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch", category: "batteries" },
+];
+
 export default function Component() {
+  const [activeTab, setActiveTab] = useState("all");
 
   const reviews = [
     {
@@ -161,195 +178,239 @@ export default function Component() {
           </Carousel>
           <hr />
         </section>
-        <section className="w-full py-12">
-          <div className="flex flex-col items-center justify-center m-4">
-            <h2 className="bg-rose-600 text-white rounded-xl text-4xl font-bold p-5 mb-8">
-              Our Dealership
-            </h2>
-            <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-8">
+        <section className="w-full py-16 bg-gradient-to-b from-white to-gray-50 border-t border-gray-100">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {/* Premium Header */}
+            <div className="text-center mb-12">
+              <span className="text-rose-600 font-semibold tracking-wider text-sm uppercase">Our Trusted Partners</span>
+              <h2 className="text-4xl font-extrabold text-gray-900 mt-2 mb-4 tracking-tight">
+                Authorized Dealerships & Brands
+              </h2>
+              <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full"></div>
+              <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed text-base md:text-lg">
+                We partner with leading global manufacturers to provide 100% genuine tyres, high-performance engine oils, and long-lasting batteries.
+              </p>
+            </div>
+
+            {/* Filter Tabs */}
+            <div className="flex flex-wrap justify-center gap-2 mb-10">
               {[
-                { src: "/ceatlogo.jpg", alt: "Ceat tyres available at Suman Tyres Gandhinagar" },
-                { src: "/michelinlogo.jpg", alt: "Michelin tyres available at Suman Tyres Gandhinagar" },
-                { src: "/bridgestonelogo.jpg", alt: "Bridgestone tyres available at Suman Tyres Gandhinagar" },
-                { src: "/apollologo.jpeg", alt: "Apollo tyres available at Suman Tyres Gandhinagar" },
-                { src: "/jklogo.png", alt: "JK tyres available at Suman Tyres Gandhinagar" },
-                { src: "/shelllogo.jpeg", alt: "Shell oil available at Suman Tyres Gandhinagar" },
-                { src: "/castrollogo.jpeg", alt: "Castrol oil available at Suman Tyres Gandhinagar" },
-                { src: "/repsollogo.jpg", alt: "Repsol oil available at Suman Tyres Gandhinagar" },
-                { src: "/servologo.jpg", alt: "Servo oil available at Suman Tyres Gandhinagar" },
-                { src: "/amaronlogo.jpg", alt: "Amaron battery available at Suman Tyres Gandhinagar" },
-                { src: "/exidelogo.jpeg", alt: "Exide battery available at Suman Tyres Gandhinagar" },
-                { src: "/eloficlogo.jpeg", alt: "Elofic battery available at Suman Tyres Gandhinagar" },
-                { src: "https://tse1.mm.bing.net/th?id=OIP.bL3fSD9-oV7gqGJa3-_I0QHaEK&pid=Api&P=0&h=180", alt: "Bosch battery available at Suman Tyres Gandhinagar" },
-              ].map((brand, index) => (
-                <div key={index} className="flex items-center justify-center p-4 bg-gray-100 rounded">
-                  <Image src={brand.src} alt={brand.alt} width={150} height={150} className="object-contain w-auto h-auto max-h-24" unoptimized />
-                </div>
+                { id: "all", label: "All Brands" },
+                { id: "tyres", label: "Tyres" },
+                { id: "oils", label: "Engine Oils & Filters" },
+                { id: "batteries", label: "Batteries" }
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 transform active:scale-95 ${activeTab === tab.id
+                    ? "bg-rose-600 text-white shadow-md shadow-rose-600/20"
+                    : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 hover:text-gray-900"
+                    }`}
+                >
+                  {tab.label}
+                </button>
               ))}
             </div>
-            <div>
+
+            {/* Brands Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-12">
+              {brands
+                .filter((brand) => activeTab === "all" || brand.category === activeTab)
+                .map((brand, index) => (
+                  <div
+                    key={index}
+                    className="group relative flex flex-col items-center justify-between p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
+                  >
+                    {/* Badge */}
+                    <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-[10px] font-bold uppercase tracking-wider bg-rose-50 text-rose-600 px-2 py-0.5 rounded border border-rose-100">
+                        Genuine
+                      </span>
+                    </div>
+
+                    {/* Logo Image */}
+                    <div className="flex-1 flex items-center justify-center min-h-[90px] w-full p-2">
+                      <Image
+                        src={brand.src}
+                        alt={`${brand.alt} available at Suman Tyres Gandhinagar`}
+                        width={140}
+                        height={90}
+                        className="object-contain max-h-[80px] w-auto transition-transform duration-300 group-hover:scale-105"
+                        unoptimized
+                      />
+                    </div>
+
+                    {/* Brand Name Text label */}
+                    <span className="mt-4 text-sm font-semibold text-gray-500 group-hover:text-gray-800 transition-colors duration-200">
+                      {brand.alt}
+                    </span>
+                  </div>
+                ))}
+            </div>
+
+            {/* Bottom Call to Action */}
+            <div className="flex justify-center mt-4">
               <WhatsAppButton />
             </div>
           </div>
+        </section>
+        <div className='w-full py-16 bg-gray-50'>
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                Shop by Category
+              </h2>
+              <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full"></div>
+              <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+                Explore our premium range of products tailored for your vehicle&apos;s ultimate performance.
+              </p>
+            </div>
 
-          <hr />
-          <div className='w-full py-16 bg-gray-50'>
-            <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                  Shop by Category
-                </h2>
-                <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full"></div>
-                <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                  Explore our premium range of products tailored for your vehicle&apos;s ultimate performance.
-                </p>
-              </div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              {[
+                { src: "/tyre1.jpeg", title: "Premium Tyres", path: "/tyres" },
+                { src: "/oil1.jpeg", title: "Engine Oils", path: "/oil" },
+                { src: "/battery1.jpeg", title: "Car Batteries", path: "/battery" },
+                { src: "/oilfilter.jpg", title: "Filters & Parts", path: "/oil" },
+              ].map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.path}
+                  className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+                    <Image
+                      src={item.src}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
 
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                {[
-                  { src: "/tyre1.jpeg", title: "Premium Tyres", path: "/tyres" },
-                  { src: "/oil1.jpeg", title: "Engine Oils", path: "/oil" },
-                  { src: "/battery1.jpeg", title: "Car Batteries", path: "/battery" },
-                  { src: "/oilfilter.jpg", title: "Filters & Parts", path: "/oil" },
-                ].map((item, index) => (
-                  <Link
-                    key={index}
-                    href={item.path}
-                    className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5"
-                  >
-                    <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                      <Image
-                        src={item.src}
-                        alt={item.title}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex items-end justify-between overflow-hidden">
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white tracking-wide">
+                      {item.title}
+                    </h3>
+                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-rose-600 flex items-center justify-center text-white transform translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+                      <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
-
-                    <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex items-end justify-between overflow-hidden">
-                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white tracking-wide">
-                        {item.title}
-                      </h3>
-                      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-rose-600 flex items-center justify-center text-white transform translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
-                        <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
-          <hr />
-          <div className="text-center mt-12 mb-8 px-4">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-              What Our Customers Say
-            </h2>
-            <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full mb-4"></div>
-          </div>
+        </div>
+        <hr />
+        <div className="text-center mt-12 mb-8 px-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            What Our Customers Say
+          </h2>
+          <div className="w-24 h-1.5 bg-rose-600 mx-auto rounded-full mb-4"></div>
+        </div>
 
-          <div className="flex justify-center items-center w-full py-8 bg-white px-4 md:px-12">
-            <Carousel className="w-full max-w-7xl relative" opts={{ align: "start", loop: true }}>
-              <CarouselContent className="-ml-4">
-                {reviews.map((review, i) => (
-                  <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/3">
-                    <div className="bg-white rounded-xl shadow-md p-5 h-full border flex flex-col">
-                      {/* Header: Profile, Name, Date, Google Icon */}
-                      <div className="flex justify-between items-center mb-3">
-                        <div className="flex items-center">
-                          {/* Profile Image and Text */}
-                          <ReviewerImage src={review.imgUrl} name={review.name} />
-                          <div>
-                            <h3 className="font-semibold text-gray-800">{review.name}</h3>
-                            <p className="text-sm text-gray-500">{review.date}</p>
-                          </div>
+        <div className="flex justify-center items-center w-full py-8 bg-white px-4 md:px-12">
+          <Carousel className="w-full max-w-7xl relative" opts={{ align: "start", loop: true }}>
+            <CarouselContent className="-ml-4">
+              {reviews.map((review, i) => (
+                <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-xl shadow-md p-5 h-full border flex flex-col">
+                    {/* Header: Profile, Name, Date, Google Icon */}
+                    <div className="flex justify-between items-center mb-3">
+                      <div className="flex items-center">
+                        {/* Profile Image and Text */}
+                        <ReviewerImage src={review.imgUrl} name={review.name} />
+                        <div>
+                          <h3 className="font-semibold text-gray-800">{review.name}</h3>
+                          <p className="text-sm text-gray-500">{review.date}</p>
                         </div>
-                        {/* Google Icon (Top Right) */}
-                        <FcGoogle className="text-gray-400 text-xl" />
                       </div>
-
-                      {/* Rating and Verified Badge */}
-                      <div className="flex items-center gap-1 mb-2">
-                        {[...Array(5)].map((_, idx) => (
-                          <FaStar key={idx} className="text-yellow-500" size={16} />
-                        ))}
-                        {/* Blue Checkmark */}
-                        <GoVerified className="text-blue-500 ml-1" size={16} />
-                      </div>
-
-                      {/* Review text */}
-                      <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap flex-1">
-                        {review.text}
-                      </p>
+                      {/* Google Icon (Top Right) */}
+                      <FcGoogle className="text-gray-400 text-xl" />
                     </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex -left-4 lg:-left-12" />
-              <CarouselNext className="hidden md:flex -right-4 lg:-right-12" />
-            </Carousel>
-          </div>
-          <hr />
-          <div className="bg-gray-50 py-12 px-6">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
-              {/* Left Content */}
-              <div className="flex-1">
-                <h2 className="text-2xl font-bold mb-6">Types of Tyres</h2>
+                    {/* Rating and Verified Badge */}
+                    <div className="flex items-center gap-1 mb-2">
+                      {[...Array(5)].map((_, idx) => (
+                        <FaStar key={idx} className="text-yellow-500" size={16} />
+                      ))}
+                      {/* Blue Checkmark */}
+                      <GoVerified className="text-blue-500 ml-1" size={16} />
+                    </div>
 
-                {/* Conventional Tubed */}
-                <div className="mb-6 flex">
-                  <div className="w-2 h-24 bg-green-600 mr-2"></div>
-                  <div>
-                    <h3 className="font-semibold text-lg flex items-center">
-                      Conventional Tubed
-                    </h3>
-                    <p className="text-gray-600 mt-2">
-                      A tubed tyre that has a separate inner tube placed inside it. If a tubed tyre is punctured,
-                      then you will not be able to drive the vehicle.
+                    {/* Review text */}
+                    <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap flex-1">
+                      {review.text}
                     </p>
                   </div>
-                </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-4 lg:-left-12" />
+            <CarouselNext className="hidden md:flex -right-4 lg:-right-12" />
+          </Carousel>
+        </div>
+        <hr />
+        <div className="bg-gray-50 py-12 px-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
-                {/* Tubeless */}
+            {/* Left Content */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-6">Types of Tyres</h2>
+
+              {/* Conventional Tubed */}
+              <div className="mb-6 flex">
+                <div className="w-2 h-24 bg-green-600 mr-2"></div>
                 <div>
-                  <h3 className="font-semibold text-lg">Tubeless</h3>
+                  <h3 className="font-semibold text-lg flex items-center">
+                    Conventional Tubed
+                  </h3>
                   <p className="text-gray-600 mt-2">
-                    A tubeless tyre does not have a tube inside it. If the tubeless tyre is punctured, the tyre never goes flat
-                    and it will still run for days.
+                    A tubed tyre that has a separate inner tube placed inside it. If a tubed tyre is punctured,
+                    then you will not be able to drive the vehicle.
                   </p>
                 </div>
               </div>
 
-              {/* Right Image */}
-              <div className="flex-1 flex justify-centernpm">
-                <Image
-                  src="/tyre.png"
-                  alt="Car and Bike Tyres in Gandhinagar"
-                  width={288}
-                  height={288}
-                  className="object-contain"
-                />
+              {/* Tubeless */}
+              <div>
+                <h3 className="font-semibold text-lg">Tubeless</h3>
+                <p className="text-gray-600 mt-2">
+                  A tubeless tyre does not have a tube inside it. If the tubeless tyre is punctured, the tyre never goes flat
+                  and it will still run for days.
+                </p>
               </div>
             </div>
+
+            {/* Right Image */}
+            <div className="flex-1 flex justify-centernpm">
+              <Image
+                src="/tyre.png"
+                alt="Car and Bike Tyres in Gandhinagar"
+                width={288}
+                height={288}
+                className="object-contain"
+              />
+            </div>
           </div>
+        </div>
 
-          <hr />
-          <YouTubeCarousel />
+        <hr />
+        <YouTubeCarousel />
 
-          <FAQSection />
+        <FAQSection />
 
-          {/* SEO Content Section */}
-          <div className="sr-only bg-white py-12 px-6 text-center border-t border-gray-200">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Your Trusted Local Tyre Shop Near Me</h2>
-            <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Searching for a <strong>tyre shop near me</strong>? Suman Tyres is conveniently located in Gandhinagar, providing top-notch tyres, batteries, and engine oils to customers from <strong>Gandhinagar, Ahmedabad, Vavol, Dhodakuva</strong>, and surrounding nearby areas. Whether you need an urgent tyre replacement, wheel alignment, or routine maintenance, visit the best <strong>tyre shop in Gandhinagar</strong> today! We offer a wide range of premium products and exceptional service to ensure your vehicle is always ready for the road.
-            </p>
-          </div>
+        {/* SEO Content Section */}
+        <div className="sr-only bg-white py-12 px-6 text-center border-t border-gray-200">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Your Trusted Local Tyre Shop Near Me</h2>
+          <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Searching for a <strong>tyre shop near me</strong>? Suman Tyres is conveniently located in Gandhinagar, providing top-notch tyres, batteries, and engine oils to customers from <strong>Gandhinagar, Ahmedabad, Vavol, Dhodakuva</strong>, and surrounding nearby areas. Whether you need an urgent tyre replacement, wheel alignment, or routine maintenance, visit the best <strong>tyre shop in Gandhinagar</strong> today! We offer a wide range of premium products and exceptional service to ensure your vehicle is always ready for the road.
+          </p>
+        </div>
 
-        </section>
       </main>
       <Footer />
     </div>
